@@ -1,49 +1,54 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-import logo_icon_64 from '../../assets/images/logo-icon-64.png';
+import logo_icon_64 from '../assets/images/logo-icon-64.png';
 
 import Navbar from '../../component/Navbar/navbar'
 import Footer from '../../component/Footer/footer';
-import UserFeedBack from '../../component/userFeedBack';
-import Blog2 from '../../component/blog2';
+// import UserFeedBack from '../../component/userFeedBack';
+// import Blog2 from '../../component/blog2';
 import CookieModal from '../../component/cookieModal';
-import GetInTuch from '../../component/getInTuch';
-import AboutImage from '../../component/abloutImage';
+// import GetInTuch from '../../component/getInTuch';
+// import AboutImage from '../../component/abloutImage';
 
-import ModalVideo from 'react-modal-video'
+// import ModalVideo from 'react-modal-video'
 import "../../../node_modules/react-modal-video/css/modal-video.css";
 
-import Lightbox from 'react-18-image-lightbox';
+// import Lightbox from 'react-18-image-lightbox';
 import "react-18-image-lightbox/style.css"
 
-import {FaArrowRight,FiCamera} from '../../assets/icons/icons'
+// import {FaArrowRight,FiCamera} from '../assets/icons/icons'
+import bgVideo from '../assets/images/bg-video.png'
 
-import { servicesTwo,portfolioImage,portfolioData } from '../../data/dataFour';
+import { 
+  servicesTwo,
+  portfolioImage,
+  portfolioData 
+} from '../../data/dataFour';
 
 export default function Home() {
-  let [isOpen, setOpen] = useState(false)
-  let [currentImageIndex, setCurrentImageIndex] = useState(0);
-  let [isImage, setIsImage] = useState(false);
+  // let [isOpen, setOpen] = useState(false)
+  // let [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // let [isImage, setIsImage] = useState(false);
 
-  let handleMovePrev = () => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + portfolioImage.length - 1) % portfolioImage.length);
-  };
+  // let handleMovePrev = () => {
+  //     setCurrentImageIndex((prevIndex) => (prevIndex + portfolioImage.length - 1) % portfolioImage.length);
+  // };
 
-  let handleMoveNext = () => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % portfolioImage.length);
-  };
-  let handleImageClick = (index) => {
-      setCurrentImageIndex(index);
-      setIsImage(true);
-  };
-  let currentImage = portfolioImage[currentImageIndex];
+  // let handleMoveNext = () => {
+  //     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % portfolioImage.length);
+  // };
+  // let handleImageClick = (index) => {
+  //     setCurrentImageIndex(index);
+  //     setIsImage(true);
+  // };
+  // let currentImage = portfolioImage[currentImageIndex];
 
   return (
     <>
       <Navbar navClass="nav-light" />
 
-      <section className="py-36 md:py-64 w-full table relative bg-[url('../../assets/images/bg-video.png')] bg-center bg-no-repeat bg-cover">
+      <section className="py-36 md:py-64 w-full table relative bg-[url('../assets/images/bg-video.png')] bg-center bg-no-repeat bg-cover">
         <div className="absolute top-0 start-0 w-full h-full z-0 pointer-events-none overflow-hidden">
           <iframe
               src="https://player.vimeo.com/video/33955001?background=1&autoplay=1&loop=1&byline=0&title=0"
@@ -66,7 +71,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="relative">
+      {/* <div className="relative">
         <div className="absolute block w-full h-auto bottom-[25px] z-1 start-0">
           <Link to="#"><i className="mdi mdi-arrow-down absolute top-0 start-0 end-0 text-center inline-flex items-center justify-center rounded-full bg-white dark:bg-slate-900 h-12 w-12 mx-auto shadow-md dark:shadow-gray-800"></i></Link>
         </div>
@@ -114,7 +119,7 @@ export default function Home() {
         </div>
 
         <div className="container-fluid relative md:mt-24 mt-16">
-          <div className="grid grid-cols-1 py-36 bg-[url('../../assets/images/team.jpg')] bg-center bg-no-repeat bg-cover">
+          <div className="grid grid-cols-1 py-36 bg-[url('../assets/images/team.jpg')] bg-center bg-no-repeat bg-cover">
             <div className="absolute inset-0 bg-slate-900/70"></div>
             <div className="container relative">
               <div className="grid grid-cols-1 text-center">
@@ -181,7 +186,7 @@ export default function Home() {
 
 
         <GetInTuch title={true}/>
-      </section>
+      </section> */}
       <Footer />
       <CookieModal />
     </>
