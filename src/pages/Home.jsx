@@ -41,13 +41,14 @@ export default function IndexLandingTwo() {
     <>
       <Navbar navClass="nav-light" />
 
-      <section className="py-36 md:py-64 w-full table relative bg-[url('../assets/images/bg-video.png')] bg-center bg-no-repeat bg-cover">
+      <section className="py-36 md:py-64 w-full table relative bg-[url('../../assets/images/bg-video.png')] bg-center bg-no-repeat bg-cover">
         <div className="absolute top-0 start-0 w-full h-full z-0 pointer-events-none overflow-hidden">
           <iframe
             src="https://player.vimeo.com/video/33955001?background=1&autoplay=1&loop=1&byline=0&title=0"
             className="absolute top-1/2 start-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 -translate-y-1/2 w-screen h-[56.25vw] min-h-screen min-w-[177.77vw]"
             title="Vimeo Video"
           ></iframe>
+
         </div>
         <div className="absolute inset-0 bg-black/80"></div>
         <div className="container relative">
