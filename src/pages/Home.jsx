@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom'
 import logo_icon_64 from '../assets/images/logo-icon-64.png'
 
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import CookieModal from '../components/CookieModal'
-import GetInTuch from '../components/GetInTouch'
-import AboutImage from '../components/AboutImage'
+// import Footer from '../components/Footer'
+// import CookieModal from '../components/CookieModal'
+// import GetInTuch from '../components/GetInTouch'
+// import AboutImage from '../components/AboutImage'
 
 import ModalVideo from 'react-modal-video'
-import '../../../node_modules/react-modal-video/css/modal-video.css'
+import '../../node_modules/react-modal-video/css/modal-video.css'
 
 import Lightbox from 'react-18-image-lightbox'
 import 'react-18-image-lightbox/style.css'
 
 import {FaArrowRight,FiCamera} from '../assets/icons/icons'
 
-import { servicesTwo,portfolioImage,portfolioData } from '../../data/dataFour'
+import { servicesTwo,portfolioImage,portfolioData } from '../data/dataFour'
 
 export default function IndexLandingTwo() {
   let [isOpen, setOpen] = useState(false)
@@ -48,7 +48,6 @@ export default function IndexLandingTwo() {
             className="absolute top-1/2 start-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 -translate-y-1/2 w-screen h-[56.25vw] min-h-screen min-w-[177.77vw]"
             title="Vimeo Video"
           ></iframe>
-
         </div>
         <div className="absolute inset-0 bg-black/80"></div>
         <div className="container relative">
@@ -77,16 +76,16 @@ export default function IndexLandingTwo() {
         </div>
       </div>
       <section className="relative md:py-24 py-16">
-        <div className="container relative">
+        {/* <div className="container relative">
           <AboutImage grid="md:col-span-5"/>
-        </div>
+        </div> */}
 
         <div className="container relative md:mt-24 mt-16">
           <div className="grid grid-cols-1 pb-8 text-center">
             <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Services</h6>
             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What we offer ?</h3>
 
-            <p className="text-slate-400 max-w-xl mx-auto">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+            <p className="text-slate-400 max-w-xl mx-auto">Obviously I am a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-6 gap-[30px]">
@@ -113,7 +112,7 @@ export default function IndexLandingTwo() {
         </div>
 
         <div className="container-fluid relative md:mt-24 mt-16">
-          <div className="grid grid-cols-1 py-36 bg-[url('../assets/images/team.jpg')] bg-center bg-no-repeat bg-cover">
+          <div className="grid grid-cols-1 py-36 bg-center bg-no-repeat bg-cover">
             <div className="absolute inset-0 bg-slate-900/70"></div>
             <div className="container relative">
               <div className="grid grid-cols-1 text-center">
@@ -134,7 +133,7 @@ export default function IndexLandingTwo() {
             <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Portfolio</h6>
             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Our Works & Projects</h3>
 
-            <p className="text-slate-400 max-w-xl mx-auto">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+            <p className="text-slate-400 max-w-xl mx-auto">Obviously I am a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 mt-8">
@@ -172,10 +171,10 @@ export default function IndexLandingTwo() {
           </div>
         </div>
 
-        <GetInTuch title={true}/>
+        {/* <GetInTuch title={true}/> */}
       </section>
-      <Footer />
-      <CookieModal />
+      {/* <Footer />
+      <CookieModal /> */}
     </>
   )
 }
