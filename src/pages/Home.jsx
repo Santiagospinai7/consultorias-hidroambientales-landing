@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import logo_icon_64 from '../assets/images/logo-icon-64.png'
 
 import Navbar from '../components/Navbar'
-// import Footer from '../components/Footer'
-// import CookieModal from '../components/CookieModal'
+import Footer from '../components/Footer'
+import CookieModal from '../components/CookieModal'
 // import GetInTuch from '../components/GetInTouch'
 // import AboutImage from '../components/AboutImage'
 
@@ -19,7 +19,7 @@ import {FaArrowRight,FiCamera} from '../assets/icons/icons'
 
 import { servicesTwo,portfolioImage,portfolioData } from '../data/dataFour'
 
-export default function IndexLandingTwo() {
+export default function Home() {
   let [isOpen, setOpen] = useState(false)
   let [currentImageIndex, setCurrentImageIndex] = useState(0)
   let [isImage, setIsImage] = useState(false)
@@ -174,8 +174,8 @@ export default function IndexLandingTwo() {
 
         {/* <GetInTuch title={true}/> */}
       </section>
-      {/* <Footer />
-      <CookieModal /> */}
+      <Footer />
+      <CookieModal />
     </>
   )
 }

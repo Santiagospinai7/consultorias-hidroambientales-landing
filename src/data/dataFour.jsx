@@ -1253,3 +1253,75 @@ export const seoServices = [
   },
     
 ]
+export const footerLinks = [
+  {
+    liClass: '',
+    route: '/page-terms',
+    title: 'Terms of Services',
+
+  },
+  {
+    liClass: 'mt-[10px]',
+    route: '/page-privacy',
+    title: 'Privacy Policy',
+
+  },
+  {
+    route: '/documentation',
+    title: 'Documentation',
+    liClass: 'mt-[10px]',
+  },
+  {
+    route: '/changelog',
+    title: 'Changelog',
+    liClass: 'mt-[10px]',
+  },
+  {
+    route: '#!',
+    title: 'Widget',
+    liClass: 'mt-[10px]',
+  }
+]
+export const footerCompany = [
+  {
+    liClass: '',
+    route: '/page-aboutus',
+    title: 'About us',
+  },
+  {
+    liClass: 'mt-[10px]',
+    route: '/page-services',
+    title: 'Services',
+
+  },
+  {
+    route: '/page-team',
+    title: 'Team',
+    liClass: 'mt-[10px]',
+
+  },
+  {
+    route: '/page-pricing',
+    title: 'Pricing',
+    liClass: 'mt-[10px]',
+
+  },
+  {
+    route: '/portfolio-creative-four',
+    title: 'Project',
+    liClass: 'mt-[10px]',
+
+  },
+  {
+    route: '/blog',
+    title: 'Blog',
+    liClass: 'mt-[10px]',
+
+  },
+  {
+    route: '/auth-login',
+    title: 'Login',
+    liClass: 'mt-[10px]',
+
+  }
+]
