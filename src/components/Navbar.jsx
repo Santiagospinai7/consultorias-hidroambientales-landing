@@ -8,10 +8,10 @@ import { Link, useLocation } from 'react-router-dom'
 export default function Navbar(props) {
   let { navClass, navJustify } = props
   let [isMenu, setisMenu] = useState(false)
-  let [manu , setManu] = useState('')
+  let [manu, setManu] = useState('')
   let location = useLocation()
-    
-  useEffect(()=>{
+
+  useEffect(() => {
     let current = location.pathname.substring(location.pathname.lastIndexOf('/') + 1)
     setManu(current)
 
@@ -19,7 +19,7 @@ export default function Navbar(props) {
       const navbar = document.getElementById('topnav')
       if (
         document.body.scrollTop >= 50 ||
-                document.documentElement.scrollTop >= 50
+        document.documentElement.scrollTop >= 50
       ) {
         if (navbar !== null) {
           navbar?.classList.add('nav-sticky')
@@ -35,9 +35,7 @@ export default function Navbar(props) {
     return () => {
       window.removeEventListener('scroll', windowScroll)
     }
-
-  },[location.pathname.substring(location.pathname.lastIndexOf('/') + 1)])
-    
+  }, [location.pathname.substring(location.pathname.lastIndexOf('/') + 1)])
 
   const toggleMenu = () => {
     setisMenu(!isMenu)
@@ -57,13 +55,12 @@ export default function Navbar(props) {
     }
   }
 
-
   return (
     <nav id="topnav" className={`defaultscroll ${navClass === 'nav-light' ? '' : navClass === 'nav-sticky' ?
       'bg-white dark:bg-slate-900' : ''}`}>
-      <div className="container relative">
-        {
-          navClass === 'nav-light' ?
+      <div className="container relative flex justify-between items-center">
+        <div>
+          {navClass === 'nav-light' ? (
             <Link className="logo" to="/home">
               <span className="inline-block dark:hidden">
                 <img src={logo_dark} className="l-dark" height="24" alt="" />
@@ -71,12 +68,13 @@ export default function Navbar(props) {
               </span>
               <img src={logo_light} height="24" className="hidden dark:inline-block" alt="" />
             </Link>
-            :
+          ) : (
             <Link className="logo" to="/home">
               <img src={logo_dark} className="inline-block dark:hidden" alt="" />
               <img src={logo_light} className="hidden dark:inline-block" alt="" />
             </Link>
-        }
+          )}
+        </div>
 
         <div className="menu-extras">
           <div className="menu-item">
@@ -89,7 +87,7 @@ export default function Navbar(props) {
             </Link>
           </div>
         </div>
-           
+
         <div id="navigation" style={{ display: isMenu ? 'block' : 'none' }}>
           <ul className={`navigation-menu ${navClass} ${navJustify}`}>
             <li className={manu === 'home' || '' ? 'active' : ''}><Link to="/home" className="sub-menu-item">Home</Link></li>
