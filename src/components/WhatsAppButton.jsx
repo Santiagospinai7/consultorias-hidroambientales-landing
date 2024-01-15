@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { FaWhatsapp } from 'react-icons/fa'
 
 const WhatsAppButton = () => {
   const [showForm, setShowForm] = useState(false)
   const isMobile = useMediaQuery({ maxWidth: 767 })
+  const formRef = useRef(null)
 
   useEffect(() => {
     const closeForm = () => setShowForm(false)
@@ -17,16 +18,23 @@ const WhatsAppButton = () => {
 
   const handleButtonClick = (e) => {
     if (isMobile) {
-      window.open('https://wa.me/573136136848?text=Hello%20from%20your%20website!', '_blank')
+      window.open(
+        'https://wa.me/573136136848?text=Hola Consultorias hidroambientales 👋!%20Quisiera%20saber%20acerca...',
+        '_blank'
+      )
     } else {
-      e.stopPropagation() 
+      e.stopPropagation()
       setShowForm((prev) => !prev)
     }
   }
-  
+
+  const handleFormClick = (e) => {
+    e.stopPropagation() // Stop the propagation to prevent closing the form
+  }
 
   const handleFormSubmit = (e) => {
     e.preventDefault()
+    window.open(`https://wa.me/573136136848?text=${e.target.message.value}`, '_blank')
     setShowForm(false)
   }
 
@@ -40,12 +48,15 @@ const WhatsAppButton = () => {
       </button>
 
       {isMobile || !showForm ? null : (
-        <div className="fixed bottom-16 left-2/4 transform -translate-x-full p-4 bg-white shadow-lg rounded-md w-72">
+        <div
+          ref={formRef}
+          className="fixed bottom-16 left-2/4 transform -translate-x-full p-4 bg-white shadow-lg rounded-md w-72"
+          onClick={handleFormClick}
+        >
           <form onSubmit={handleFormSubmit} className="w-full max-w-sm">
             <label htmlFor="message" className="block mb-2 text-gray-700">
               <p className="text-lg font-semi mb-4">👋 Hola, ¿En que te podemos ayudar?</p>
             </label>
-            {/* put itext input and button here align in the same line */}
             <textarea
               id="message"
               name="message"
@@ -61,9 +72,7 @@ const WhatsAppButton = () => {
             </button>
           </form>
         </div>
-      
       )}
-
     </div>
   )
 }
