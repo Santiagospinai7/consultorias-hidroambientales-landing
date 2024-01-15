@@ -1,11 +1,6 @@
 import { Link } from 'react-router-dom'
 
 import logo_light from '../assets/images/logo-light.png'
-import american_ex from '../assets/images/payments/american-ex.png'
-import discover from '../assets/images/payments/discover.png'
-import master_card from '../assets/images/payments/master-card.png'
-import paypal from '../assets/images/payments/paypal.png'
-import visa from '../assets/images/payments/visa.png'
 
 import * as Icon from 'react-feather'
 
@@ -83,16 +78,8 @@ export default function Footer() {
         <div className="container relative text-center">
           <div className="grid md:grid-cols-2 items-center">
             <div className="md:text-start text-center">
-              <p className="mb-0">© {new Date().getFullYear()} Techwind. Design & Develop with <i className="mdi mdi-heart text-red-600"></i> by <Link to="https://shreethemes.in/" target="_blank" className="text-reset">Shreethemes</Link>.</p>
+              <p className="mb-0">© {new Date().getFullYear()} Design & Develop with <i className="mdi mdi-heart text-red-600"></i> by <Link to="https://www.idtechnologysas.com/" target="_blank" className="text-reset">ID Technology</Link>.</p>
             </div>
-
-            <ul className="list-none md:text-end text-center space-x-1 mt-6 md:mt-0">
-              <li className="inline"><Link to="#"><img src={american_ex} className="max-h-6 inline" title="American Express" alt="" /></Link></li>
-              <li className="inline"><Link to="#"><img src={discover} className="max-h-6 inline" title="Discover" alt="" /></Link></li>
-              <li className="inline"><Link to="#"><img src={master_card} className="max-h-6 inline" title="Master Card" alt="" /></Link></li>
-              <li className="inline"><Link to="#"><img src={paypal} className="max-h-6 inline" title="Paypal" alt="" /></Link></li>
-              <li className="inline"><Link to="#"><img src={visa} className="max-h-6 inline" title="Visa" alt="" /></Link></li>
-            </ul>
           </div>
         </div>
       </div>
