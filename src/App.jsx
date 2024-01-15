@@ -4,6 +4,8 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
+import WhatsAppButton from './components/WhatsAppButton'
+
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 
@@ -16,6 +18,7 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/about-us' element={<AboutUs />} />
       </Routes>
+      <WhatsAppButton />
       <Footer />
     </BrowserRouter>
   )
