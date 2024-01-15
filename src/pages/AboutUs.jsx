@@ -5,9 +5,6 @@ import image1 from '../assets/images/client/02.jpg'
 import image2 from '../assets/images/client/03.jpg'
 import image3 from '../assets/images/client/04.jpg'
 
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-
 import '../../node_modules/react-modal-video/css/modal-video.css'
 import * as Icon from 'react-feather'
 import {MdKeyboardArrowRight} from '../assets/icons/icons'
@@ -44,7 +41,6 @@ export default function AboutUs() {
   ]
   return (
     <>
-      <Navbar navClass="nav-light" />
       <section className="relative table w-full py-36 lg:py-44 bg-[url('../../assets/images/company/aboutus.jpg')] bg-no-repeat bg-center bg-cover">
         <div className="absolute inset-0 bg-black opacity-75"></div>
         <div className="container relative">
@@ -132,8 +128,6 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   )
 }

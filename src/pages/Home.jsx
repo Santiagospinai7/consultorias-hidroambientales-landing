@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 
 import logo_icon_64 from '../assets/images/logo-icon-64.png'
 
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import CookieModal from '../components/CookieModal'
 // import GetInTuch from '../components/GetInTouch'
 // import AboutImage from '../components/AboutImage'
@@ -39,8 +37,6 @@ export default function Home() {
 
   return (
     <>
-      <Navbar navClass="nav-light" />
-
       <section className="py-36 md:py-64 w-full table relative bg-[url('../../assets/images/bg-video.png')] bg-center bg-no-repeat bg-cover">
         <div className="absolute top-0 start-0 w-full h-full z-0 pointer-events-none overflow-hidden">
           <iframe
@@ -174,7 +170,7 @@ export default function Home() {
 
         {/* <GetInTuch title={true}/> */}
       </section>
-      <Footer />
+      {/* <Footer /> */}
       <CookieModal />
     </>
   )
