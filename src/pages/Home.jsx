@@ -50,12 +50,12 @@ export default function Home() {
         <div className="container relative">
           <div className="grid grid-cols-1 text-center">
             <img src={logo_icon_64} className="mx-auto" alt="" />
-            <h4 className="text-white lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium my-6 position-relative">We Collaboration Easy & Fast</h4>
+            <h4 className="text-white lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium my-6 position-relative">Consultorias hidroambientales</h4>
 
-            <p className="text-white opacity-50 mb-0 max-w-xl text-lg mx-auto">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
+            <p className="text-white opacity-50 mb-0 max-w-xl text-lg mx-auto">Somos una empresa dedicada a la consultoría ambiental, con más de 10 años de experiencia en el sector.</p>
 
             <div className="relative mt-8">
-              <Link className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Acerca de nosotros</Link>
+              <Link to="/about-us" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md" >Acerca de nosotros</Link>
             </div>
           </div>
         </div>
