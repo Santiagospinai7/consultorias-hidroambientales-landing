@@ -39,18 +39,18 @@ const WhatsAppButton = () => {
   }
 
   return (
-    <div className="fixed right-0 bottom-0 p-6 z-10 sm:p-10">
+    <div className="fixed right-0 bottom-0 p-6 z-10">
       <button
-        className="duration-500 p-3 rounded-full text-white bg-green-500 hover:bg-green-700"
+        className="duration-500 p-5 rounded-full text-white bg-green-500 hover:bg-green-700"
         onClick={handleButtonClick}
       >
-        <FaWhatsapp size={24} />
+        <FaWhatsapp size={32} />
       </button>
 
       {isMobile || !showForm ? null : (
         <div
           ref={formRef}
-          className="fixed bottom-16 left-2/4 transform -translate-x-full p-4 bg-white shadow-lg rounded-md w-72"
+          className="fixed bottom-20 left-2/4 transform -translate-x-full p-4 bg-white shadow-lg rounded-md w-72"
           onClick={handleFormClick}
         >
           <form onSubmit={handleFormSubmit} className="w-full max-w-sm">
@@ -61,14 +61,14 @@ const WhatsAppButton = () => {
               id="message"
               name="message"
               className="w-full h-24 px-3 py-2 text-gray-700 border rounded-lg focus:outline-none"
-              placeholder="Hola, quisiera saber si tienen disponibilidad para..."
+              placeholder="Hola, quisiera saber acerca..."
               required
             />
             <button
               type="submit"
-              className="w-full px-3 py-4 mt-4 text-white bg-green-500 rounded-md focus:bg-green-600 focus:outline-none"
+              className="w-full px-3 py-4 mt-4 text-white duration-500 bg-green-500 hover:bg-green-700 rounded-md focus:bg-green-600 focus:outline-none"
             >
-              Enviar
+              Enviar mensaje
             </button>
           </form>
         </div>
