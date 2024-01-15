@@ -1285,7 +1285,7 @@ export const footerLinks = [
 export const footerCompany = [
   {
     liClass: '',
-    route: '/page-aboutus',
+    route: '/about-us',
     title: 'About us',
   },
   {
