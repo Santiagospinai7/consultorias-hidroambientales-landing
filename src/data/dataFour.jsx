@@ -1,4 +1,4 @@
-import {VscServer, TbCloudUp, BsEnvelopeAt, LuUsers, BiTachometer, FiDisc, MdOutlineMonitorWeight, LiaFileInvoiceDollarSolid, LiaSwatchbookSolid, TbUserCheck,AiOutlineGitlab,PiBookOpenText,HiOutlineChartPie,VscFeedback,RiPresentationFill,AiOutlineFire,RiMoneyCnyBoxLine,AiOutlineDollar,FiAirplay,MdApi,TbCameraPlus,PiFlowerLight,HiOutlineCog6Tooth,FaRegComment,FaRegQuestionCircle,MdOutlineCollectionsBookmark,BiWallet,LuImagePlus,LuSave,BiShieldAlt2,MdOutlineCalendarMonth,RiMailSendLine,LuAirplay,VscMention,TbAward,BsBriefcase,BiDna,BiLogoDribbble,AiOutlineStar,LiaDiscord,BiCube,AiOutlineCompass,BsSuitClub,BsCheckCircle,MdOutlineBrightness5,SlBookOpen,RiBatteryChargeLine,RxLightningBolt,LuAtom,PiBellSimpleRingingBold,RiBitCoinLine,TbCurrencyBitcoin,AiOutlineHome,PiBriefcase,FiKey,BsPencil, RiCheckboxMultipleBlankLine, BiLineChart, HiOutlineUsers, FaRegComments, } from '../assets/icons/icons'
+import {VscServer, TbCloudUp, BsEnvelopeAt, LuUsers, BiTachometer, FiDisc, MdOutlineMonitorWeight, LiaFileInvoiceDollarSolid, LiaSwatchbookSolid, TbUserCheck,AiOutlineGitlab,PiBookOpenText,HiOutlineChartPie,VscFeedback,RiPresentationFill,AiOutlineFire,RiMoneyCnyBoxLine,AiOutlineDollar,FiAirplay,MdApi,TbCameraPlus,PiFlowerLight,HiOutlineCog6Tooth,FaRegComment,FaRegQuestionCircle,MdOutlineCollectionsBookmark,BiWallet,LuImagePlus,LuSave,BiShieldAlt2,MdOutlineCalendarMonth,RiMailSendLine,LuAirplay,VscMention,TbAward,BsBriefcase,BiDna,BiLogoDribbble,AiOutlineStar,LiaDiscord,BiCube,AiOutlineCompass,BsSuitClub,BsCheckCircle,MdOutlineBrightness5,SlBookOpen,RiBatteryChargeLine,RxLightningBolt,LuAtom,PiBellSimpleRingingBold,RiBitCoinLine,TbCurrencyBitcoin,AiOutlineHome,PiBriefcase,FiKey,BsPencil, RiCheckboxMultipleBlankLine, BiLineChart, HiOutlineUsers, FaRegComments, FiPhone, FaRegEnvelope, RiMapPinLine } from '../assets/icons/icons'
 
 import {HiOutlineArrowsExpand} from 'react-icons/hi'
 
@@ -535,32 +535,32 @@ export const servicesData = [
 export const servicesTwo = [
   {
     icon:FiAirplay,
-    title:'UX / UI Design',
+    title:'Servicio 1',
     desc:'The phrasal sequence of the is now so that many campaign and benefit'
   },
   {
     icon:MdApi,
-    title:'IOS App Designer',
+    title:'Servicio 2',
     desc:'The phrasal sequence of the is now so that many campaign and benefit'
   },
   {
     icon:TbCameraPlus,
-    title:'Photography',
+    title:'Servicio 3',
     desc:'The phrasal sequence of the is now so that many campaign and benefit'
   },
   {
     icon:PiFlowerLight,
-    title:'Graphic Designer',
+    title:'Servicio 4',
     desc:'The phrasal sequence of the is now so that many campaign and benefit'
   },
   {
     icon:HiOutlineCog6Tooth,
-    title:'Web Security',
+    title:'Servicio 5',
     desc:'The phrasal sequence of the is now so that many campaign and benefit'
   },
   {
     icon:FaRegComment,
-    title:'24/7 Support',
+    title:'Servicio 6',
     desc:'The phrasal sequence of the is now so that many campaign and benefit'
   },
 ]
@@ -1253,35 +1253,6 @@ export const seoServices = [
   },
     
 ]
-export const footerLinks = [
-  {
-    liClass: '',
-    route: '/page-terms',
-    title: 'Terms of Services',
-
-  },
-  {
-    liClass: 'mt-[10px]',
-    route: '/page-privacy',
-    title: 'Privacy Policy',
-
-  },
-  {
-    route: '/documentation',
-    title: 'Documentation',
-    liClass: 'mt-[10px]',
-  },
-  {
-    route: '/changelog',
-    title: 'Changelog',
-    liClass: 'mt-[10px]',
-  },
-  {
-    route: '#!',
-    title: 'Widget',
-    liClass: 'mt-[10px]',
-  }
-]
 export const footerCompany = [
   {
     liClass: '',
@@ -1290,39 +1261,18 @@ export const footerCompany = [
   },
   {
     liClass: 'mt-[10px]',
-    route: '/page-services',
-    title: 'Services',
-
+    route: '/services',
+    title: 'Servicios',
   },
   {
-    route: '/page-team',
-    title: 'Team',
+    route: '/products',
+    title: 'Productos',
     liClass: 'mt-[10px]',
-
   },
   {
-    route: '/page-pricing',
-    title: 'Pricing',
+    route: '/terms',
+    title: 'Terminos de servicio',
     liClass: 'mt-[10px]',
-
-  },
-  {
-    route: '/portfolio-creative-four',
-    title: 'Project',
-    liClass: 'mt-[10px]',
-
-  },
-  {
-    route: '/blog',
-    title: 'Blog',
-    liClass: 'mt-[10px]',
-
-  },
-  {
-    route: '/auth-login',
-    title: 'Login',
-    liClass: 'mt-[10px]',
-
   }
 ]
 export const feedback =[
@@ -1361,5 +1311,25 @@ export const feedback =[
     image: client6,
     name: 'Cristino Murfi',
     role: 'Manager'
+  }
+]
+export const contactData = [
+  {
+    icon:FiPhone,
+    title:'Phone',
+    desc:'The phrasal sequence of the is now so that many campaign and benefit',
+    contact:'+152 534-468-854'
+  },
+  {
+    icon:FaRegEnvelope,
+    title:'Email',
+    desc:'The phrasal sequence of the is now so that many campaign and benefit',
+    contact:'contact@example.com'
+  },
+  {
+    icon:RiMapPinLine,
+    title:'Location',
+    desc:'The phrasal sequence of the is now so that many campaign and benefit',
+    contact:'View on Google map'
   }
 ]

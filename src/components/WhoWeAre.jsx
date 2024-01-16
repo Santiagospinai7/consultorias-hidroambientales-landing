@@ -33,15 +33,15 @@ export default function WhoWeAre(){
           <div className="lg:ms-5">
             <div className="flex mb-4">
               <span className="text-indigo-600 text-2xl font-bold mb-0"><CountUp className="counter-value text-6xl font-bold" start={1} end={15}></CountUp>+</span>
-              <span className="self-end font-medium ms-2">Years <br /> Experience</span>
+              <span className="self-end font-medium ms-2">Años <br /> De Experiencia</span>
             </div>
 
-            <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Who we are ?</h3>
+            <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Quienes somos nosotros?</h3>
 
-            <p className="text-slate-400 max-w-xl">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect. Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with real content.</p>
+            <p className="text-slate-400 max-w-xl">Somos una empresa dedicada a la consultoría ambiental, con más de 10 años de experiencia en el sector. Nuestro equipo de profesionales está altamente cualificado para ofrecer soluciones integrales a nuestros clientes.</p>
 
             <div className="mt-6">
-              <Link to="/contact-one" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"><FaRegEnvelope className="me-2 text-sm"/> Contact us</Link>
+              <Link to="/contact" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"><FaRegEnvelope className="me-2 text-sm"/> Contact us</Link>
             </div>
           </div>
         </div>

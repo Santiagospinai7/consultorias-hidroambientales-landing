@@ -8,6 +8,7 @@ import WhatsAppButton from './components/WhatsAppButton'
 
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Navigate to='/home' />} />
         <Route path='/home' element={<Home />} />
         <Route path='/about-us' element={<AboutUs />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <WhatsAppButton />
       <Footer />

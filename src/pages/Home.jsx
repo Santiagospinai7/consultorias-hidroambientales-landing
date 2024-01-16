@@ -80,10 +80,9 @@ export default function Home() {
 
         <div className="container relative md:mt-24 mt-16">
           <div className="grid grid-cols-1 pb-8 text-center">
-            <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Services</h6>
-            <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What we offer ?</h3>
-
-            <p className="text-slate-400 max-w-xl mx-auto">Obviously I am a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+            <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Servicios</h6>
+            <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Nuestros servicios</h3>
+            <p className="text-slate-400 max-w-xl mx-auto">Somos una empresa dedicada a la consultoría ambiental, contamos con una gran trayectoria en el sector ofreciendo servicios de calidad.</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-6 gap-[30px]">
@@ -100,7 +99,7 @@ export default function Home() {
                     <p className="text-slate-400 mt-3">{item.desc}</p>
         
                     <div className="mt-5">
-                      <Link to="/page-services" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read More <FaArrowRight className="ms-2 text-[10px]"/></Link>
+                      <Link to="/page-services" className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Leer más <FaArrowRight className="ms-2 text-[10px]"/></Link>
                     </div>
                   </div>
                 </div>
@@ -128,10 +127,10 @@ export default function Home() {
         </div>
         <div className="container relative md:mt-24 mt-16">
           <div className="grid grid-cols-1 pb-8 text-center">
-            <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Portfolio</h6>
-            <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Our Works & Projects</h3>
+            <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Productos</h6>
+            <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Nuestros productos</h3>
 
-            <p className="text-slate-400 max-w-xl mx-auto">Obviously I am a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+            <p className="text-slate-400 max-w-xl mx-auto">Somos proveedores de productos de calidad, contamos con una gran trayectoria en el sector ofreciendo productos de calidad.</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 mt-8">
@@ -172,8 +171,6 @@ export default function Home() {
         <div className=" md:mt-24 mt-16" >
           <UserFeedBack />
         </div>
-
-        {/* <Blog2 className={"container relative md:mt-24 mt-16"} id={""} /> */}
 
 
         <GetInTouch title={true}/>

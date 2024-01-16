@@ -9,7 +9,6 @@ import '../../node_modules/react-modal-video/css/modal-video.css'
 import * as Icon from 'react-feather'
 import {MdKeyboardArrowRight} from '../assets/icons/icons'
 import CompanyLogo from '../components/companyLogo'
-import AboutUsServices from '../components/AboutUsServices'
 import WhoWeAre from '../components/WhoWeAre'
 
 export default function AboutUs() {
@@ -75,25 +74,7 @@ export default function AboutUs() {
 
       </section>
 
-      <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
-        <div className="container relative">
-          <div className="grid grid-cols-1 pb-8 text-center">
-            <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Key Features</h3>
-
-            <p className="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
-          </div>
-
-          <AboutUsServices/>
-
-          <div className="grid grid-cols-1 justify-center">
-            <div className="mt-6 text-center">
-              <Link to="/page-services" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2">See More <MdKeyboardArrowRight className="text-xl ms-1"/></Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800 md:pb-0 pb-0" id="team">
+      <section className="relative  md:py-24 py-16 bg-gray-50 dark:bg-slate-800 md:pb-0 pb-0" id="team">
         <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center">
             <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Our Professional Team</h3>
@@ -101,7 +82,7 @@ export default function AboutUs() {
             <p className="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
           </div>
 
-          <div className="grid md:grid-cols-12 grid-cols-1 mt-8 gap-[30px]">
+          <div className="grid md:pb-24 pb-16 md:grid-cols-12 grid-cols-1 mt-8 gap-[30px]">
             {teamData.map((item,index)=>{
               return(
                 <div key={index} className="lg:col-span-3 md:col-span-6">

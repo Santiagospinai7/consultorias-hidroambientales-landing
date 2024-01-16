@@ -128,7 +128,7 @@ export default function Navbar(props) {
               </ul>
             </li>
 
-            <li className={manu === 'contact-one' || '' ? 'active' : ''}><Link to="/contact-one" className="sub-menu-item">Contactanos</Link></li>
+            <li className={manu === 'contact' || '' ? 'active' : ''}><Link to="/contact" className="sub-menu-item">Contactanos</Link></li>
           </ul>
         </div>
       </div >

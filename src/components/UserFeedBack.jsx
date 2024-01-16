@@ -12,9 +12,9 @@ export default function UserFeedBack() {
     <>
       <div className="container relative" id="review">
         <div className="grid grid-cols-1 pb-8 text-center">
-          <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What Our Users Say</h3>
+          <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Comentarios de nuestros clientes</h3>
 
-          <p className="text-slate-400 max-w-xl mx-auto">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
+          <p className="text-slate-400 max-w-xl mx-auto">Nuestros clientes son muy importantes para nosotros, por eso siempre buscamos brindarles el mejor servicio, esto son algunos de los comentarios que nos han dejado.</p>
         </div>
 
         <div className="grid grid-cols-1 mt-8">

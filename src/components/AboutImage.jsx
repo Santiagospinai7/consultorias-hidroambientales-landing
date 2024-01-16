@@ -30,12 +30,10 @@ export default function AboutImage({grid}){
 
       <div className="md:col-span-6">
         <div className="lg:ms-5">
-          <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Our History</h6>
-          <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">“Sweet as the Moment When <br /> the coworking Went Pop</h3>
+          <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Nuestra historia</h6>
+          <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Empresa De Tratamiento <br/> Del Agua en Cali</h3>
 
           <p className="text-slate-400 max-w-xl mb-6">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Techwind network, and much more with just a few taps. commodo consequat. Duis aute irure.</p>
-
-          <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-md">Get Started</Link>
         </div>
       </div>
     </div>
