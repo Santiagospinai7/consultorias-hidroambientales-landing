@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 import logo_icon_64 from '../assets/images/logo-icon-64.png'
 
 import CookieModal from '../components/CookieModal'
-// import GetInTuch from '../components/GetInTouch'
-// import AboutImage from '../components/AboutImage'
+import GetInTouch from '../components/GetInTouch'
+import AboutImage from '../components/AboutImage'
+import UserFeedBack from '../components/UserFeedBack'
 
 import ModalVideo from 'react-modal-video'
 import '../../node_modules/react-modal-video/css/modal-video.css'
@@ -73,9 +74,9 @@ export default function Home() {
         </div>
       </div>
       <section className="relative md:py-24 py-16">
-        {/* <div className="container relative">
+        <div className="container relative">
           <AboutImage grid="md:col-span-5"/>
-        </div> */}
+        </div>
 
         <div className="container relative md:mt-24 mt-16">
           <div className="grid grid-cols-1 pb-8 text-center">
@@ -109,7 +110,7 @@ export default function Home() {
         </div>
 
         <div className="container-fluid relative md:mt-24 mt-16">
-          <div className="grid grid-cols-1 py-36 bg-center bg-no-repeat bg-cover">
+          <div className="grid grid-cols-1 py-36 bg-[url('../../assets/images/team.jpg')] bg-center bg-no-repeat bg-cover">
             <div className="absolute inset-0 bg-slate-900/70"></div>
             <div className="container relative">
               <div className="grid grid-cols-1 text-center">
@@ -168,9 +169,15 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <GetInTuch title={true}/> */}
+        <div className=" md:mt-24 mt-16" >
+          <UserFeedBack />
+        </div>
+
+        {/* <Blog2 className={"container relative md:mt-24 mt-16"} id={""} /> */}
+
+
+        <GetInTouch title={true}/>
       </section>
-      {/* <Footer /> */}
       <CookieModal />
     </>
   )

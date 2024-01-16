@@ -94,33 +94,41 @@ export default function Navbar(props) {
 
             <li className={manu === 'about-us' || '' ? 'active' : ''}><Link to="/about-us" className="sub-menu-item">About us</Link></li>
 
-            <li className={`${['page-services','page-team', 'page-pricing','page-testimonial','user-profile','user-billing','user-payment','user-invoice','user-notification','user-setting','property-listing','property-detail','course-listing','course-detail','nft-explore','nft-auction','nft-collection','nft-creators','nft-creator-profile','nft-creator-profile-edit','nft-wallet','nft-create-item','nft-detail','food-recipe','shop-grid','shop-grid','shop-grid-two','shop-item-detail','shop-cart','shop-checkout','food-recipe','shop-grid','shop-grid-two','shop-item-detail','shop-cart','shop-checkout','shop-account','food-recipe','shop-grid','shop-grid-two','shop-item-detail','shop-cart','shop-checkout','shop-account','photography-about','photography-portfolio','page-job-grid','page-job-detail','page-job-apply','page-job-post','page-job-career','page-job-candidates','page-job-candidate-detail','page-job-companies','page-Job-company-detail','forums-topic','forums-comments','helpcenter-overview','helpcenter-faqs','helpcenter-guides','helpcenter-support','blog','blog-sidebar','blog-detail','blog-standard-post','blog-slider-post','blog-gallery-post','blog-youtube-post','blog-vimeo-post','blog-audio-post','blog-blockquote-post','blog-left-sidebar-post','email-confirmation','email-password-reset','email-alert','email-invoice','auth-login','auth-signup','auth-re-password','auth-lock-screen','page-terms','page-privacy','page-comingsoon','page-maintenance','page-error','page-thankyou','contact-detail','contact-one','contact-two'].includes(manu)? 'active' : ''} has-submenu parent-parent-menu-item`}>
+            <li className={`${['services'].includes(manu)? 'active' : ''} has-submenu parent-parent-menu-item`}>
               <Link to="#!">Servicios</Link><span className="menu-arrow"></span>
               <ul className="submenu">
-                <li className={`${['about-us', 'page-services','page-team', 'page-pricing', 'page-testimonial'].includes(manu)? 'active' : ''} has-submenu parent-menu-item`}><Link to="#"> Company </Link><span className="submenu-arrow"></span>
-                  <ul className="submenu">
+                <li className={`${['about-us'].includes(manu)? 'active' : ''} has-submenu parent-menu-item`}><Link to="#"> Lavado de tanques </Link>
+                  {/* <ul className="submenu">
                     <li className={manu === 'about-us' || '' ? 'active' : ''}><Link to="/about-us" className="sub-menu-item"> About Us</Link></li>
                     <li className={manu === 'page-services' || '' ? 'active' : ''}><Link to="/page-services" className="sub-menu-item">Services</Link></li>
                     <li className={manu === 'page-team' || '' ? 'active' : ''}><Link to="/page-team" className="sub-menu-item"> Team</Link></li>
                     <li className={manu === 'page-pricing' || '' ? 'active' : ''}><Link to="/page-pricing" className="sub-menu-item">Pricing</Link></li>
                     <li className={manu === 'page-testimonial' || '' ? 'active' : ''}><Link to="/page-testimonial" className="sub-menu-item">Testimonial </Link></li>
+                  </ul> */}
+                </li>
+                <li className={`${['about-us'].includes(manu)? 'active' : ''} has-submenu parent-menu-item`}><Link to="#"> Lavado de piscinas </Link></li>
+              </ul>
+            </li>
+
+            <li className={`${['products'].includes(manu)? 'active' : ''} has-submenu parent-parent-menu-item`}>
+              <Link to="#!">Productos</Link><span className="menu-arrow"></span>
+              <ul className="submenu">
+                <li className={`${['about-us', 'page-services','page-team', 'page-pricing', 'page-testimonial'].includes(manu)? 'active' : ''} has-submenu parent-menu-item`}><Link to="#"> Piscinas </Link><span className="submenu-arrow"></span>
+                  <ul className="submenu">
+                    <li className={manu === 'about-us' || '' ? 'active' : ''}><Link to="/about-us" className="sub-menu-item"> Producto 1</Link></li>
+                    <li className={manu === 'page-services' || '' ? 'active' : ''}><Link to="/page-services" className="sub-menu-item">Producto 2</Link></li>
                   </ul>
                 </li>
-                <li className="has-submenu parent-menu-item"><Link to="#!"> Multi Level Menu</Link><span className="submenu-arrow"></span>
+                <li className={`${['about-us', 'page-services','page-team', 'page-pricing', 'page-testimonial'].includes(manu)? 'active' : ''} has-submenu parent-menu-item`}><Link to="#"> Tanques </Link><span className="submenu-arrow"></span>
                   <ul className="submenu">
-                    <li><Link to="#!" className="sub-menu-item">Level 1.0</Link></li>
-                    <li className="has-submenu child-menu-item"><Link to="#!"> Level 2.0 </Link><span className="submenu-arrow"></span>
-                      <ul className="submenu">
-                        <li><Link to="#!" className="sub-menu-item">Level 2.1</Link></li>
-                        <li><Link to="#!" className="sub-menu-item">Level 2.2</Link></li>
-                      </ul>
-                    </li>
+                    <li className={manu === 'about-us' || '' ? 'active' : ''}><Link to="/about-us" className="sub-menu-item"> Producto 3</Link></li>
+                    <li className={manu === 'page-services' || '' ? 'active' : ''}><Link to="/page-services" className="sub-menu-item">Producto 4</Link></li>
                   </ul>
                 </li>
               </ul>
             </li>
 
-            <li className={manu === 'contact-one' || '' ? 'active' : ''}><Link to="/contact-one" className="sub-menu-item">Contact</Link></li>
+            <li className={manu === 'contact-one' || '' ? 'active' : ''}><Link to="/contact-one" className="sub-menu-item">Contactanos</Link></li>
           </ul>
         </div>
       </div >
