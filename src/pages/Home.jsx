@@ -15,7 +15,7 @@ import Lightbox from 'react-18-image-lightbox'
 import 'react-18-image-lightbox/style.css'
 
 import {FaArrowRight,FiCamera} from '../assets/icons/icons'
-
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 import { servicesTwo,portfolioImage,portfolioData } from '../data/dataFour'
 
 export default function Home() {
@@ -34,6 +34,13 @@ export default function Home() {
     setIsImage(true)
   }
   let currentImage = portfolioImage[currentImageIndex]
+
+  const scrollToAbout = () => {
+    scroll.scrollTo('about', {
+      duration: 800,
+      smooth: 'easeInOutQuart',
+    })
+  }
 
   return (
     <>
@@ -63,7 +70,12 @@ export default function Home() {
 
       <div className="relative">
         <div className="absolute block w-full h-auto bottom-[25px] z-1 start-0">
-          <Link to="#about"><i className="mdi mdi-arrow-down absolute top-0 start-0 end-0 text-center inline-flex items-center justify-center rounded-full bg-white dark:bg-slate-900 h-12 w-12 mx-auto shadow-md dark:shadow-gray-800"></i></Link>
+          <ScrollLink to="about" smooth={true} duration={800}>
+            <i
+              className="mdi mdi-arrow-down absolute top-0 start-0 end-0 text-center inline-flex items-center justify-center rounded-full bg-white dark:bg-slate-900 h-12 w-12 mx-auto shadow-md dark:shadow-gray-800 cursor-pointer"
+              onClick={scrollToAbout}
+            ></i>
+          </ScrollLink>
         </div>
 
         <div className="shape absolute sm:-bottom-px -bottom-[2px] start-0 end-0 overflow-hidden text-white dark:text-slate-900">
@@ -72,7 +84,7 @@ export default function Home() {
           </svg>
         </div>
       </div>
-      <section className="relative md:pt-24 py-16 md:pb-12 pb-8" id="about">
+      <section className="relative md:py-24 py-16" id="about">
         <div className="container relative">
           <AboutImage grid="md:col-span-5"/>
         </div>
