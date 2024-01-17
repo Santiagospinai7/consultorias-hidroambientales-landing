@@ -1316,19 +1316,19 @@ export const feedback =[
 export const contactData = [
   {
     icon:FiPhone,
-    title:'Phone',
+    title:'Teléfono',
     desc:'The phrasal sequence of the is now so that many campaign and benefit',
-    contact:'+152 534-468-854'
+    contact:'+57 313 613 6848'
   },
   {
     icon:FaRegEnvelope,
-    title:'Email',
+    title:'Correo',
     desc:'The phrasal sequence of the is now so that many campaign and benefit',
     contact:'contact@example.com'
   },
   {
     icon:RiMapPinLine,
-    title:'Location',
+    title:'Ubicación',
     desc:'The phrasal sequence of the is now so that many campaign and benefit',
     contact:'View on Google map'
   }

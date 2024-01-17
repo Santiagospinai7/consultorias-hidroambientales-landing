@@ -4,7 +4,7 @@ import {FiPhone} from '../assets/icons/icons'
 
 export default function GetInTouch({title}){
   return(
-    <div className="container relative md:mt-24 mt-16 ">
+    <div className="container relative">
       <div className="grid grid-cols-1 text-center">
         {title=== true ? <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Contactanos</h6> :''}
         <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">¿Tienes alguna duda?</h3>

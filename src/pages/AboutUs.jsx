@@ -69,7 +69,7 @@ export default function AboutUs() {
       <section className="relative md:py-24 py-16">
         <WhoWeAre/>
         <div className="container relative mt-8">
-          <CompanyLogo/>
+          <CompanyLogo animate={false}/>
         </div>
 
       </section>
@@ -77,9 +77,9 @@ export default function AboutUs() {
       <section className="relative  md:py-24 py-16 bg-gray-50 dark:bg-slate-800 md:pb-0 pb-0" id="team">
         <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center">
-            <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Our Professional Team</h3>
+            <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Conoce nuestro equipo</h3>
 
-            <p className="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
+            <p className="text-slate-400 max-w-xl mx-auto">Contamos con un equipo de profesionales altamente capacitados y con una gran experiencia en el sector.</p>
           </div>
 
           <div className="grid md:pb-24 pb-16 md:grid-cols-12 grid-cols-1 mt-8 gap-[30px]">
@@ -93,12 +93,9 @@ export default function AboutUs() {
                       <Link  className="text-lg font-medium hover:text-indigo-600 block">{item.name}</Link>
                       <span className="text-slate-400 block">{item.title}</span>
       
-                      <p className="text-slate-400 mt-4">{item.desc}</p>
+                      {/* <p className="text-slate-400 mt-4">{item.desc}</p> */}
       
                       <ul className="list-none mt-4 space-x-1">
-                        <li className="inline"><Link  className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Facebook className="h-4 w-4"></Icon.Facebook></Link></li>
-                        <li className="inline"><Link  className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Instagram className="h-4 w-4"></Icon.Instagram></Link></li>
-                        <li className="inline"><Link  className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Twitter className="h-4 w-4"></Icon.Twitter></Link></li>
                         <li className="inline"><Link  className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Linkedin className="h-4 w-4"></Icon.Linkedin></Link></li>
                       </ul>
                     </div>

@@ -13,15 +13,15 @@ export default function Contact() {
         <div className="absolute inset-0 bg-black opacity-75"></div>
         <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center mt-10">
-            <h3 className="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">Contact Us</h3>
+            <h3 className="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">Contactanos</h3>
           </div>
         </div>
 
         <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
           <ul className="tracking-[0.5px] mb-0 inline-flex space-x-1">
-            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white"><Link to="/index">Techwind</Link></li>
+            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white"><Link to="/">Home</Link></li>
             <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white" aria-current="page">Contact Us</li>
+            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white" aria-current="page">Contactanos</li>
           </ul>
         </div>
       </section>
@@ -67,26 +67,26 @@ export default function Contact() {
             <div className="lg:col-span-5 md:col-span-6">
               <div className="lg:ms-5">
                 <div className="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-800 p-6">
-                  <h3 className="mb-6 text-2xl leading-normal font-medium">Get in touch !</h3>
+                  <h3 className="mb-6 text-2xl leading-normal font-medium">Pongamonos en contacto!</h3>
 
                   <form>
                     <div className="grid lg:grid-cols-12 lg:gap-6">
                       <div className="lg:col-span-6 mb-5">
                         <div className="text-start">
-                          <label htmlFor="name" className="font-semibold">Your Name:</label>
+                          <label htmlFor="name" className="font-semibold">Nombre:</label>
                           <div className="form-icon relative mt-2">
                             <Icon.User className="w-4 h-4 absolute top-3 start-4"></Icon.User>
-                            <input name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Name :" />
+                            <input name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Nombre :" />
                           </div>
                         </div>
                       </div>
 
                       <div className="lg:col-span-6 mb-5">
                         <div className="text-start">
-                          <label htmlFor="email" className="font-semibold">Your Email:</label>
+                          <label htmlFor="email" className="font-semibold">Correo:</label>
                           <div className="form-icon relative mt-2">
                             <Icon.Mail className="w-4 h-4 absolute top-3 start-4"></Icon.Mail>
-                            <input name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Email :" />
+                            <input name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Correo :" />
                           </div>
                         </div>
                       </div>
@@ -95,7 +95,7 @@ export default function Contact() {
                     <div className="grid grid-cols-1">
                       <div className="mb-5">
                         <div className="text-start">
-                          <label htmlFor="subject" className="font-semibold">Your Question:</label>
+                          <label htmlFor="subject" className="font-semibold">Pregunta:</label>
                           <div className="form-icon relative mt-2">
                             <Icon.Book className="w-4 h-4 absolute top-3 start-4"></ Icon.Book>
                             <input name="subject" id="subject" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Subject :" />
@@ -105,15 +105,15 @@ export default function Contact() {
 
                       <div className="mb-5">
                         <div className="text-start">
-                          <label htmlFor="comments" className="font-semibold">Your Comment:</label>
+                          <label htmlFor="comments" className="font-semibold">Comentario:</label>
                           <div className="form-icon relative mt-2">
                             <Icon.MessageCircle className="w-4 h-4 absolute top-3 start-4"></Icon.MessageCircle>
-                            <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Message :"></textarea>
+                            <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Mensaje :"></textarea>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <button type="submit" id="submit" name="send" className="py-2 px-5 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md justify-center flex items-center">Send Message</button>
+                    <button type="submit" id="submit" name="send" className="py-2 px-5 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md justify-center flex items-center">Enviar Mensaje</button>
                   </form>
                 </div>
               </div>

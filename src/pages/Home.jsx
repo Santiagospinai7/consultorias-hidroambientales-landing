@@ -7,8 +7,8 @@ import CookieModal from '../components/CookieModal'
 import GetInTouch from '../components/GetInTouch'
 import AboutImage from '../components/AboutImage'
 import UserFeedBack from '../components/UserFeedBack'
+import CompanyLogo from '../components/companyLogo'
 
-import ModalVideo from 'react-modal-video'
 import '../../node_modules/react-modal-video/css/modal-video.css'
 
 import Lightbox from 'react-18-image-lightbox'
@@ -19,7 +19,6 @@ import {FaArrowRight,FiCamera} from '../assets/icons/icons'
 import { servicesTwo,portfolioImage,portfolioData } from '../data/dataFour'
 
 export default function Home() {
-  let [isOpen, setOpen] = useState(false)
   let [currentImageIndex, setCurrentImageIndex] = useState(0)
   let [isImage, setIsImage] = useState(false)
 
@@ -64,7 +63,7 @@ export default function Home() {
 
       <div className="relative">
         <div className="absolute block w-full h-auto bottom-[25px] z-1 start-0">
-          <Link to="#"><i className="mdi mdi-arrow-down absolute top-0 start-0 end-0 text-center inline-flex items-center justify-center rounded-full bg-white dark:bg-slate-900 h-12 w-12 mx-auto shadow-md dark:shadow-gray-800"></i></Link>
+          <Link to="#about"><i className="mdi mdi-arrow-down absolute top-0 start-0 end-0 text-center inline-flex items-center justify-center rounded-full bg-white dark:bg-slate-900 h-12 w-12 mx-auto shadow-md dark:shadow-gray-800"></i></Link>
         </div>
 
         <div className="shape absolute sm:-bottom-px -bottom-[2px] start-0 end-0 overflow-hidden text-white dark:text-slate-900">
@@ -73,12 +72,18 @@ export default function Home() {
           </svg>
         </div>
       </div>
-      <section className="relative md:py-24 py-16">
+      <section className="relative md:pt-24 py-16 md:pb-12 pb-8" id="about">
         <div className="container relative">
           <AboutImage grid="md:col-span-5"/>
         </div>
+      </section>
 
-        <div className="container relative md:mt-24 mt-16">
+      <section className="md:pb-12 pb-8" id="clients">
+        <CompanyLogo />
+      </section>
+
+      <section className="relative bg-gray-50 md:py-24 py-16" id="services">
+        <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center">
             <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Servicios</h6>
             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Nuestros servicios</h3>
@@ -107,25 +112,9 @@ export default function Home() {
             })}
           </div>
         </div>
-
-        <div className="container-fluid relative md:mt-24 mt-16">
-          <div className="grid grid-cols-1 py-36 bg-[url('../../assets/images/team.jpg')] bg-center bg-no-repeat bg-cover">
-            <div className="absolute inset-0 bg-slate-900/70"></div>
-            <div className="container relative">
-              <div className="grid grid-cols-1 text-center">
-                <h3 className="mb-4 md:text-3xl text-2xl text-white font-medium">Stop leaving money on the table.</h3>
-
-                <p className="text-white/80 max-w-xl mx-auto">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
-
-                <Link to="#" onClick={() => setOpen(true)} data-id="S_CGed6E610" className="lightbox h-20 w-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 mx-auto mt-10">
-                  <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
-                </Link>
-              </div>
-              <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="S_CGed6E610" onClose={() => setOpen(false)} />
-            </div>
-          </div>
-        </div>
-        <div className="container relative md:mt-24 mt-16">
+      </section>
+      <section className="relative md:py-24 py-16">
+        <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center">
             <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Productos</h6>
             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Nuestros productos</h3>
@@ -167,12 +156,13 @@ export default function Home() {
             )}
           </div>
         </div>
-
-        <div className=" md:mt-24 mt-16" >
+      </section>
+      <section className="relative bg-gray-50 md:py-24 py-16">
+        <div >
           <UserFeedBack />
         </div>
-
-
+      </section>
+      <section className="relative md:py-24 py-16">
         <GetInTouch title={true}/>
       </section>
       <CookieModal />

@@ -3479,6 +3479,12 @@ video {
 .pb-2{
   padding-bottom: 0.5rem !important;
 }
+.pb-12 {
+  padding-bottom: 3rem !important;
+}
+.pb-10 {
+  padding-bottom: 2.5rem !important;
+}
 .pb-24{
   padding-bottom: 6rem !important;
 }
@@ -9097,6 +9103,10 @@ html[dir=rtl] .tns-visually-hidden {
   .md\:py-0{
     padding-top: 0px !important;
     padding-bottom: 0px !important;
+  }
+  .md\:py-12{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
   }
   .md\:py-24{
     padding-top: 6rem !important;
