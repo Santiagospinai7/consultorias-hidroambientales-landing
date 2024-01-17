@@ -84,7 +84,7 @@ export default function Home() {
           </svg>
         </div>
       </div>
-      <section className="relative md:py-24 py-16" id="about">
+      <section className="relative md:pt-24 pt-16 md:pb-12 pb-8" id="about">
         <div className="container relative">
           <AboutImage grid="md:col-span-5"/>
         </div>
