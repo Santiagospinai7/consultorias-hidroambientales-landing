@@ -2,6 +2,13 @@ import {VscServer, TbCloudUp, BsEnvelopeAt, LuUsers, BiTachometer, FiDisc, MdOut
 
 import {HiOutlineArrowsExpand} from 'react-icons/hi'
 
+import { TbWashEco } from 'react-icons/tb'
+import { GiWaterTank } from 'react-icons/gi'
+import { FaHandsHelping } from 'react-icons/fa'
+import { FaSwimmingPool } from 'react-icons/fa'
+import { FaShoppingBasket } from 'react-icons/fa'
+
+
 import * as Icon from 'react-feather'
 
 import com from '../assets/images/hosting/com.jpg'
@@ -46,9 +53,6 @@ import cowork4 from '../assets/images/cowork/10.jpg'
 
 import portfolio1 from '../assets/images/portfolio/1.jpg'
 import portfolio2 from '../assets/images/portfolio/2.jpg'
-import portfolio3 from '../assets/images/portfolio/3.jpg'
-import portfolio4 from '../assets/images/portfolio/4.jpg'
-import portfolio5 from '../assets/images/portfolio/5.jpg'
 import portfolio6 from '../assets/images/portfolio/6.jpg'
 import portfolio7 from '../assets/images/portfolio/7.jpg'
 import portfolio8 from '../assets/images/portfolio/8.jpg'
@@ -60,6 +64,8 @@ import portfolio13 from '../assets/images/portfolio/13.jpg'
 import portfolio14 from '../assets/images/portfolio/14.jpg'
 import portfolio15 from '../assets/images/portfolio/15.jpg'
 import portfolio16 from '../assets/images/portfolio/16.jpg'
+
+import product1 from '../assets/images/products/8151754.jpg'
 
 import law1 from '../assets/images/law/1.jpg'
 import law2 from '../assets/images/law/2.jpg'
@@ -534,78 +540,62 @@ export const servicesData = [
 ]
 export const servicesTwo = [
   {
-    icon:FiAirplay,
-    title:'Servicio 1',
-    desc:'The phrasal sequence of the is now so that many campaign and benefit'
-  },
-  {
-    icon:MdApi,
-    title:'Servicio 2',
-    desc:'The phrasal sequence of the is now so that many campaign and benefit'
-  },
-  {
-    icon:TbCameraPlus,
-    title:'Servicio 3',
-    desc:'The phrasal sequence of the is now so that many campaign and benefit'
-  },
-  {
-    icon:PiFlowerLight,
-    title:'Servicio 4',
-    desc:'The phrasal sequence of the is now so that many campaign and benefit'
+    icon:TbWashEco,
+    title:'Desinfección Potable',
+    desc:'Lavado y desinfección de tanques de almacenamiento de agua potable '
   },
   {
     icon:HiOutlineCog6Tooth,
-    title:'Servicio 5',
-    desc:'The phrasal sequence of the is now so that many campaign and benefit'
+    title:'Mantenimiento',
+    desc:'Mantenimiento e impermeabilización de tanques de agua potable.'
   },
   {
-    icon:FaRegComment,
-    title:'Servicio 6',
-    desc:'The phrasal sequence of the is now so that many campaign and benefit'
+    icon:GiWaterTank,
+    title:'Tratamiento Integral',
+    desc:'Operación y mantenimiento de plantas de tratamiento de agua.'
+  },
+  {
+    icon:FaSwimmingPool,
+    title:'Mantenimiento Piscinas',
+    desc:'Mantenimiento general de piscinas.'
+  },
+  {
+    icon:FaHandsHelping,
+    title:'Asesoría y Capacitación',
+    desc:'Asesoría y capacitación de tratamiento de aguas y piscinas.'
+  },
+  {
+    icon:FaShoppingBasket,
+    title:'Venta De Productos Químicos',
+    desc:'Venta de productos quimicos para el tratamiento de aguas.'
   },
 ]
-export const portfolioImage = [portfolio1,portfolio2,portfolio3,portfolio4,portfolio5,portfolio6,portfolio7,portfolio8]
-export const portfolioData = [
+export const productData = [
   {
-    image:portfolio1,
-    name:'Mockup Collection',
-    title:'Abstract'
+    image:product1,
+    name:'Cloro granulado 70%',
+    title:'Producto'
   },
   {
-    image:portfolio2,
-    name:'Mockup Collection',
-    title:'Abstract'
+    image:product1,
+    name:'Clarificante',
+    title:'Producto'
   },
   {
-    image:portfolio3,
-    name:'Mockup Collection',
-    title:'Abstract'
+    image:product1,
+    name:'Reductor',
+    title:'Producto'
   },
   {
-    image:portfolio4,
-    name:'Mockup Collection',
-    title:'Abstract'
+    image:product1,
+    name:'Desengrasante',
+    title:'Producto'
   },
   {
-    image:portfolio5,
-    name:'Mockup Collection',
-    title:'Abstract'
-  },
-  {
-    image:portfolio6,
-    name:'Mockup Collection',
-    title:'Abstract'
-  },
-  {
-    image:portfolio7,
-    name:'Mockup Collection',
-    title:'Abstract'
-  },
-  {
-    image:portfolio8,
-    name:'Mockup Collection',
-    title:'Abstract'
-  },
+    image:product1,
+    name:'Filtrante de vidrio',
+    title:'Producto'
+  }
 ]
 export const lowServices = [
   {

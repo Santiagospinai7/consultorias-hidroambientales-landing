@@ -140,10 +140,22 @@ export default function Navbar(props) {
               <span className="menu-arrow"></span>
               <ul className="submenu">
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#"> Lavado de tanques </Link>
+                  <Link to="#">Desinfección Potable</Link>
                 </li>
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#"> Lavado de piscinas </Link>
+                  <Link to="#">Mantenimiento</Link>
+                </li>
+                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="#">Tratamiento Integral</Link>
+                </li>
+                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="#">Mantenimiento Piscinas</Link>
+                </li>
+                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="#">Asesoría y Capacitación</Link>
+                </li>
+                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="#">Venta De Productos Químicos</Link>
                 </li>
               </ul>
             </li>
@@ -154,7 +166,7 @@ export default function Navbar(props) {
               </a>
               <span className="menu-arrow"></span>
               <ul className="submenu">
-                <li className={`${['about-us', 'page-services', 'page-team', 'page-pricing', 'page-testimonial'].includes(
+                {/* <li className={`${['about-us', 'page-services', 'page-team', 'page-pricing', 'page-testimonial'].includes(
                   manu
                 ) ? 'active' : ''} has-submenu parent-menu-item`}>
                   <Link to="#"> Piscinas </Link>
@@ -189,6 +201,21 @@ export default function Navbar(props) {
                       </Link>
                     </li>
                   </ul>
+                </li> */}
+                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="#">Cloro granulado</Link>
+                </li>
+                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="#">Clarificante</Link>
+                </li>
+                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="#">Reductor</Link>
+                </li>
+                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="#">Desengrasante</Link>
+                </li>
+                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="#">Filtrante de vidrio</Link>
                 </li>
               </ul>
             </li>

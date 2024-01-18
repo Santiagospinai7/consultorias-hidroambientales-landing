@@ -30,10 +30,16 @@ export default function AboutImage({grid}){
 
       <div className="md:col-span-6">
         <div className="lg:ms-5">
-          <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Nuestra historia</h6>
-          <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Empresa De Tratamiento <br/> Del Agua en Cali</h3>
+          <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Acerca de nosotros</h6>
+          <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Expertos en Cuidado Ambiental y Sanitario</h3>
 
-          <p className="text-slate-400 max-w-xl mb-6">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Techwind network, and much more with just a few taps. commodo consequat. Duis aute irure.</p>
+          <p className="text-slate-400 max-w-xl mb-6">En Consultorías Hidroambientales, nos enorgullece ser reconocidos como expertos en el cuidado ambiental y sanitario. Con una dedicación inquebrantable a la preservación de nuestros recursos naturales y la promoción de la salud, hemos consolidado nuestra posición como líderes en soluciones integrales.</p>
+        </div>
+
+        <div className="lg:ms-5">
+          <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Por qué elegirnos?</h3>
+
+          <p className="text-slate-400 max-w-xl mb-6">Porque garantizamos calidad respaldada por personal certificado en calidad de agua y seguridad industrial. Nos destacamos en trabajo seguro en alturas y espacios confinados. Buscamos la plena satisfacción del cliente, cumpliendo normas ambientales y de seguridad. Avalados por la Secretaría de Salud, cumplimos con la norma técnica colombiana NTC 4576 y directrices municipales para lavado y desinfección de instalaciones de almacenamiento de agua potable. Elige confianza, experiencia y compromiso con la seguridad y el medio ambiente.</p>
         </div>
       </div>
     </div>

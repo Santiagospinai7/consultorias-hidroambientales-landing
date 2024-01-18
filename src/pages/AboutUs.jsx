@@ -1,43 +1,45 @@
 import { Link } from 'react-router-dom'
 
-import image from '../assets/images/client/01.jpg'
-import image1 from '../assets/images/client/02.jpg'
-import image2 from '../assets/images/client/03.jpg'
-import image3 from '../assets/images/client/04.jpg'
+// import image from '../assets/images/client/01.jpg'
+// import image1 from '../assets/images/client/02.jpg'
+// import image2 from '../assets/images/client/03.jpg'
+// import image3 from '../assets/images/client/04.jpg'
 
 import '../../node_modules/react-modal-video/css/modal-video.css'
-import * as Icon from 'react-feather'
+// import * as Icon from 'react-feather'
 import {MdKeyboardArrowRight} from '../assets/icons/icons'
 import CompanyLogo from '../components/companyLogo'
 import WhoWeAre from '../components/WhoWeAre'
 
+import {FaRegEnvelope} from '../assets/icons/icons'
+
 export default function AboutUs() {
-  const teamData = [
-    {
-      image:image,
-      name:'Ronny Jofra',
-      title:'C.E.O.',
-      desc:'If the distribution of letters and \'words\' is random'
-    },
-    {
-      image:image1,
-      name:'Aliana Rosy',
-      title:'HR',
-      desc:'If the distribution of letters and \'words\' is random'
-    },
-    {
-      image:image2,
-      name:'Sofia Razaq',
-      title:'C.O.O.',
-      desc:'If the distribution of letters and \'words\' is random'
-    },
-    {
-      image:image3,
-      name:'Micheal Carlo',
-      title:'Director',
-      desc:'If the distribution of letters and \'words\' is random'
-    },
-  ]
+  // const teamData = [
+  //   {
+  //     image:image,
+  //     name:'Ronny Jofra',
+  //     title:'C.E.O.',
+  //     desc:'If the distribution of letters and \'words\' is random'
+  //   },
+  //   {
+  //     image:image1,
+  //     name:'Aliana Rosy',
+  //     title:'HR',
+  //     desc:'If the distribution of letters and \'words\' is random'
+  //   },
+  //   {
+  //     image:image2,
+  //     name:'Sofia Razaq',
+  //     title:'C.O.O.',
+  //     desc:'If the distribution of letters and \'words\' is random'
+  //   },
+  //   {
+  //     image:image3,
+  //     name:'Micheal Carlo',
+  //     title:'Director',
+  //     desc:'If the distribution of letters and \'words\' is random'
+  //   },
+  // ]
   return (
     <>
       <section className="relative table w-full py-36 lg:py-44 bg-[url('../../assets/images/company/aboutus.jpg')] bg-no-repeat bg-center bg-cover">
@@ -74,15 +76,19 @@ export default function AboutUs() {
 
       </section>
 
-      <section className="relative  md:py-24 py-16 bg-gray-50 dark:bg-slate-800 md:pb-0 pb-0" id="team">
+      <section className="relative  md:py-24 py-16 bg-gray-50 dark:bg-slate-800" id="team">
         <div className="container relative">
-          <div className="grid grid-cols-1 pb-8 text-center">
+          <div className="grid grid-cols-1 text-center">
             <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Conoce nuestro equipo</h3>
 
             <p className="text-slate-400 max-w-xl mx-auto">Contamos con un equipo de profesionales altamente capacitados y competentes, consolidándonos en proyectos ambientales y de Saneamiento Básico de gran envergadura. Este respaldo y la confianza obtenida a nivel del suroccidente colombiano son testimonio de nuestro compromiso y excelencia en el campo.</p>
+          
+            <div className="mt-6">
+              <Link to="/contact" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"><FaRegEnvelope className="me-2 text-sm"/> Contactanos</Link>
+            </div>
           </div>
 
-          <div className="grid md:pb-24 pb-16 md:grid-cols-12 grid-cols-1 mt-8 gap-[30px]">
+          {/* <div className="grid md:pb-24 pb-16 md:grid-cols-12 grid-cols-1 mt-8 gap-[30px]">
             {teamData.map((item,index)=>{
               return(
                 <div key={index} className="lg:col-span-3 md:col-span-6">
@@ -93,8 +99,6 @@ export default function AboutUs() {
                       <Link  className="text-lg font-medium hover:text-indigo-600 block">{item.name}</Link>
                       <span className="text-slate-400 block">{item.title}</span>
       
-                      {/* <p className="text-slate-400 mt-4">{item.desc}</p> */}
-      
                       <ul className="list-none mt-4 space-x-1">
                         <li className="inline"><Link  className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Linkedin className="h-4 w-4"></Icon.Linkedin></Link></li>
                       </ul>
@@ -103,7 +107,7 @@ export default function AboutUs() {
                 </div>
               )
             })}
-          </div>
+          </div> */}  
         </div>
       </section>
     </>

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 import ab03 from '../assets/images/about/ab03.jpg'
 import ab02 from '../assets/images/about/ab02.jpg'
@@ -6,7 +6,7 @@ import ab01 from '../assets/images/about/ab01.jpg'
 
 import CountUp from 'react-countup'
 
-import {FaRegEnvelope} from '../assets/icons/icons'
+// import {FaRegEnvelope} from '../assets/icons/icons'
 
 import { Pagination, Navigation, Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -62,9 +62,9 @@ export default function WhoWeAre(){
 
               <p className="text-slate-400 max-w-xl">Somos una empresa dedicada a ofrecer servicios especializados en limpieza, desinfección, mantenimiento e impermeabilización de tanques de agua potable, así como en el mantenimiento de plantas de tratamiento de agua y piscinas. Nuestra experiencia se extiende a la prestación de asesorías profesionales en Ingeniería Ambiental y Sanitaria, abarcando una diversidad de sectores que incluyen establecimientos institucionales, hospitalarios, comerciales, industriales y residenciales.</p>
 
-              <div className="mt-6">
+              {/* <div className="mt-6">
                 <Link to="/contact" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"><FaRegEnvelope className="me-2 text-sm"/> Contactanos</Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -81,9 +81,9 @@ export default function WhoWeAre(){
             navigation={true}
             loop={true}
             spaceBetween={30}
-            autoplay={{
-              delay: 1000,
-            }}
+            // autoplay={{
+            //   delay: 10000,
+            // }}
             modules={[Pagination, Navigation, Autoplay]}
             slidesPerView={1}
           >
