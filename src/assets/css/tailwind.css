@@ -1728,6 +1728,15 @@ video {
 .w-\[98\%\]{
   width: 98% !important;
 }
+.w-\[400\%\]{
+  width: 300% !important;
+}
+.sm\:.w-\[300\%\]{
+  display: 300% !important;
+}
+.md\:.w-\[200\%\]{
+  display: 200% !important;
+}
 .w-auto{
   width: auto !important;
 }
@@ -1967,6 +1976,20 @@ video {
   -webkit-animation: spin 30s linear infinite !important;
           animation: spin 30s linear infinite !important;
 }
+
+@keyframes scroll {
+  0% {
+    left: 0 !important;
+  }
+  100% {
+    left: -100% !important;
+  }
+}
+
+.animate {
+  animation: scroll 15s linear infinite;
+}
+
 .cursor-e-resize{
   cursor: e-resize !important;
 }
