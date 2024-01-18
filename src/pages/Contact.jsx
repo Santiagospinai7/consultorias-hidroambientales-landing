@@ -98,7 +98,7 @@ export default function Contact() {
                           <label htmlFor="subject" className="font-semibold">Pregunta:</label>
                           <div className="form-icon relative mt-2">
                             <Icon.Book className="w-4 h-4 absolute top-3 start-4"></ Icon.Book>
-                            <input name="subject" id="subject" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Subject :" />
+                            <input name="subject" id="subject" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Pregunta :" />
                           </div>
                         </div>
                       </div>

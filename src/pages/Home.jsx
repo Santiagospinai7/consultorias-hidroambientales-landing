@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import logo_icon_64 from '../assets/images/logo-icon-64.png'
 
-import CookieModal from '../components/CookieModal'
+// import CookieModal from '../components/CookieModal'
 import GetInTouch from '../components/GetInTouch'
 import AboutImage from '../components/AboutImage'
 import UserFeedBack from '../components/UserFeedBack'
@@ -61,7 +61,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="py-36 md:py-64 w-full table relative bg-[url('../../assets/images/bg-video.png')] bg-center bg-no-repeat bg-cover">
+      <section className="py-36 md:py-60 w-full table relative bg-[url('../../assets/images/bg-video.png')] bg-center bg-no-repeat bg-cover">
         <div className="absolute top-0 start-0 w-full h-full z-0 pointer-events-none overflow-hidden">
           <iframe
             src="https://player.vimeo.com/video/33955001?background=1&autoplay=1&loop=1&byline=0&title=0"
@@ -194,7 +194,7 @@ export default function Home() {
       <section className="relative md:py-24 py-16">
         <GetInTouch title={true}/>
       </section>
-      <CookieModal />
+      {/* <CookieModal /> */}
     </>
   )
 }

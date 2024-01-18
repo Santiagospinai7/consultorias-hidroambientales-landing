@@ -41,7 +41,7 @@ export default function WhoWeAre(){
             <p className="text-slate-400 max-w-xl">Somos una empresa dedicada a la consultoría ambiental, con más de 10 años de experiencia en el sector. Nuestro equipo de profesionales está altamente cualificado para ofrecer soluciones integrales a nuestros clientes.</p>
 
             <div className="mt-6">
-              <Link to="/contact" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"><FaRegEnvelope className="me-2 text-sm"/> Contact us</Link>
+              <Link to="/contact" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"><FaRegEnvelope className="me-2 text-sm"/> Contactanos</Link>
             </div>
           </div>
         </div>

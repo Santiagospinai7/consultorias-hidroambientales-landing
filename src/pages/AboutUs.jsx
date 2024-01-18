@@ -46,7 +46,7 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 pb-8 text-center mt-10">
             <h3 className="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">About Us</h3>
 
-            <p className="text-slate-300 text-lg max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
+            <p className="text-slate-300 text-lg max-w-xl mx-auto">Empresa dedicada a la consultoría ambiental, con más de 10 años de experiencia en el sector.</p>
           </div>
         </div>
 
