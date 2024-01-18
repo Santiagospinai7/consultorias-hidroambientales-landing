@@ -46,7 +46,7 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 pb-8 text-center mt-10">
             <h3 className="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">About Us</h3>
 
-            <p className="text-slate-300 text-lg max-w-xl mx-auto">Empresa dedicada a la consultoría ambiental, con más de 10 años de experiencia en el sector.</p>
+            <p className="text-slate-300 text-lg max-w-xl mx-auto">Nuestra Pasión: Sostenibilidad y Servicio de Calidad.</p>
           </div>
         </div>
 
@@ -79,7 +79,7 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 pb-8 text-center">
             <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Conoce nuestro equipo</h3>
 
-            <p className="text-slate-400 max-w-xl mx-auto">Contamos con un equipo de profesionales altamente capacitados y con una gran experiencia en el sector.</p>
+            <p className="text-slate-400 max-w-xl mx-auto">Contamos con un equipo de profesionales altamente capacitados y competentes, consolidándonos en proyectos ambientales y de Saneamiento Básico de gran envergadura. Este respaldo y la confianza obtenida a nivel del suroccidente colombiano son testimonio de nuestro compromiso y excelencia en el campo.</p>
           </div>
 
           <div className="grid md:pb-24 pb-16 md:grid-cols-12 grid-cols-1 mt-8 gap-[30px]">
