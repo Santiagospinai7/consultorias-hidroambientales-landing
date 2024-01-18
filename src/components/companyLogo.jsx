@@ -15,7 +15,7 @@ export default function CompanyLogo({animate = true}) {
           {logos.map((logo, index) => (
             <div key={index} className="mx-auto py-1">
               <img src={logo} className="h-6" alt={`logo-${index}`} />
-            </div>
+            </div> 
           ))}
           {logos.map((logo, index) => (
             <div key={index} className="mx-auto py-1">

@@ -1,9 +1,5 @@
 import { Link } from 'react-router-dom'
 
-// import logo_light from '../assets/images/logo-light.png'
-
-import * as Icon from 'react-feather'
-
 import { footerCompany } from '../data/dataFour'
 
 import {FaLinkedin, FaFacebookF, FaInstagram, MdKeyboardArrowRight} from '../assets/icons/icons'
@@ -14,7 +10,7 @@ export default function Footer() {
       <div className="container relative">
         <div className="grid grid-cols-12">
           <div className="col-span-12">
-            <div className="py-[60px] px-0">
+            <div className="py-[30px] px-0">
               <div className="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
                 <div className="lg:col-span-4 md:col-span-12">
                   <Link to="/#" className="text-[22px] focus:outline-none">
@@ -39,21 +35,20 @@ export default function Footer() {
                 </div>
 
                 <div className="lg:col-span-4 md:col-span-4">
-                  <h5 className="tracking-[1px] text-gray-100 font-semibold">Newsletter</h5>
-                  <p className="mt-6">Sign up and receive the latest tips via email.</p>
-                  <form>
-                    <div className="grid grid-cols-1">
-                      <div className="foot-subscribe my-3">
-                        <label className="form-label">Write your email <span className="text-red-600">*</span></label>
-                        <div className="form-icon relative mt-2">
-                          <Icon.Mail className="w-4 h-4 absolute top-3 start-4" />
-                          <input type="email" className="form-input ps-12 rounded w-full py-2 px-3 h-10 bg-gray-800 border-0 text-gray-100 focus:shadow-none focus:ring-0" placeholder="Email" name="email" required="" />
-                        </div>
+                  <h5 className="tracking-[1px] text-gray-100 font-semibold">Nos puedes encontrar</h5>
+                  <div className="grid grid-cols-1 mt-2">
+                    <div className="foot-subscribe my-3 md:h-[150]">
+                      <div className="w-full leading-[0] border-0 h-full">
+                        <iframe
+                          title="google"
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
+                          style={{ border: 0 }}
+                          className="w-full h-full"
+                          allowFullScreen
+                        ></iframe>
                       </div>
-
-                      <button type="submit" id="submitsubscribe" name="send" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Subscribe</button>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>

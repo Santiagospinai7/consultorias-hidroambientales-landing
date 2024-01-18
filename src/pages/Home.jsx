@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import logo_icon_64 from '../assets/images/logo-icon-64.png'
@@ -17,6 +17,8 @@ import 'react-18-image-lightbox/style.css'
 import {FaArrowRight,FiCamera} from '../assets/icons/icons'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 import { servicesTwo,portfolioImage,portfolioData } from '../data/dataFour'
+
+import { useLocation } from 'react-router-dom'
 
 export default function Home() {
   let [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -41,6 +43,21 @@ export default function Home() {
       smooth: 'easeInOutQuart',
     })
   }
+
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.hash) {
+      let targetId = location.hash.substring(1)
+      let targetElement = document.getElementById(targetId)
+      if (targetElement) {
+        scroll.scrollTo(targetElement.offsetTop, {
+          duration: 800,
+          smooth: 'easeInOutQuart',
+        })
+      }
+    }
+  }, [location])
 
   return (
     <>
@@ -125,8 +142,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative md:py-24 py-16">
-        <div className="container relative">
+      <section className="relative md:py-24 py-16" id='products'>
+        <div className="container relative" >
           <div className="grid grid-cols-1 pb-8 text-center">
             <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Productos</h6>
             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Nuestros productos</h3>
