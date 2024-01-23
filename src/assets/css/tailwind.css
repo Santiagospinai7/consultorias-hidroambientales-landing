@@ -2395,11 +2395,6 @@ video {
   border-color: rgb(79 70 229 / var(--tw-border-opacity)) !important;
 }
 
-.border-green-ch-600{
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(123 196 84 / var(--tw-border-opacity)) !important;
-}
-
 .border-indigo-600\/10{
   border-color: rgb(79 70 229 / 0.1) !important;
 }
@@ -3902,17 +3897,17 @@ video {
   --tw-text-opacity: 1 !important;
   color: rgb(60 72 88 / var(--tw-text-opacity)) !important;
 }
-.text-green-ekored-600{
+.text-green-ch-600{
   --tw-text-opacity: 1 !important;
   color: rgb(123, 196, 84 / var(--tw-text-opacity)) !important;
 }
-.text-green-ekored-700{
+.text-green-ch-700{
   --tw-text-opacity: 1 !important;
   color: rgb(123, 196, 84 / var(--tw-text-opacity)) !important;
 }
-.border-green-ekored-600{
+.border-green-ch-600{
   --tw-border-opacity: 1 !important;
-  border-color: rgb(123, 196, 84 / var(--tw-border-opacity)) !important;
+  border-color: rgb(123 196 84 / var(--tw-border-opacity)) !important;
 }
 .text-dark-footer{
   --tw-text-opacity: 1 !important;
@@ -7022,6 +7017,18 @@ html[dir=rtl] .tns-visually-hidden {
   background-color: rgb(79 70 229 / var(--tw-bg-opacity)) !important;
 }
 
+.after\:bg-green-600::after{
+  content: var(--tw-content) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(123 196 84 / var(--tw-bg-opacity)) !important;
+}
+
+.after\:bg-indigo-600::after{
+  content: var(--tw-content) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(79 70 229 / var(--tw-bg-opacity)) !important;
+}
+
 .after\:bg-indigo-600\/10::after{
   content: var(--tw-content) !important;
   background-color: rgb(79 70 229 / 0.1) !important;
@@ -7479,13 +7486,9 @@ html[dir=rtl] .tns-visually-hidden {
   --tw-text-opacity: 1 !important;
   color: rgb(79 70 229 / var(--tw-text-opacity)) !important;
 }
-.hover\:text-green-ekored-700:hover{
+.hover\:text-green-ch-700:hover{
   --tw-text-opacity: 1 !important;
   color: rgb(21 128 61 / var(--tw-text-opacity)) !important;
-}
-.hover\:border-green-ekored-700:hover{
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(21 128 61 / var(--tw-border-opacity)) !important;
 }
 
 .hover\:text-orange-600:hover{
