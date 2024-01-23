@@ -79,37 +79,15 @@ export default function Navbar(props) {
       className={`defaultscroll ${navClass === 'nav-light' ? '' : navClass === 'nav-sticky' ? 'bg-white dark:bg-slate-900' : ''}`}
     >
       <div className="container relative flex justify-between items-center">
-        <div>
+        <div className='max-w-11'>
           {navClass === 'nav-light' ? (
-          // <Link className="logo" to="/home">
-          //   <span className="inline-block dark:hidden">
-          //     <img src={logo_dark} className="l-dark" height="24" alt="" />
-          //     <img src={logo_light} className="l-light" height="24" alt="" />
-          //   </span>
-          //   <img src={logo_light} height="24" className="hidden dark:inline-block" alt="" />
-          // </Link>
-          // <a className="sub-menu-item" href='home'>
-          //     Logo
-          // </a>
-
             <Link className="logo" to="/home">
-              <img src={text_logo} className="inline-block dark:hidden" alt="" />
-              {/* <img src={logo_light} className="hidden dark:inline-block" alt="" /> */}
+              <img src={text_logo} className="inline-block dark:hidden .max-w-md max-h-20" alt="" />
             </Link>
-
           ) : (
-            // <Link className="logo" to="/home">
-            //   <img src={logo_dark} className="inline-block dark:hidden" alt="" />
-            //   <img src={logo_light} className="hidden dark:inline-block" alt="" />
-            // </Link>
             <Link className="logo" to="/home">
-              <img src={text_logo} className="inline-block dark:hidden" alt="" />
-              {/* <img src={logo_light} className="hidden dark:inline-block" alt="" /> */}
+              <img src={text_logo} className="inline-block dark:hidden .max-w-md max-h-20" alt="" />
             </Link>
-            
-          // <a className="sub-menu-item" href='home'>
-          //     Logo
-          // </a>
           )}
         </div>
 
