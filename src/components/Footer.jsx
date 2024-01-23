@@ -16,6 +16,7 @@ export default function Footer() {
                   <Link to="/#" className="text-[22px] focus:outline-none">
                     {/* <img src={logo_light} alt="" /> */}
                     <h1 className="text-xl font-bold text-white">Consultorías Hidroambientales</h1>
+                    <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=t4jQymOKpgs7jF3wIzfq3cYjzoohboShNmbXdwmhOa04gIu95mmp1ZRBT317"></script></span>
                   </Link>
                   <p className="mt-6 text-gray-300">Somos una empresa dedicada a la consultoría ambiental, con más de 10 años de experiencia en el sector.</p>
                   <ul className="list-none mt-5 space-x-1 space-y-1">

@@ -1,5 +1,6 @@
 // import logo_dark from '../assets/images/logo-dark.png'
 // import logo_light from '../assets/images/logo-light.png'
+import text_logo from '../assets/images/ch/logo/logo_transparente.png'
 import '../assets/libs/@mdi/font/css/materialdesignicons.min.css'
 import '../assets/css/tailwind.css'
 import { useState, useEffect } from 'react'
@@ -80,25 +81,35 @@ export default function Navbar(props) {
       <div className="container relative flex justify-between items-center">
         <div>
           {navClass === 'nav-light' ? (
-            // <Link className="logo" to="/home">
-            //   <span className="inline-block dark:hidden">
-            //     <img src={logo_dark} className="l-dark" height="24" alt="" />
-            //     <img src={logo_light} className="l-light" height="24" alt="" />
-            //   </span>
-            //   <img src={logo_light} height="24" className="hidden dark:inline-block" alt="" />
-            // </Link>
-            <a className="sub-menu-item" href='home'>
-                Logo
-            </a>
+          // <Link className="logo" to="/home">
+          //   <span className="inline-block dark:hidden">
+          //     <img src={logo_dark} className="l-dark" height="24" alt="" />
+          //     <img src={logo_light} className="l-light" height="24" alt="" />
+          //   </span>
+          //   <img src={logo_light} height="24" className="hidden dark:inline-block" alt="" />
+          // </Link>
+          // <a className="sub-menu-item" href='home'>
+          //     Logo
+          // </a>
+
+            <Link className="logo" to="/home">
+              <img src={text_logo} className="inline-block dark:hidden" alt="" />
+              {/* <img src={logo_light} className="hidden dark:inline-block" alt="" /> */}
+            </Link>
 
           ) : (
             // <Link className="logo" to="/home">
             //   <img src={logo_dark} className="inline-block dark:hidden" alt="" />
             //   <img src={logo_light} className="hidden dark:inline-block" alt="" />
             // </Link>
-            <a className="sub-menu-item" href='home'>
-                Logo
-            </a>
+            <Link className="logo" to="/home">
+              <img src={text_logo} className="inline-block dark:hidden" alt="" />
+              {/* <img src={logo_light} className="hidden dark:inline-block" alt="" /> */}
+            </Link>
+            
+          // <a className="sub-menu-item" href='home'>
+          //     Logo
+          // </a>
           )}
         </div>
 
