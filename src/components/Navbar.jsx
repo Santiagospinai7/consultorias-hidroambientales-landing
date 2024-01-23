@@ -155,42 +155,6 @@ export default function Navbar(props) {
               </a>
               <span className="menu-arrow"></span>
               <ul className="submenu">
-                {/* <li className={`${['about-us', 'page-services', 'page-team', 'page-pricing', 'page-testimonial'].includes(
-                  manu
-                ) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#"> Piscinas </Link>
-                  <span className="submenu-arrow"></span>
-                  <ul className="submenu">
-                    <li className={manu === 'about-us' || '' ? 'active' : ''}>
-                      <Link to="/about-us" className="sub-menu-item">
-                        Producto 1
-                      </Link>
-                    </li>
-                    <li className={manu === 'page-services' || '' ? 'active' : ''}>
-                      <Link to="/page-services" className="sub-menu-item">
-                        Producto 2
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className={`${['about-us', 'page-services', 'page-team', 'page-pricing', 'page-testimonial'].includes(
-                  manu
-                ) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#"> Tanques </Link>
-                  <span className="submenu-arrow"></span>
-                  <ul className="submenu">
-                    <li className={manu === 'about-us' || '' ? 'active' : ''}>
-                      <Link to="/about-us" className="sub-menu-item">
-                        Producto 3
-                      </Link>
-                    </li>
-                    <li className={manu === 'page-services' || '' ? 'active' : ''}>
-                      <Link to="/page-services" className="sub-menu-item">
-                        Producto 4
-                      </Link>
-                    </li>
-                  </ul>
-                </li> */}
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
                   <Link to="#">Cloro granulado</Link>
                 </li>
