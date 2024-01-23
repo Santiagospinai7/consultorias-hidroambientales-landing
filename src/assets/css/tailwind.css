@@ -4554,23 +4554,24 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   line-height: 1.5rem !important;
   letter-spacing: 1px !important;
   --tw-text-opacity: 1 !important;
-  color: rgb(22 28 45 / var(--tw-text-opacity)) !important;
+  color: rgb(24, 177, 233) !important;
 }
 :is(.dark #topnav .navigation-menu > li > a){
   --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+  color: rgb(24, 177, 233) !important;
 }
 #topnav .navigation-menu > li > a:hover, #topnav .navigation-menu > li > a:active{
   --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
+  color: rgb(123 196 84 / var(--tw-text-opacity)) !important
 }
 #topnav .navigation-menu > li:hover > a, #topnav .navigation-menu > li.active > a{
   --tw-text-opacity: 1 !important;
-  color: rgb(79 70 229 / var(--tw-text-opacity)) !important;
+  color: rgb(123 196 84 / var(--tw-text-opacity)) !important;
 }
 :is(.dark #topnav .navigation-menu > li:hover > a),:is(.dark  #topnav .navigation-menu > li.active > a){
   --tw-text-opacity: 1 !important;
-  color: rgb(79 70 229 / var(--tw-text-opacity)) !important;
+  color: rgb(123 196 84 / var(--tw-text-opacity)) !important;
+  
 }
 #topnav .navigation-menu > li .submenu.megamenu li .megamenu-head{
   white-space: nowrap !important;
@@ -5103,12 +5104,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   }
   :is(.dark #topnav .navigation-menu > li > a){
     --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    /* color: rgb(255 255 255 / var(--tw-text-opacity)); */
   }
   #topnav .navigation-menu > li > a:hover,
 #topnav .navigation-menu > li .submenu li a:hover, #topnav .navigation-menu > li.has-submenu.open > a{
     --tw-text-opacity: 1;
-    color: rgb(79 70 229 / var(--tw-text-opacity));
+    /* color: rgb(79 70 229 / var(--tw-text-opacity)); */
   }
   #topnav .menu-extras .menu-item{
     --tw-border-opacity: 1;

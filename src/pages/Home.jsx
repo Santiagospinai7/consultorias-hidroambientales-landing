@@ -131,7 +131,7 @@ export default function Home() {
       <section className="relative md:py-24 py-16" id='products'>
         <div className="container relative" >
           <div className="grid grid-cols-1 pb-8 text-center">
-            <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">Productos</h6>
+            <h6 className="text-cyan-500 text-sm font-bold uppercase mb-2">Productos</h6>
             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Nuestros productos</h3>
 
             <p className="text-slate-400 max-w-xl mx-auto">Somos proveedores de productos de calidad, contamos con una gran trayectoria en el sector ofreciendo productos de calidad.</p>
