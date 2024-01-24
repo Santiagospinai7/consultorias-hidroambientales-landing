@@ -123,6 +123,19 @@ import property4 from '../assets/images/real/property/4.jpg'
 import property5 from '../assets/images/real/property/5.jpg'
 import property6 from '../assets/images/real/property/6.jpg'
 
+import image12 from '../assets/images/portfolio/1.jpg'
+import image13 from '../assets/images/portfolio/2.jpg'
+import image14 from '../assets/images/portfolio/3.jpg'
+import image15 from '../assets/images/portfolio/4.jpg'
+import image16 from '../assets/images/portfolio/5.jpg'
+import image17 from '../assets/images/portfolio/6.jpg'
+import image18 from '../assets/images/portfolio/7.jpg'
+import image19 from '../assets/images/portfolio/8.jpg'
+import image20 from '../assets/images/portfolio/20.jpg'
+import image21 from '../assets/images/portfolio/21.jpg'
+import image22 from '../assets/images/portfolio/22.jpg'
+import image23 from '../assets/images/portfolio/23.jpg'
+
 export const hosting = [
   {
     icon: VscServer,
@@ -542,32 +555,38 @@ export const servicesTwo = [
   {
     icon:TbWashEco,
     title:'Desinfección Potable',
-    desc:'Lavado y desinfección de tanques de almacenamiento de agua potable '
+    desc:'Lavado y desinfección de tanques de almacenamiento de agua potable.',
+    link: '/services/1'
   },
   {
     icon:HiOutlineCog6Tooth,
     title:'Mantenimiento',
-    desc:'Mantenimiento e impermeabilización de tanques de agua potable.'
+    desc:'Mantenimiento e impermeabilización de tanques de agua potable.',
+    link: '/services/2'
   },
   {
     icon:GiWaterTank,
     title:'Tratamiento Integral',
-    desc:'Operación y mantenimiento de plantas de tratamiento de agua.'
+    desc:'Operación y mantenimiento de plantas de tratamiento de agua.',
+    link: '/services/3'
   },
   {
     icon:FaSwimmingPool,
     title:'Mantenimiento Piscinas',
-    desc:'Mantenimiento general de piscinas.'
+    desc:'Mantenimiento general de piscinas.',
+    link: '/services/4'
   },
   {
     icon:FaHandsHelping,
     title:'Asesoría y Capacitación',
-    desc:'Asesoría y capacitación de tratamiento de aguas y piscinas.'
+    desc:'Asesoría y capacitación de tratamiento de aguas y piscinas.',
+    link: '/services/1'
   },
   {
     icon:FaShoppingBasket,
     title:'Venta De Productos Químicos',
-    desc:'Venta de productos quimicos para el tratamiento de aguas.'
+    desc:'Venta de productos quimicos para el tratamiento de aguas.',
+    link: '/services/1'
   },
 ]
 export const productData = [
@@ -1321,5 +1340,174 @@ export const contactData = [
     title:'Ubicación',
     desc:'Este es nuestro ubicación',
     contact:'View on Google map'
+  }
+]
+
+export const candidates = [
+  { 
+    id:1,
+    image: client1,
+    name:'Steven Townsend',
+    job:'Web Designer',
+    place:'India'
+  },
+  { 
+    id:2,
+    image: client2,
+    name:'Tiffany Betancourt',
+    job:'Web Developer' ,
+    place:'China'
+  },
+  { 
+    id:3,
+    image: client3,
+    name:'Jacqueline Burns',
+    job:'Software Engineering',
+    place:'France'
+  },
+  { 
+    id:4,
+    image: client4,
+    name:'Mari Harrington',
+    job:'UX/UI Designer',
+    place:'Canada'
+  },
+  { 
+    id:5,
+    image: client5,
+    name:'Floyd Glasgow' ,
+    job:'Graphic Designer',
+    place:'Australia'
+  },
+  { 
+    id:6,
+    image: client6,
+    name:'Donna Schultz',
+    job:'Front-End Developer' ,
+    place:'Germany'
+  },
+  { 
+    id:7,
+    image: client7,
+    name:'Joshua Morris',
+    job:'Senior Web Developer' ,
+    place:'Indonesia'
+  },
+  { 
+    id:8,
+    image: client8,
+    name:'Rosaria Vargas',
+    job:'Back-End Developer',
+    place:'America'
+  }
+] 
+
+export const portfolioImageTwo = [image12,image13,image14, image15,image16,image17,image18,image19,image20,image21,image22,image23]
+
+export const portfolioTwo = [
+  {
+    id:0,
+    image: image12,
+    imageLink: '/assets/images/portfolio/1.jpg',
+    name: 'Mockup Collection',
+    dataGroup: '["branding"]',
+    category: 'branding',
+  },
+  {
+    id:1,
+    image: image13,
+    imageLink: '/assets/images/portfolio/2.jpg',
+    name: 'Mockup Collection',
+    dataGroup: '["designing"]',
+    category: 'designing',
+  },
+  {
+    id:2,
+    image: image14,
+    imageLink: '/assets/images/portfolio/3.jpg',
+    name: 'Mockup Collection',
+    dataGroup: '["photography"]',
+    category: 'photography',
+      
+
+  },
+  {
+    id:3,
+    image: image15,
+    imageLink: '/assets/images/portfolio/4.jpg',
+    name: 'Mockup Collection',
+    dataGroup: '["development"]',
+    category: 'development',
+
+  },
+  {
+    id:4,
+    image: image16,
+    imageLink: '/assets/images/portfolio/5.jpg',
+    name: 'Mockup Collection',
+    dataGroup: '["branding"]',
+    category: 'branding',
+
+  },
+  {
+    id:5,
+    image: image17,
+    imageLink: '/assets/images/portfolio/6.jpg',
+    name: 'Mockup Collection',
+    dataGroup: '["branding"]',
+    category: 'branding',
+
+  },
+  {
+    id:6,
+    image: image18,
+    imageLink: '/assets/images/portfolio/7.jpg',
+    name: 'Mockup Collection',
+    dataGroup: '["designing"]',
+    category: 'designing',
+
+  },
+  {
+    id:7,
+    image: image19,
+    imageLink: '/assets/images/portfolio/8.jpg',
+    name: 'Mockup Collection',
+    dataGroup: '["development"]',
+    category: 'development',
+
+  },
+  {
+    id:8,
+    image: image20,
+    imageLink: '/assets/images/portfolio/9.jpg',
+    name: 'Mockup Collection',
+    dataGroup: '["photography"]',
+    category: 'photography',
+
+  },
+  {
+    id:9,
+    image: image21,
+    imageLink: '/assets/images/portfolio/10.jpg',
+    name: 'Mockup Collection',
+    dataGroup: '["photography"]',
+    category: 'photography',
+
+  },
+  {
+    id:10,
+    image: image22,
+    imageLink: '/assets/images/portfolio/11.jpg',
+    name: 'Mockup Collection',
+    dataGroup: '["branding"]',
+    category: 'branding',
+  },
+  {
+    id:11,
+    image: image23,
+    imageLink: '/assets/images/portfolio/12.jpg',
+    name: 'Mockup Collection',
+    dataGroup: '["branding"]',
+    category: 'branding',
   }
 ]

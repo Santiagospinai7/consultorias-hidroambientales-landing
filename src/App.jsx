@@ -9,6 +9,7 @@ import WhatsAppButton from './components/WhatsAppButton'
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 import Contact from './pages/Contact'
+import ServiceDetail from './pages/ServiceDetail'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path="/services/:id" element={<ServiceDetail />} />
       </Routes>
       <WhatsAppButton />
       <Footer />
