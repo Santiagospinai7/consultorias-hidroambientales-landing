@@ -70,10 +70,7 @@ export default function UserFeedBack() {
                   </div>
                 </SwiperSlide>
               ))}
-            </Swiper> 
-
-
-                       
+            </Swiper>                        
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ import 'react-18-image-lightbox/style.css'
 
 import {FaArrowRight} from '../assets/icons/icons'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
-import { servicesTwo,productData } from '../data/dataFour'
+import { servicesData , productData } from '../data/dataFour'
 
 import { useLocation } from 'react-router-dom'
 
@@ -106,7 +106,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-6 gap-[30px]">
-            {servicesTwo.map((item,index)=>{
+            {servicesData.map((item,index)=>{
               let Icons = item.icon
               return(
                 <div key={index} className="p-6 hover:shadow-xl hover:shadow-gray-100 dark:hover:shadow-gray-800 transition duration-500 rounded-2xl mt-6">
