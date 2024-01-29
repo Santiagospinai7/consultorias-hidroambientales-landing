@@ -39,6 +39,12 @@ import image55 from '../assets/images/ch/mantenimiento_piscinas/p55.jpg'
 import image56 from '../assets/images/ch/mantenimiento_piscinas/p56.jpg'
 import image57 from '../assets/images/ch/mantenimiento_piscinas/p57.jpg'
 
+// service 5
+// import image2 from '../assets/images/ch/asesoria_capacitacion/p2.jpg'
+import image3 from '../assets/images/ch/asesoria_capacitacion/p3.jpg'
+import image5 from '../assets/images/ch/asesoria_capacitacion/p5.jpg'
+import image6 from '../assets/images/ch/asesoria_capacitacion/p6.jpg'
+
 
 export const servicesData = [
   {
@@ -114,10 +120,10 @@ export const servicesData = [
     icon:FaHandsHelping,
     title:'Asesoría y Capacitación',
     desc:'Asesoría y capacitación de tratamiento de aguas y piscinas.',
-    link: '/services/1',
-    detail : '',
-    photos: [],
-    banner_bg: image58,
+    link: '/services/5',
+    detail : 'La presencia de bacterias, virus y otros patógenos en las plantas ,  tanques de agua y en piscinas  puede causar enfermedades transmitidas por el agua, como gastroenteritis, diarrea y hepatitis. La desinfección adecuada ayuda a eliminar estos microorganismos. Por ello es tan importante contar con el personal capacitado de acuerdo a la normatividad y los estándares de calidad de agua.',
+    photos: [image5, image6],
+    banner_bg: image3,
   },
   {
     id:6,
