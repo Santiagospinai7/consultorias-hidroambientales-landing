@@ -58,7 +58,7 @@ export default function WhoWeAre(){
                 <span className="self-end font-medium ms-2">Años <br /> De Experiencia</span>
               </div>
 
-              <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Quienes somos nosotros?</h3>
+              <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">¿Quienes somos nosotros?</h3>
 
               <p className="text-slate-400 max-w-xl">Somos una empresa dedicada a ofrecer servicios especializados en limpieza, desinfección, mantenimiento e impermeabilización de tanques de agua potable, así como en el mantenimiento de plantas de tratamiento de agua y piscinas. Nuestra experiencia se extiende a la prestación de asesorías profesionales en Ingeniería Ambiental y Sanitaria, abarcando una diversidad de sectores que incluyen establecimientos institucionales, hospitalarios, comerciales, industriales y residenciales.</p>
 

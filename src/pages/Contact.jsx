@@ -113,7 +113,7 @@ export default function Contact() {
                         </div>
                       </div>
                     </div>
-                    <button type="submit" id="submit" name="send" className="py-2 px-5 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md justify-center flex items-center">Enviar Mensaje</button>
+                    <button type="submit" id="submit" name="send" className="py-2 px-5 font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-green-ch-600 hover:bg-green-ch-700 border-green-ch-600 hover:border-green-ch-700 text-white rounded-md justify-center flex items-center">Enviar Mensaje</button>
                   </form>
                 </div>
               </div>
