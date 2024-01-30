@@ -60,7 +60,7 @@ export default function Navbar(props) {
   const scrollTo = (location) => {
     const targetId = location
     const targetElement = document.getElementById(targetId)
-
+  
     if (targetElement) {
       scroll.scrollTo(targetElement.offsetTop, {
         duration: 800,
@@ -69,7 +69,29 @@ export default function Navbar(props) {
     } else {
       navigate('/home#' + targetId)
     }
+  
+    // Close the navbar on mobile
+    setisMenu(false)
   }
+
+  const menuItemClicked = () => {
+    // Close the navbar on mobile
+    setisMenu(false)
+  }
+
+  // const scrollTo = (location) => {
+  //   const targetId = location
+  //   const targetElement = document.getElementById(targetId)
+
+  //   if (targetElement) {
+  //     scroll.scrollTo(targetElement.offsetTop, {
+  //       duration: 800,
+  //       smooth: 'easeInOutQuart',
+  //     })
+  //   } else {
+  //     navigate('/home#' + targetId)
+  //   }
+  // }
 
 
 
@@ -111,13 +133,13 @@ export default function Navbar(props) {
         <div id="navigation" style={{ display: isMenu ? 'block' : 'none' }}>
           <ul className={`navigation-menu ${navClass} ${navJustify}`}>
             <li className={manu === 'home' || '' ? 'active' : ''}>
-              <Link to="/home" className="sub-menu-item">
+              <Link onClick={() => menuItemClicked()} to="/home" className="sub-menu-item">
                 Home
               </Link>
             </li>
 
             <li className={manu === 'about-us' || '' ? 'active' : ''}>
-              <Link to="/about-us" className="sub-menu-item">
+              <Link onClick={() => menuItemClicked()} to="/about-us" className="sub-menu-item">
                 About us
               </Link>
             </li>
@@ -174,7 +196,7 @@ export default function Navbar(props) {
             </li>
 
             <li className={manu === 'contact' || '' ? 'active' : ''}>
-              <Link to="/contact" className="sub-menu-item">
+              <Link onClick={() => menuItemClicked()} to="/contact" className="sub-menu-item">
                 Contactanos
               </Link>
             </li>
