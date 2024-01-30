@@ -34,7 +34,7 @@ export default function ServiceDetail() {
                     <div className="w-20 h-20 mx-auto bg-indigo-600/5 text-cyan-500 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
                       <Icons className='w-12 h-12'/>
                     </div>
-                    <h5 className="mt-5 text-xl font-semibold mb-0">{data?.title ? data?.title : 'Thomas Brewer'}</h5>
+                    <h5 className="mt-5 text-xl font-semibold mb-0 ">{data?.title ? data?.title : 'Thomas Brewer'}</h5>
                   </div>
 
                   <div className="p-6 m-0 text-center">
@@ -47,7 +47,7 @@ export default function ServiceDetail() {
             <div className="lg:col-span-8 md:col-span-7">
               {/* If data has before_after show detalle */}
               <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">{data.desc}</h3>
-              <h4 className="text-xl font-semibold">Detalle :</h4>
+              <h4 className="text-xl font-semibold text-cyan-500">Detalle :</h4>
               <div className="text-slate-400 mt-4">
                 {data.detail}
               </div>
@@ -85,7 +85,7 @@ export default function ServiceDetail() {
               ) || ''
               }
 
-              <h4 className="mt-8 text-xl font-semibold">Algunos de nuestros trabajos:</h4>
+              <h4 className="mt-8 text-xl font-semibold text-cyan-500">Algunos de nuestros trabajos:</h4>
 
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-8">
                 {(data.photos).slice(0,4).map((item,index)=>{

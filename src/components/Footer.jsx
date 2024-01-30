@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 
 import { footerCompany } from '../data/dataFour'
 
+import logo from '../assets/images/ch/logo/logo_transparente.png'
+
 import {FaLinkedin, FaFacebookF, FaInstagram, MdKeyboardArrowRight} from '../assets/icons/icons'
 
 export default function Footer() {
@@ -13,9 +15,8 @@ export default function Footer() {
             <div className="py-[30px] px-0">
               <div className="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
                 <div className="lg:col-span-4 md:col-span-12">
-                  <Link to="/#" className="text-[22px] focus:outline-none">
-                    {/* <img src={logo_light} alt="" /> */}
-                    <h1 className="text-xl font-bold text-white">Consultorías Hidroambientales</h1>
+                  <Link to="/#" className="focus:outline-none">
+                    <img src={logo} alt="logo" className='w-64 h-64'/>
                     <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=t4jQymOKpgs7jF3wIzfq3cYjzoohboShNmbXdwmhOa04gIu95mmp1ZRBT317"></script></span>
                   </Link>
                   <p className="mt-6 text-gray-300">Somos una empresa dedicada a la consultoría ambiental, con más de 10 años de experiencia en el sector.</p>

@@ -233,23 +233,28 @@ export const footerCompany = [
   {
     liClass: '',
     route: '/about-us',
-    title: 'About us',
+    title: 'Acerca de nosotros',
   },
   {
-    liClass: 'mt-[10px]',
-    route: '/services',
-    title: 'Servicios',
+    liClass: 'm-0',
+    route: '/contact',
+    title: 'Contactanos',
   },
-  {
-    route: '/products',
-    title: 'Productos',
-    liClass: 'mt-[10px]',
-  },
-  {
-    route: '/terms',
-    title: 'Terminos de servicio',
-    liClass: 'mt-[10px]',
-  }
+  // {
+  //   liClass: 'mt-[10px]',
+  //   route: '/services',
+  //   title: 'Servicios',
+  // },
+  // {
+  //   route: '/products',
+  //   title: 'Productos',
+  //   liClass: 'mt-[10px]',
+  // },
+  // {
+  //   route: '/terms',
+  //   title: 'Terminos de servicio',
+  //   liClass: 'mt-[10px]',
+  // }
 ]
 export const feedback =[
   {

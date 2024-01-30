@@ -129,22 +129,22 @@ export default function Navbar(props) {
               <span className="menu-arrow"></span>
               <ul className="submenu">
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#">Desinfección Potable</Link>
+                  <Link to="services/1">Desinfección Potable</Link>
                 </li>
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#">Mantenimiento</Link>
+                  <Link to="services/2">Mantenimiento</Link>
                 </li>
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#">Tratamiento Integral</Link>
+                  <Link to="services/3">Tratamiento Integral</Link>
                 </li>
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#">Mantenimiento Piscinas</Link>
+                  <Link to="services/4">Mantenimiento Piscinas</Link>
                 </li>
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#">Asesoría y Capacitación</Link>
+                  <Link to="services/5">Asesoría y Capacitación</Link>
                 </li>
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#">Venta De Productos Químicos</Link>
+                  <Link to="services/6">Venta De Productos Químicos</Link>
                 </li>
               </ul>
             </li>
