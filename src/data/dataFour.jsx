@@ -22,22 +22,25 @@ import image36 from '../assets/images/ch/lavado_desinfeccion/p36.jpg'
 import image48 from '../assets/images/ch/lavado_desinfeccion/p48.jpeg'
 import image47 from '../assets/images/ch/lavado_desinfeccion/p47.jpeg'
 
+
 // service 2
 import image58 from '../assets/images/ch/mantenimiento_plantas/p58.jpg'
 import image8 from '../assets/images/ch/impermeabilizacion_de_tanques/p8.jpeg'
 import image9 from '../assets/images/ch/impermeabilizacion_de_tanques/p9.jpeg'
+import impermeabilizacion_bg from '../assets/images/ch/bgs/impermeabilizacion.jpg'
 
 // service 3
 import image60 from '../assets/images/ch/mantenimiento_plantas/p60.jpg'
 import image59 from '../assets/images/ch/mantenimiento_plantas/p59.jpg'
 
 // service 4
-import image52 from '../assets/images/ch/mantenimiento_piscinas/p52.jpg'
+// import image52 from '../assets/images/ch/mantenimiento_piscinas/p52.jpg'
 import image53 from '../assets/images/ch/mantenimiento_piscinas/p53.jpg'
 import image54 from '../assets/images/ch/mantenimiento_piscinas/p54.jpg'
 import image55 from '../assets/images/ch/mantenimiento_piscinas/p55.jpg'
 import image56 from '../assets/images/ch/mantenimiento_piscinas/p56.jpg'
 import image57 from '../assets/images/ch/mantenimiento_piscinas/p57.jpg'
+import mantenimiento_piscinas_bg from '../assets/images/ch/bgs/mantenimiento_piscina.jpg'
 
 // service 5
 // import image2 from '../assets/images/ch/asesoria_capacitacion/p2.jpg'
@@ -45,12 +48,15 @@ import image3 from '../assets/images/ch/asesoria_capacitacion/p3.jpg'
 import image5 from '../assets/images/ch/asesoria_capacitacion/p5.jpg'
 import image6 from '../assets/images/ch/asesoria_capacitacion/p6.jpg'
 
+// service 6
+import venta_productos_bg from '../assets/images/ch/bgs/venta_productos.jpg'
+
 
 export const servicesData = [
   {
     id:1,
     icon:TbWashEco,
-    title:'Desinfección Potable',
+    title:'Lavado y desinfección de tanques',
     desc:'Lavado y desinfección de tanques de almacenamiento de agua potable.',
     link: '/services/1',
     detail : (
@@ -68,7 +74,7 @@ export const servicesData = [
   {
     id:2,
     icon:HiOutlineCog6Tooth,
-    title:'Mantenimiento e impermeabilización',
+    title:'Impermeabilización de tanques de agua',
     desc:'Mantenimiento e impermeabilización de tanques de agua potable.',
     link: '/services/2',
     detail : (
@@ -77,12 +83,12 @@ export const servicesData = [
       </p>
     ),
     photos: [image8, image9],
-    banner_bg: image58,
+    banner_bg: impermeabilizacion_bg,
   },
   {
     id:3,
     icon:GiWaterTank,
-    title:'Tratamiento Integral',
+    title:'Operación y mantenimiento de plantas',
     desc:'Operación y mantenimiento de plantas de tratamiento de agua.',
     link: '/services/3',
     detail : (
@@ -113,7 +119,7 @@ export const servicesData = [
       </>
     ),
     photos: [image53, image54, image55, image56, image57],
-    banner_bg: image52,
+    banner_bg: mantenimiento_piscinas_bg,
   },
   {
     id:5,
@@ -130,10 +136,10 @@ export const servicesData = [
     icon:FaShoppingBasket,
     title:'Venta De Productos Químicos',
     desc:'Venta de productos quimicos para el tratamiento de aguas.',
-    link: '/services/1',
+    link: '/home#products',
     detail : '',
     photos: [],
-    banner_bg: image58,
+    banner_bg: venta_productos_bg,
   },
 ]
 export const productData = [
@@ -238,7 +244,7 @@ export const footerCompany = [
   {
     liClass: 'm-0',
     route: '/contact',
-    title: 'Contactanos',
+    title: 'Contáctanos',
   },
   // {
   //   liClass: 'mt-[10px]',
@@ -299,18 +305,21 @@ export const contactData = [
     icon:FiPhone,
     title:'Teléfono',
     desc:'Este es nuestro número de contacto',
-    contact:'+57 313 613 6848'
+    contact:'+57 313 613 6848',
+    link: 'tel:+573136136848'
   },
   {
     icon:FaRegEnvelope,
     title:'Correo',
     desc:'Este es nuestro correo de contacto',
-    contact:'consultoriashidroambientales@gmail.com'
+    contact:'consultoriashidroambientales@gmail.com',
+    link: '#'
   },
   {
     icon:RiMapPinLine,
     title:'Ubicación',
     desc:'Este es nuestro ubicación',
-    contact:'View on Google map'
+    contact:'Av. 4a Oe. #4 - 43',
+    link: 'https://www.google.com/maps/place/Av.+4a+Oe.+%234+-+43,+Normandia+Sebastian+de+Belalcazar,+Cali,+Valle+del+Cauca/@3.4519829,-76.5455043,19z/data=!3m1!4b1!4m6!3m5!1s0x8e30a679bb7c2bbf:0x1fe0006bda697e8f!8m2!3d3.4519816!4d-76.5448606!16s%2Fg%2F11j8lptndd?entry=ttu'
   }
 ]

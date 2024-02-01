@@ -84,7 +84,7 @@ export default function AboutUs() {
             <p className="text-slate-400 max-w-xl mx-auto">Contamos con un equipo de profesionales altamente capacitados y competentes, consolidándonos en proyectos ambientales y de Saneamiento Básico de gran envergadura. Este respaldo y la confianza obtenida a nivel del suroccidente colombiano son testimonio de nuestro compromiso y excelencia en el campo.</p>
           
             <div className="mt-6">
-              <Link to="/contact" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-green-ch-600 hover:bg-green-ch-700 border-green-ch-600 hover:border-green-ch-70 text-white rounded-md me-2 mt-2"><FaRegEnvelope className="me-2 text-sm"/> Contactanos</Link>
+              <Link to="/contact" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-green-ch-600 hover:bg-green-ch-700 border-green-ch-600 hover:border-green-ch-70 text-white rounded-md me-2 mt-2"><FaRegEnvelope className="me-2 text-sm"/> Contáctanos</Link>
             </div>
           </div>
 

@@ -197,7 +197,7 @@ export default function Navbar(props) {
 
             <li className={manu === 'contact' || '' ? 'active' : ''}>
               <Link onClick={() => menuItemClicked()} to="/contact" className="sub-menu-item">
-                Contactanos
+                Contáctanos
               </Link>
             </li>
           </ul>

@@ -14,7 +14,7 @@ import '../../node_modules/react-modal-video/css/modal-video.css'
 // import Lightbox from 'react-18-image-lightbox'
 import 'react-18-image-lightbox/style.css'
 
-import {FaArrowRight} from '../assets/icons/icons'
+// import {FaArrowRight} from '../assets/icons/icons'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 import { servicesData , productData } from '../data/dataFour'
 
@@ -106,23 +106,26 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-6 gap-[30px]">
-            {servicesData.map((item,index)=>{
+            {servicesData.map((item, index) => {
               let Icons = item.icon
-              return(
-                <div key={index} className="p-6 hover:shadow-xl hover:shadow-gray-100 dark:hover:shadow-gray-800 transition duration-500 rounded-2xl mt-6">
-                  <div className="w-20 h-20 bg-indigo-600/5 text-cyan-500 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
-                    <Icons className='w-7 h-7'/>
-                  </div>
-        
-                  <div className="content mt-7">
-                    <Link to={item.link} className="title h5 text-lg font-medium">{item.title}</Link>
-                    <p className="text-slate-400 mt-3">{item.desc}</p>
-        
-                    <div className="mt-5">
-                      <Link to={item.link} className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-cyan-500 hover:text-green-ch-700 after:bg-green-700 duration-500">Leer más <FaArrowRight className="ms-2 text-[10px]"/></Link>
+              return (
+                <Link to={item.link} className="group relative block overflow-hidden rounded-md transition-all duration-500" key={index}>
+                  {item.banner_bg && (
+                    <img src={item.banner_bg} className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500 object-cover w-full h-full" alt="" />
+                  )}
+
+                  <div className="absolute inset-0 group-hover:bg-dark opacity-50 transition duration-500 z-0"></div>
+
+                  <div className="content">
+                    <div className="title absolute z-10 opacity-0 group-hover:opacity-100 bottom-4 start-4 transition-all duration-500">
+                      <div className="w-20 h-20 bg-indigo-600/5 text-white rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800">
+                        <Icons className='w-7 h-7'/>
+                      </div>
+                      <h6 className="text-md font-medium text-white duration-500 ease-in-out">{item.title}</h6>
+                      <p className="text-white mt-3">{item.desc}</p>
                     </div>
                   </div>
-                </div>
+                </Link>
               )
             })}
           </div>
@@ -150,7 +153,8 @@ export default function Home() {
                     </div> */}
         
                     <div className="title absolute z-10 opacity-0 group-hover:opacity-100 bottom-4 start-4 transition-all duration-500">
-                      <Link to="/portfolio-detail-one" className="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">{item.name}</Link>
+                      {/* <Link to="/portfolio-detail-one" className="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">{item.name}</Link> */}
+                      <p  className="h6 text-md font-medium text-white duration-500 ease-in-out">{item.name}</p>
                       <p className="text-slate-100 tag mb-0">{item.title}</p>
                     </div>
                   </div>

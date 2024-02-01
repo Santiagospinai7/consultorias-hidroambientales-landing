@@ -13,7 +13,7 @@ export default function Contact() {
         <div className="absolute inset-0 bg-black opacity-75"></div>
         <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center mt-10">
-            <h3 className="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">Contactanos</h3>
+            <h3 className="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">Contáctanos</h3>
           </div>
         </div>
 
@@ -21,7 +21,7 @@ export default function Contact() {
           <ul className="tracking-[0.5px] mb-0 inline-flex space-x-1">
             <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white"><Link to="/">Home</Link></li>
             <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><MdKeyboardArrowRight className="text-xl"/></li>
-            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white" aria-current="page">Contactanos</li>
+            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white" aria-current="page">Contáctanos</li>
           </ul>
         </div>
       </section>
@@ -49,7 +49,7 @@ export default function Contact() {
                     <p className="text-slate-400 mt-3">{item.desc}</p>
 
                     <div className="mt-5">
-                      <Link to="/tel:+152534-468-854" className="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">{item.contact}</Link>
+                      <Link to={item.link} target="_blank" className="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">{item.contact}</Link>
                     </div>
                   </div>
                 </div>
@@ -124,7 +124,7 @@ export default function Contact() {
       <div className="container-fluid relative">
         <div className="grid grid-cols-1">
           <div className="w-full leading-[0] border-0">
-            <iframe  title='google' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" style={{border:0}} className="w-full h-[500px]" allowFullScreen></iframe>
+            <iframe  title='google' src="https://maps.google.com/maps?q=Edificio%20Torresloma&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style={{border:0}} className="w-full h-[500px]" allowFullScreen></iframe>
           </div>
         </div>
       </div>

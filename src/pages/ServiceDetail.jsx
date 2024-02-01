@@ -38,7 +38,7 @@ export default function ServiceDetail() {
                   </div>
 
                   <div className="p-6 m-0 text-center">
-                    <Link to="/contact" className="py-2 px-5 my-0 mx-auto inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-green-ch-600 hover:bg-green-ch-700 border-green-ch-600 hover:border-green-ch-700 text-white rounded-md">Contactanos</Link>
+                    <Link to="/contact" className="py-2 px-5 my-0 mx-auto inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-green-ch-600 hover:bg-green-ch-700 border-green-ch-600 hover:border-green-ch-700 text-white rounded-md">Contáctanos</Link>
                   </div>
                 </div>
               </div>
