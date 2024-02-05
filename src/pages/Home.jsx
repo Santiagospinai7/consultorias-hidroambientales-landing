@@ -1,13 +1,13 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-import logo_icon_64 from '../assets/images/logo-icon-64.png'
+// import logo_icon_64 from '../assets/images/logo-icon-64.png'
 
 // import CookieModal from '../components/CookieModal'
 import GetInTouch from '../components/GetInTouch'
 import AboutImage from '../components/AboutImage'
 import UserFeedBack from '../components/UserFeedBack'
-import CompanyLogo from '../components/companyLogo'
+// import CompanyLogo from '../components/companyLogo'
 
 import '../../node_modules/react-modal-video/css/modal-video.css'
 
@@ -59,7 +59,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/80"></div>
         <div className="container relative">
           <div className="grid grid-cols-1 text-center">
-            <img src={logo_icon_64} className="mx-auto" alt="" />
+            {/* <img src={logo_icon_64} className="mx-auto" alt="" /> */}
             <h4 className="text-white lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium my-6 position-relative">Consultorias hidroambientales</h4>
 
             <p className="text-white opacity-50 mb-0 max-w-xl text-lg mx-auto">Contribuir  a la salud y bienestar de las comunidades en Colombia.</p>
@@ -93,9 +93,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="md:pb-12 pb-8" id="clients">
+      {/* <section className="md:pb-12 pb-8" id="clients">
         <CompanyLogo />
-      </section>
+      </section> */}
 
       <section className="relative bg-gray-50 md:py-24 py-16" id="services">
         <div className="container relative">
