@@ -25,9 +25,9 @@ import image47 from '../assets/images/ch/lavado_desinfeccion/p47.jpeg'
 
 // service 2
 import image58 from '../assets/images/ch/mantenimiento_plantas/p58.jpg'
-import image8 from '../assets/images/ch/impermeabilizacion_de_tanques/p8.jpeg'
-import image9 from '../assets/images/ch/impermeabilizacion_de_tanques/p9.jpeg'
-import impermeabilizacion_bg from '../assets/images/ch/bgs/impermeabilizacion.jpg'
+import image8 from '../assets/images/ch/impermeabilizacion_de_tanques/p8.webp'
+import image9 from '../assets/images/ch/impermeabilizacion_de_tanques/p9.webp'
+import impermeabilizacion_bg from '../assets/images/ch/bgs/impermeabilizacion.webp'
 
 // service 3
 import image60 from '../assets/images/ch/mantenimiento_plantas/p60.jpg'
@@ -40,16 +40,16 @@ import image54 from '../assets/images/ch/mantenimiento_piscinas/p54.jpg'
 import image55 from '../assets/images/ch/mantenimiento_piscinas/p55.jpg'
 import image56 from '../assets/images/ch/mantenimiento_piscinas/p56.jpg'
 import image57 from '../assets/images/ch/mantenimiento_piscinas/p57.jpg'
-import mantenimiento_piscinas_bg from '../assets/images/ch/bgs/mantenimiento_piscina.jpg'
+import mantenimiento_piscinas_bg from '../assets/images/ch/bgs/mantenimiento_piscina.webp'
 
 // service 5
 // import image2 from '../assets/images/ch/asesoria_capacitacion/p2.jpg'
-import image3 from '../assets/images/ch/asesoria_capacitacion/p3.jpg'
-import image5 from '../assets/images/ch/asesoria_capacitacion/p5.jpg'
-import image6 from '../assets/images/ch/asesoria_capacitacion/p6.jpg'
+import image3 from '../assets/images/ch/asesoria_capacitacion/p3.webp'
+import image5 from '../assets/images/ch/asesoria_capacitacion/p5.webp'
+import image6 from '../assets/images/ch/asesoria_capacitacion/p6.webp'
 
 // service 6
-import venta_productos_bg from '../assets/images/ch/bgs/venta_productos.jpg'
+import venta_productos_bg from '../assets/images/ch/bgs/venta_productos.webp'
 
 
 export const servicesData = [
