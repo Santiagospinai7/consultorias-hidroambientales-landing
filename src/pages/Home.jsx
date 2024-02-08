@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import GetInTouch from '../components/GetInTouch'
 import AboutImage from '../components/AboutImage'
 import UserFeedBack from '../components/UserFeedBack'
-// import CompanyLogo from '../components/companyLogo'
+import CompanyLogo from '../components/companyLogo'
 
 import '../../node_modules/react-modal-video/css/modal-video.css'
 
@@ -93,16 +93,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section className="md:pb-12 pb-8" id="clients">
+      <section className="md:pb-12 pb-8" id="clients">
         <CompanyLogo />
-      </section> */}
+      </section>
 
       <section className="relative bg-gray-50 md:py-24 py-16" id="services">
         <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center">
             <h6 className="text-cyan-500 text-sm font-bold uppercase mb-2">Servicios</h6>
             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Nuestros servicios</h3>
-            <p className="text-slate-400 max-w-xl mx-auto">Somos una empresa dedicada a la consultoría ambiental, contamos con una gran trayectoria en el sector ofreciendo servicios de calidad.</p>
+            <p className="text-slate-400 max-w-2xl mx-auto">Somos una empresa dedicada a la consultoría ambiental, contamos con una gran trayectoria en el sector ofreciendo servicios de calidad, que son: <a href="/services/1">Lavado y desinfección de tanques</a>, <a href="/services/2">Impermeabilización de tanques de agua</a>, <a href="/services/3">Operación y mantenimiento de plantas</a>, <a href="/services/4">Mantenimiento Piscinas</a>, <a href="/services/5">Asesoría y Capacitación</a>, <a href="/home#products">Venta De Productos Químicos</a></p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-6 gap-[30px]">
@@ -153,8 +153,8 @@ export default function Home() {
                     </div> */}
         
                     <div className="title absolute z-10 opacity-0 group-hover:opacity-100 bottom-4 start-4 transition-all duration-500">
-                      {/* <Link to="/portfolio-detail-one" className="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">{item.name}</Link> */}
-                      <p  className="h6 text-md font-medium text-white duration-500 ease-in-out">{item.name}</p>
+                      <Link to="https://quickstart-3d6bd286.myshopify.com/" className="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">{item.name}</Link>
+                      {/* <p  className="h6 text-md font-medium text-white duration-500 ease-in-out">{item.name}</p> */}
                       <p className="text-slate-100 tag mb-0">{item.title}</p>
                     </div>
                   </div>

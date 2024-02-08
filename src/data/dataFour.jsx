@@ -264,7 +264,7 @@ export const footerCompany = [
 ]
 export const feedback =[
   {
-    description: '" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "',
+    description: '" Hola "',
     image: client1,
     name: 'Calvin Carlo',
     role: 'Manager'

@@ -1833,6 +1833,9 @@ video {
 .max-w-xl{
   max-width: 36rem !important;
 }
+.max-w-2xl{
+  max-width: 42rem !important;
+}
 .flex-1{
   -webkit-box-flex: 1 !important;
       -ms-flex: 1 1 0% !important;
