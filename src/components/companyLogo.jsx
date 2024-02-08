@@ -10,20 +10,25 @@ const logos = [amazon, google, lenovo, paypal, shopify, spotify]
 export default function CompanyLogo({animate = true}) {
   if (animate) {
     return (
-      <div className="w-[200%] h-16 overflow-hidden relative flex items-center">
-        <div className="w-[400%] sm:w-[300%] md:w-[200%] flex items-center h-10 justify-around absolute left-0 animate animate">
-          {logos.map((logo, index) => (
-            <div key={index} className="mx-auto py-1">
-              <img src={logo} className="h-6" alt={`logo-${index}`} />
-            </div> 
-          ))}
-          {logos.map((logo, index) => (
-            <div key={index} className="mx-auto py-1">
-              <img src={logo} className="h-6" alt={`logo-${index}`} />
-            </div>
-          ))}
+      <>
+        <div>
+          <h1 className="text-2xl text-center mb-4 md:text-3xl md:leading-normal leading-normal font-semibold">Empresas que han confiado en nosotros:</h1>
         </div>
-      </div>
+        <div className="w-[200%] h-16 overflow-hidden relative flex items-center">
+          <div className="w-[400%] sm:w-[300%] md:w-[200%] flex items-center h-10 justify-around absolute left-0 animate animate">
+            {logos.map((logo, index) => (
+              <div key={index} className="mx-auto py-1">
+                <img src={logo} className="h-6" alt={`logo-${index}`} />
+              </div> 
+            ))}
+            {logos.map((logo, index) => (
+              <div key={index} className="mx-auto py-1">
+                <img src={logo} className="h-6" alt={`logo-${index}`} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </>
     )
   } else {
     return (
