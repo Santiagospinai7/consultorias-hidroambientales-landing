@@ -323,31 +323,51 @@ export const contactData = [
     link: 'https://www.google.com/maps/place/Av.+4a+Oe.+%234+-+43,+Normandia+Sebastian+de+Belalcazar,+Cali,+Valle+del+Cauca/@3.4519829,-76.5455043,19z/data=!3m1!4b1!4m6!3m5!1s0x8e30a679bb7c2bbf:0x1fe0006bda697e8f!8m2!3d3.4519816!4d-76.5448606!16s%2Fg%2F11j8lptndd?entry=ttu'
   }
 ]
-export const clientSatisfaction = [
+
+export const clientSatisfactionData = [
   {
-    title: 'Clientes',
-    desc: 'Nuestros clientes son muy importantes para nosotros, por eso siempre buscamos brindarles el mejor servicio, estas son nuestras estadisticas de satisfacción según nuestros clientes:',
-    data: [
-      {
-        title: 'Muy insatisfecho',
-        value: 1
-      },
-      {
-        title: 'Un Poco satisfecho',
-        value: 2
-      },
-      {
-        title: 'Neutral',
-        value: 2
-      },
-      {
-        title: 'Bastante satisfecho',
-        value: 15
-      },
-      {
-        title: 'Muy satisfecho',
-        value: 80
-      }
-    ]
+    labels: ['Muy insatisfecho', 'Un Poco satisfecho', 'Neutral', 'Bastante satisfecho', 'Muy satisfecho'],
+    datsets: [1, 2, 2, 15, 80],
+    backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 205, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+    ],
+    borderWidth: 1
+  }
+]
+
+export const DataTest = [
+  {
+    id: 1,
+    year: 2016,
+    userGain: 80000,
+    userLost: 823
+  },
+  {
+    id: 2,
+    year: 2017,
+    userGain: 45677,
+    userLost: 345
+  },
+  {
+    id: 3,
+    year: 2018,
+    userGain: 78888,
+    userLost: 555
+  },
+  {
+    id: 4,
+    year: 2019,
+    userGain: 90000,
+    userLost: 4555
+  },
+  {
+    id: 5,
+    year: 2020,
+    userGain: 4300,
+    userLost: 234
   }
 ]
