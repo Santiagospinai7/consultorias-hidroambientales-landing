@@ -39,13 +39,13 @@ export default function AboutImage({grid}){
           <h6 className="text-cyan-500 text-sm font-bold uppercase mb-2">Acerca de nosotros</h6>
           <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Expertos en Cuidado Ambiental y Sanitario</h3>
 
-          <p className="text-slate-400 max-w-xl mb-6">En Consultorías Hidroambientales, nos enorgullece ser reconocidos como expertos en el cuidado ambiental y sanitario. Con una dedicación inquebrantable a la preservación de nuestros recursos naturales y la promoción de la salud, hemos consolidado nuestra posición como líderes en soluciones integrales.</p>
+          <p className="text-slate-400 max-w-2xl mb-6">En Consultorías Hidroambientales, nos enorgullece ser reconocidos como expertos en el cuidado ambiental y sanitario. Con una dedicación inquebrantable a la preservación de nuestros recursos naturales y la promoción de la salud, hemos consolidado nuestra posición como líderes en soluciones integrales.</p>
         </div>
 
         <div className="lg:ms-5">
           <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">¿Por qué elegirnos?</h3>
 
-          <p className="text-slate-400 max-w-xl mb-6">Porque garantizamos calidad respaldada por personal certificado en calidad de agua y seguridad industrial. Nos destacamos en trabajo seguro en alturas y espacios confinados. Buscamos la plena satisfacción del cliente, cumpliendo normas ambientales y de seguridad. Avalados por la Secretaría de Salud, cumplimos con la norma técnica colombiana NTC 4576 y directrices municipales para lavado y desinfección de instalaciones de almacenamiento de agua potable. Elige confianza, experiencia y compromiso con la seguridad y el medio ambiente.</p>
+          <p className="text-slate-400 max-w-2xl mb-6">Porque garantizamos calidad respaldada por personal certificado en calidad de agua y seguridad industrial. Nos destacamos en trabajo seguro en alturas y espacios confinados. Buscamos la plena satisfacción del cliente, cumpliendo normas ambientales y de seguridad. Avalados por la Secretaría de Salud, cumplimos con la norma técnica colombiana NTC 4576 y directrices municipales para lavado y desinfección de instalaciones de almacenamiento de agua potable. Elige confianza, experiencia y compromiso con la seguridad y el medio ambiente.</p>
         </div>
       </div>
     </div>

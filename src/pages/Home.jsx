@@ -8,6 +8,7 @@ import GetInTouch from '../components/GetInTouch'
 import AboutImage from '../components/AboutImage'
 import UserFeedBack from '../components/UserFeedBack'
 import CompanyLogo from '../components/companyLogo'
+import CustomerSatisfaction from '../components/CustomerSatisfaction'
 
 import '../../node_modules/react-modal-video/css/modal-video.css'
 
@@ -137,7 +138,7 @@ export default function Home() {
             <h6 className="text-cyan-500 text-sm font-bold uppercase mb-2">Productos</h6>
             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Nuestros productos</h3>
 
-            <p className="text-slate-400 max-w-xl mx-auto">Somos proveedores de productos de calidad, contamos con una gran trayectoria en el sector ofreciendo productos de calidad.</p>
+            <p className="text-slate-400 max-w-2xl mx-auto">Somos proveedores de productos de calidad, contamos con una gran trayectoria en el sector ofreciendo productos de calidad.</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 mt-8">
@@ -165,11 +166,14 @@ export default function Home() {
         </div>
       </section>
       <section className="relative bg-gray-50 md:py-24 py-16">
+        <CustomerSatisfaction title={true}/>
+      </section>
+      <section className="relative md:py-24 py-16">
         <div >
           <UserFeedBack />
         </div>
       </section>
-      <section className="relative md:py-24 py-16">
+      <section className="relative bg-gray-50 md:py-24 py-16">
         <GetInTouch title={true}/>
       </section>
       {/* <CookieModal /> */}

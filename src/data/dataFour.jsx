@@ -323,3 +323,31 @@ export const contactData = [
     link: 'https://www.google.com/maps/place/Av.+4a+Oe.+%234+-+43,+Normandia+Sebastian+de+Belalcazar,+Cali,+Valle+del+Cauca/@3.4519829,-76.5455043,19z/data=!3m1!4b1!4m6!3m5!1s0x8e30a679bb7c2bbf:0x1fe0006bda697e8f!8m2!3d3.4519816!4d-76.5448606!16s%2Fg%2F11j8lptndd?entry=ttu'
   }
 ]
+export const clientSatisfaction = [
+  {
+    title: 'Clientes',
+    desc: 'Nuestros clientes son muy importantes para nosotros, por eso siempre buscamos brindarles el mejor servicio, estas son nuestras estadisticas de satisfacción según nuestros clientes:',
+    data: [
+      {
+        title: 'Muy insatisfecho',
+        value: 1
+      },
+      {
+        title: 'Un Poco satisfecho',
+        value: 2
+      },
+      {
+        title: 'Neutral',
+        value: 2
+      },
+      {
+        title: 'Bastante satisfecho',
+        value: 15
+      },
+      {
+        title: 'Muy satisfecho',
+        value: 80
+      }
+    ]
+  }
+]

@@ -60,7 +60,7 @@ export default function WhoWeAre(){
 
               <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">¿Quienes somos nosotros?</h3>
 
-              <p className="text-slate-400 max-w-xl">Somos una empresa dedicada a ofrecer servicios especializados en limpieza, desinfección, mantenimiento e impermeabilización de tanques de agua potable, así como en el mantenimiento de plantas de tratamiento de agua y piscinas. Nuestra experiencia se extiende a la prestación de asesorías profesionales en Ingeniería Ambiental y Sanitaria, abarcando una diversidad de sectores que incluyen establecimientos institucionales, hospitalarios, comerciales, industriales y residenciales.</p>
+              <p className="text-slate-400 max-w-2xl">Somos una empresa dedicada a ofrecer servicios especializados en limpieza, desinfección, mantenimiento e impermeabilización de tanques de agua potable, así como en el mantenimiento de plantas de tratamiento de agua y piscinas. Nuestra experiencia se extiende a la prestación de asesorías profesionales en Ingeniería Ambiental y Sanitaria, abarcando una diversidad de sectores que incluyen establecimientos institucionales, hospitalarios, comerciales, industriales y residenciales.</p>
 
               {/* <div className="mt-6">
                 <Link to="/contact" className="py-2 px-5 inline-flex items-center font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"><FaRegEnvelope className="me-2 text-sm"/> Contactanos</Link>
@@ -92,7 +92,7 @@ export default function WhoWeAre(){
                 <div className="cursor-e-resize flex flex-col items-center justify-center h-full">
                   <div className="lg:ms-5">
                     <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">{item.title}</h3>
-                    <p className="text-slate-400 max-w-xl">{item.description}</p>
+                    <p className="text-slate-400 max-w-2xl">{item.description}</p>
                   </div>
                 </div>
               </SwiperSlide>

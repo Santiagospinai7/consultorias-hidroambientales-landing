@@ -28,7 +28,7 @@ export default function Footer() {
                 </div>
 
                 <div className="lg:col-span-4 md:col-span-4">
-                  <h5 className="tracking-[1px] text-gray-100 font-semibold">Company</h5>
+                  <h5 className="tracking-[1px] text-gray-100 font-semibold">Compañia</h5>
                   <ul className="list-none footer-list mt-6">
                     {footerCompany.map((data, index) => (
                       <li key={index} className={data.liClass}><Link to={data.route} className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out inline-flex items-center"><MdKeyboardArrowRight className="text-xl me-1"/> {data.title}</Link></li>
