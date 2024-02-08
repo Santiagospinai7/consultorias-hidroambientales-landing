@@ -21,7 +21,7 @@ export default function ServiceDetail() {
         className="relative table w-full py-72 bg-no-repeat bg-top bg-cover"
         style={{ backgroundImage: `url(${data.banner_bg})` }}
       >
-        <div className="absolute inset-0 bg-black opacity-80"></div>
+        <div className="absolute inset-0 bg-black opacity-20"></div>
       </section>
 
       <section className="relative md:py-24 py-16">

@@ -56,7 +56,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="absolute inset-0 bg-black/80"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
         <div className="container relative">
           <div className="grid grid-cols-1 text-center">
             {/* <img src={logo_icon_64} className="mx-auto" alt="" /> */}
