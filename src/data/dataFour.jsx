@@ -326,48 +326,33 @@ export const contactData = [
 
 export const clientSatisfactionData = [
   {
-    labels: ['Muy insatisfecho', 'Un Poco satisfecho', 'Neutral', 'Bastante satisfecho', 'Muy satisfecho'],
-    datsets: [1, 2, 2, 15, 80],
-    backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(255, 159, 64, 0.2)',
-      'rgba(255, 205, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-    ],
-    borderWidth: 1
-  }
-]
-
-export const DataTest = [
-  {
     id: 1,
-    year: 2016,
-    userGain: 80000,
-    userLost: 823
+    label: 'Muy insatisfecho',
+    color: 'rgb(255, 46, 91)',
+    satisfactionPercentage: 0
   },
   {
     id: 2,
-    year: 2017,
-    userGain: 45677,
-    userLost: 345
+    label: 'Un Poco satisfecho',
+    color: 'rgb(255, 159, 64)',
+    satisfactionPercentage: 3
   },
   {
-    id: 3,
-    year: 2018,
-    userGain: 78888,
-    userLost: 555
+    id: '3',
+    label: 'Neutral',
+    color: 'rgb(255, 205, 86)',
+    satisfactionPercentage: 7
   },
   {
     id: 4,
-    year: 2019,
-    userGain: 90000,
-    userLost: 4555
+    label: 'Bastante satisfecho',
+    color: 'rgb(75, 192, 192)',
+    satisfactionPercentage: 15
   },
   {
     id: 5,
-    year: 2020,
-    userGain: 4300,
-    userLost: 234
+    label: 'Muy satisfecho',
+    color: 'rgb(54, 162, 235)',
+    satisfactionPercentage: 75
   }
 ]

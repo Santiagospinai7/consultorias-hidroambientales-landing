@@ -3,19 +3,23 @@ import { Pie } from 'react-chartjs-2'
 function PieChart({ chartData }) {
   return (
     <div className="chart-container">
-      <h2 style={{ textAlign: 'center' }}>Pie Chart</h2>
       <Pie
         data={chartData}
         options={{
           plugins: {
             title: {
-              display: true,
-              text: 'Users Gained between 2016-2020'
-            }
-          }
+              display: false,
+              text: 'Satisfacción de nuestros clientes 2023',
+            },
+            legend: {
+              display: false, // Oculta la leyenda de Chart.js si quieres usar la personalizada
+            },
+          },
+          maintainAspectRatio: false, // Permite que el tamaño del gráfico sea más flexible
         }}
       />
     </div>
   )
 }
+
 export default PieChart
