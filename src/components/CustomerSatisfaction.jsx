@@ -32,7 +32,7 @@ export default function CustomerSatisfaction({ title }) {
             Nuestros clientes son muy importantes para nosotros, por eso siempre buscamos brindarles el mejor servicio. Estas son nuestras estadísticas de satisfacción según nuestros clientes:
           </p>
         </div>
-        <div className="md:w-1/2 flex flex-col items-center">
+        <div className="md:w-1/2 flex md:flex-row flex-col items-center">
           <div className="md:max-w-xs w-full">
             <PieChart chartData={chartData} />
           </div>

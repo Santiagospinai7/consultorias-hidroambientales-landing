@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 // import logo_icon_64 from '../assets/images/logo-icon-64.png'
+import logo_gota from '../assets/images/ch/logo/gota.png'
 
 // import CookieModal from '../components/CookieModal'
 import GetInTouch from '../components/GetInTouch'
@@ -57,10 +58,10 @@ export default function Home() {
           />
         </div>
 
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/80"></div>
         <div className="container relative">
           <div className="grid grid-cols-1 text-center">
-            {/* <img src={logo_icon_64} className="mx-auto" alt="" /> */}
+            <img src={logo_gota} className="mx-auto" width={80} height={100} alt="Gota" />
             <h4 className="text-white lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium my-6 position-relative">Consultorias hidroambientales</h4>
 
             <p className="text-white opacity-50 mb-0 max-w-xl text-lg mx-auto">Contribuir  a la salud y bienestar de las comunidades en Colombia.</p>
