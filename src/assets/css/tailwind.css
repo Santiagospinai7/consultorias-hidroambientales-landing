@@ -3669,6 +3669,12 @@ video {
 .pt-8{
   padding-top: 2rem !important;
 }
+.pr-2 {
+  padding-right: 0.5rem !important;
+}
+pl-2 {
+  padding-left: 0.5rem !important;
+}
 .text-center{
   text-align: center !important;
 }
