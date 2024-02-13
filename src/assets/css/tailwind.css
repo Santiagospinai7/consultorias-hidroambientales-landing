@@ -4345,11 +4345,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 }
 #topnav .has-submenu.active .submenu li.active > a{
   --tw-text-opacity: 1 !important;
-  color: rgb(79 70 229 / var(--tw-text-opacity)) !important;
+  color: rgb(24, 177, 233) !important;
 }
 :is(.dark #topnav .has-submenu.active .submenu li.active > a){
   --tw-text-opacity: 1 !important;
-  color: rgb(79 70 229 / var(--tw-text-opacity)) !important;
+  color: rgb(24, 177, 233) !important;
 }
 #topnav .has-submenu.active.active .menu-arrow{
   --tw-border-opacity: 1;
@@ -4707,11 +4707,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 }
 #topnav.nav-sticky .navigation-menu.nav-light > li.active > a{
   --tw-text-opacity: 1 !important;
-  color: rgb(79 70 229 / var(--tw-text-opacity)) !important;
+  color:   rgb(24, 177, 233) !important;
 }
 :is(.dark #topnav.nav-sticky .navigation-menu.nav-light > li.active > a){
   --tw-text-opacity: 1 !important;
-  color: rgb(79 70 229 / var(--tw-text-opacity)) !important;
+  color:   rgb(24, 177, 233) !important;
 }
 #topnav.nav-sticky .navigation-menu.nav-light > li:hover > .menu-arrow,
 #topnav.nav-sticky .navigation-menu.nav-light > li.active > .menu-arrow {

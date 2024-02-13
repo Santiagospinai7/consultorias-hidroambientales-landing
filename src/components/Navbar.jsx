@@ -8,12 +8,20 @@ import { animateScroll as scroll } from 'react-scroll'
 export default function Navbar(props) {
   const { navClass, navJustify } = props
   const [isMenu, setisMenu] = useState(false)
+  const [path, setPath] = useState('')
   const [manu, setManu] = useState('')
   const location = useLocation()
 
   useEffect(() => {
     let current = location.pathname.substring(location.pathname.lastIndexOf('/') + 1)
+
+    // get current path
+    let path = location.pathname
+    console.log('path', path)
+    setPath(path)
     setManu(current)
+
+    console.log('path', path)
 
     function windowScroll() {
       const navbar = document.getElementById('topnav')
@@ -141,29 +149,28 @@ export default function Navbar(props) {
               </Link>
             </li>
 
-            <li className={`${['services'].includes(manu) ? 'active' : ''} has-submenu parent-parent-menu-item`}>
+            <li className={`${['/services/1'].includes(path) ? 'active' : '' || ['/services/2'].includes(path) ? 'active' : '' || ['/services/3'].includes(path) ? 'active' : '' || ['/services/4'].includes(path) ? 'active' : ''} has-submenu parent-parent-menu-item`}>
               <a className="sub-menu-item" onClick={() => scrollTo('services')}>
                 Servicios
               </a>
               <span className="menu-arrow"></span>
               <ul className="submenu">
-                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="services/1">Desinfección Potable</Link>
+                <li className={`${['/services/1'].includes(path) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="services/1">Lavado, desinfeccion, e impermeabilizacion de Tanques de Agua Potable</Link>
                 </li>
-                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="services/2">Mantenimiento</Link>
+                <li className={`${['/services/2'].includes(path) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="services/2">Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable</Link>
                 </li>
-                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="services/3">Tratamiento Integral</Link>
+                <li className={`${['/services/3'].includes(path) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="services/3">Diseño, construccion y operacion de Piscinas</Link>
                 </li>
-                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="services/4">Mantenimiento Piscinas</Link>
+                <li className={`${['/services/4'].includes(path) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="services/4">Asesoría y Capacitación</Link>
                 </li>
-                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="services/5">Asesoría y Capacitación</Link>
-                </li>
-                <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="services/6">Venta De Productos Químicos</Link>
+                <li className={`${['about-us'].includes(path) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <a className="sub-menu-item" onClick={() => scrollTo('products')}>
+                  Suministro de equipos,productos quimicos para acueductos y piscinas
+                  </a>
                 </li>
               </ul>
             </li>
@@ -175,19 +182,29 @@ export default function Navbar(props) {
               <span className="menu-arrow"></span>
               <ul className="submenu">
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#">Cloro granulado</Link>
+                  <a className="sub-menu-item" onClick={() => scrollTo('products')}>
+                    Cloro granulado
+                  </a>
                 </li>
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#">Clarificante</Link>
+                  <a className="sub-menu-item" onClick={() => scrollTo('products')}>
+                  Clarificante
+                  </a>
                 </li>
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#">Reductor</Link>
+                  <a className="sub-menu-item" onClick={() => scrollTo('products')}>
+                  Reductor
+                  </a>
                 </li>
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#">Desengrasante</Link>
+                  <a className="sub-menu-item" onClick={() => scrollTo('products')}>
+                  Desengrasante
+                  </a>
                 </li>
                 <li className={`${['about-us'].includes(manu) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="#">Filtrante de vidrio</Link>
+                  <a className="sub-menu-item" onClick={() => scrollTo('products')}>
+                  Filtrante de vidrio
+                  </a>
                 </li>
               </ul>
             </li>

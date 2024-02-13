@@ -1,4 +1,4 @@
-import {FiAirplay,MdApi,TbCameraPlus,PiFlowerLight,HiOutlineCog6Tooth,FaRegComment,BiWallet,LuImagePlus,LuSave,BiShieldAlt2,MdOutlineCalendarMonth,RiMailSendLine, FiPhone, FaRegEnvelope, RiMapPinLine } from '../assets/icons/icons'
+import {BiWallet,LuImagePlus,LuSave, FiPhone, FaRegEnvelope, RiMapPinLine } from '../assets/icons/icons'
 
 import { TbWashEco } from 'react-icons/tb'
 import { GiWaterTank } from 'react-icons/gi'
@@ -27,7 +27,7 @@ import image47 from '../assets/images/ch/lavado_desinfeccion/p47.jpeg'
 import image58 from '../assets/images/ch/mantenimiento_plantas/p58.jpg'
 import image8 from '../assets/images/ch/impermeabilizacion_de_tanques/p8.webp'
 import image9 from '../assets/images/ch/impermeabilizacion_de_tanques/p9.webp'
-import impermeabilizacion_bg from '../assets/images/ch/bgs/impermeabilizacion.webp'
+// import impermeabilizacion_bg from '../assets/images/ch/bgs/impermeabilizacion.webp'
 
 // service 3
 import image60 from '../assets/images/ch/mantenimiento_plantas/p60.jpg'
@@ -56,15 +56,20 @@ export const servicesData = [
   {
     id:1,
     icon:TbWashEco,
-    title:'Lavado y desinfección de tanques',
-    desc:'Lavado y desinfección de tanques de almacenamiento de agua potable.',
+    title:'Lavado, desinfeccion, e impermeabilizacion de Tanques de Agua Potable',
+    desc:'',
     link: '/services/1',
     detail : (
-      <p>
+      <>
+        <p>
         Según resolución No. 4145.0.21.0382 Secretaria de Salud Pública Municipal (21 de noviembre de 2014),  en edificios y clínicas,  hospitales, unidades residenciales, zona industrial - fabricas, centros comerciales, universidades, colegios, empresas de suministro de agua potable;  Donde establece que los tanques para almacenamiento de agua potable deben lavarse y desinfectarse mínimo cada 4 meses. Esto posibilita el retiro de los barros decantados en el fondo del tanque, la eliminación de hongos y el perfecto funcionamiento del sistema para garantizar una buena calidad del agua para el consumo humano.
-      </p>
+        </p>
+        <p>
+      Los tanques de agua potable desempeñan un papel fundamental en la provisión de agua segura y de calidad a las comunidades, con el fin de asegurar un suministro confiable, es esencial contar con un sistema de impermeabilización adecuado en estos tanques, el cual es realizado con epoxicos y membranas grado agua potable, donde se hace un recubrimiento en el tanque de agua, que nos garantiza una impermeabilidad y asepsia de la superficie, asi como la protección contra filtraciones, posibles perdidas de agua, mantenimiento adecuado de la estructura, cumplimiento  de estándares con base a las normas de la secretaria de salud y confianza de los usuarios.
+        </p>
+      </>
     ),
-    photos: [image17, image36],
+    photos: [image17, image36, image8, image9],
     before_after: [
       { title:'Antes', image:image48 },
       { title:'Después', image:image47 }
@@ -73,24 +78,10 @@ export const servicesData = [
   },
   {
     id:2,
-    icon:HiOutlineCog6Tooth,
-    title:'Impermeabilización de tanques de agua',
-    desc:'Mantenimiento e impermeabilización de tanques de agua potable.',
-    link: '/services/2',
-    detail : (
-      <p>
-        Los tanques de agua potable desempeñan un papel fundamental en la provisión de agua segura y de calidad a las comunidades, con el fin de asegurar un suministro confiable, es esencial contar con un sistema de impermeabilización adecuado en estos tanques, el cual es realizado con epoxicos y membranas grado agua potable, donde se hace un recubrimiento en el tanque de agua, que nos garantiza una impermeabilidad y asepsia de la superficie, asi como la protección contra filtraciones, posibles perdidas de agua, mantenimiento adecuado de la estructura, cumplimiento  de estándares con base a las normas de la secretaria de salud y confianza de los usuarios.
-      </p>
-    ),
-    photos: [image8, image9],
-    banner_bg: impermeabilizacion_bg,
-  },
-  {
-    id:3,
     icon:GiWaterTank,
-    title:'Operación y mantenimiento de plantas',
-    desc:'Operación y mantenimiento de plantas de tratamiento de agua.',
-    link: '/services/3',
+    title:'Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable.',
+    desc:'',
+    link: '/services/2',
     detail : (
       <p>
         La calidad del agua que se consume en una localidad está determinada entre otros factores por la calidad de la fuente, el tratamiento que se aplica para potabilizarla, el estado de las instalaciones físicas y de los equipos, la disponibilidad de los recursos necesarios para el funcionamiento de las instalaciones de tratamiento y la disponibilidad de personal para operar y mantener adecuadamente dichas instalaciones. <br /> El objetivo de la operación y mantenimiento de una planta es el control de calidad para obtener mejores resultados en la calidad del agua apta para el consumo humano. Debe incluir el control de calidad en procesos, como captación, bombeo, filtración, separación de sólidos, procesos bioquímicos aeróbicos o anaeróbicos, uso de lodos activados, decantación y descarga, entre otros.
@@ -100,11 +91,11 @@ export const servicesData = [
     banner_bg: image58,
   },
   {
-    id:4,
+    id:3,
     icon:FaSwimmingPool,
-    title:'Mantenimiento Piscinas',
-    desc:'Mantenimiento general de piscinas.',
-    link: '/services/4',
+    title:'Diseño, construccion y operacion de Piscinas.',
+    desc:'',
+    link: '/services/3',
     detail : (
       <>
         <p>
@@ -122,20 +113,20 @@ export const servicesData = [
     banner_bg: mantenimiento_piscinas_bg,
   },
   {
-    id:5,
+    id:4,
     icon:FaHandsHelping,
     title:'Asesoría y Capacitación',
-    desc:'Asesoría y capacitación de tratamiento de aguas y piscinas.',
-    link: '/services/5',
+    desc:'',
+    link: '/services/4',
     detail : 'La presencia de bacterias, virus y otros patógenos en las plantas ,  tanques de agua y en piscinas  puede causar enfermedades transmitidas por el agua, como gastroenteritis, diarrea y hepatitis. La desinfección adecuada ayuda a eliminar estos microorganismos. Por ello es tan importante contar con el personal capacitado de acuerdo a la normatividad y los estándares de calidad de agua.',
     photos: [image5, image6],
     banner_bg: image3,
   },
   {
-    id:6,
+    id:5,
     icon:FaShoppingBasket,
-    title:'Venta De Productos Químicos',
-    desc:'Venta de productos quimicos para el tratamiento de aguas.',
+    title:'Suministro de equipos,productos quimicos para acueductos y piscinas',
+    desc:'',
     link: '/home#products',
     detail : '',
     photos: [],
@@ -184,55 +175,6 @@ export const nftAbout = [
     icon: LuSave,
     title:'List them for sale',
     desc:'Earn ETH and BIT for all your NFTs that you sell on our marketplace.'
-  },
-]
-export const paymentFeature = [
-  {
-    icon:BiShieldAlt2,
-    title:'Secured Payment',
-    desc:'The phrasal sequence of the is now so that many campaign and benefit'
-  },
-  {
-    icon:MdOutlineCalendarMonth,
-    title:'Easy to use',
-    desc:'The phrasal sequence of the is now so that many campaign and benefit'
-  },
-  {
-    icon:RiMailSendLine,
-    title:'Support',
-    desc:'The phrasal sequence of the is now so that many campaign and benefit'
-  },
-]
-export const personalServices =[
-  {
-    icon:FiAirplay,
-    title:'UX / UI Design',
-    decs:'The phrasal sequence of the is now so that many campaign and benefit'
-  },
-  {
-    icon:MdApi,
-    title:'IOS App Designer',
-    decs:'The phrasal sequence of the is now so that many campaign and benefit'
-  },
-  {
-    icon:TbCameraPlus,
-    title:'Photography',
-    decs:'The phrasal sequence of the is now so that many campaign and benefit'
-  },
-  {
-    icon:PiFlowerLight,
-    title:'Graphic Designer',
-    decs:'The phrasal sequence of the is now so that many campaign and benefit'
-  },
-  {
-    icon:HiOutlineCog6Tooth,
-    title:'Web Security',
-    decs:'The phrasal sequence of the is now so that many campaign and benefit'
-  },
-  {
-    icon:FaRegComment,
-    title:'24/7 Support',
-    decs:'The phrasal sequence of the is now so that many campaign and benefit'
   },
 ]
 export const footerCompany = [

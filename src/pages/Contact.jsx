@@ -5,12 +5,22 @@ import {MdKeyboardArrowRight} from '../assets/icons/icons'
 import * as Icon from 'react-feather'
 import { contactData } from '../data/dataFour'
 
+import banner_image from '../assets/images/ch/lavado_desinfeccion/p30.jpg'
+
 export default function Contact() {
     
   return (
     <>
-      <section className="relative table w-full py-36 bg-[url('../../assets/images/company/aboutus.jpg')] bg-center bg-no-repeat bg-cover">
-        <div className="absolute inset-0 bg-black opacity-75"></div>
+      <section className="relative table w-full py-36  bg-center bg-no-repeat bg-cover">
+        <div className="absolute top-0 start-0 w-full h-full z-0 pointer-events-none overflow-hidden">
+          <img
+            src={banner_image}
+            className="absolute top-1/2 start-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover"
+            alt=""
+          />
+        </div>
+
+        <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center mt-10">
             <h3 className="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">Contáctanos</h3>

@@ -52,7 +52,7 @@ export default function AboutUs() {
             alt=""
           />
         </div>
-        <div className="absolute inset-0 bg-black opacity-75"></div>
+        <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center mt-10">
             <h3 className="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Acerca de nosotros</h3>
