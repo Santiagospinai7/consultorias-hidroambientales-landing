@@ -4,11 +4,16 @@ import { Link } from 'react-router-dom'
 // import about01 from '../assets/images/business/about01.jpg'
 // import about02 from '../assets/images/business/about02.jpg'
 
-import p14 from '../assets/images/ch/lavado_desinfeccion/p14.jpg'
+// import p14 from '../assets/images/ch/lavado_desinfeccion/p14.jpg'
 // import p32 from '../assets/images/ch/lavado_desinfeccion/p14.jpg'
 // import p36 from '../assets/images/ch/lavado_desinfeccion/p14.jpg'
 
-import p37 from '../assets/images/ch/lavado_desinfeccion/p37.JPG'
+
+// import p36 from '../assets/images/ch/lavado_desinfeccion/p36.JPG'
+import p38 from '../assets/images/ch/lavado_desinfeccion/p38.JPG'
+// import operario_img from '../assets/images/ch/new/Operario pisicinas 2.jpg'
+
+// import p37 from '../assets/images/ch/lavado_desinfeccion/p37.JPG'
 
 import ModalVideo from 'react-modal-video'
 import '../../node_modules/react-modal-video/css/modal-video.css'
@@ -19,9 +24,14 @@ export default function AboutImage({grid}){
     <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
       <div className={grid}>
         <div className="relative lg:me-8">
-          <img src={p14} className="rounded-md max-h-[400px]" alt="" />
-
-          <div className="absolute bottom-24 end-0">
+          <img src={p38} className="rounded-md max-h-[400px]" alt="" />
+          <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
+            <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610"
+              className="lightbox h-14 w-14 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-cyan-500">
+              <i className="mdi mdi-play inline-flex items-center justify-center text-xl"></i>
+            </Link>
+          </div>
+          {/* <div className="absolute bottom-24 end-0">
             <img src={p37} className="rounded-md shadow-md w-48 h-48" alt="" />
             <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
               <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610"
@@ -29,7 +39,7 @@ export default function AboutImage({grid}){
                 <i className="mdi mdi-play inline-flex items-center justify-center text-xl"></i>
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="JeHv6g0mpUI" onClose={() => setOpen(false)} />

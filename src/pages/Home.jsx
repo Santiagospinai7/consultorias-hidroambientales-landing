@@ -22,7 +22,8 @@ import { servicesData , productData } from '../data/dataFour'
 
 import { useLocation } from 'react-router-dom'
 
-import p67_image from '../assets/images/ch/freepik/p67.jpg'
+// import p67_image from '../assets/images/ch/freepik/p67.jpg'
+import banner_image from '../assets/images/ch/new/banner.jpg'
 
 export default function Home() {
   const scrollToAbout = () => {
@@ -52,7 +53,7 @@ export default function Home() {
       <section className="py-36 md:py-60 w-full table relative bg-center bg-no-repeat bg-cover">
         <div className="absolute top-0 start-0 w-full h-full z-0 pointer-events-none overflow-hidden">
           <img
-            src={p67_image}
+            src={banner_image}
             className="absolute top-1/2 start-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover"
             alt=""
           />

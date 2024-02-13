@@ -19,8 +19,8 @@ export default function CustomerSatisfaction({ title }) {
   })
 
   return (
-    <div className="container mx-auto p-4">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+    <div className="container relative">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center">
         <div className="md:w-1/2">
           {title && (
             <h6 className="text-cyan-500 text-sm font-bold uppercase mb-2">Clientes</h6>
