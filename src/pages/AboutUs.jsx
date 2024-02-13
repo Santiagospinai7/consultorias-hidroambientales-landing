@@ -11,6 +11,8 @@ import {MdKeyboardArrowRight} from '../assets/icons/icons'
 import CompanyLogo from '../components/companyLogo'
 import WhoWeAre from '../components/WhoWeAre'
 
+import banner_image from '../assets/images/ch/lavado_desinfeccion/p34.jpg'
+
 import {FaRegEnvelope} from '../assets/icons/icons'
 
 export default function AboutUs() {
@@ -42,7 +44,14 @@ export default function AboutUs() {
   // ]
   return (
     <>
-      <section className="relative table w-full py-36 lg:py-44 bg-[url('../../assets/images/company/aboutus.jpg')] bg-no-repeat bg-center bg-cover">
+      <section className="relative table w-full py-36 lg:py-44 bg-no-repeat bg-center bg-cover">
+        <div className="absolute top-0 start-0 w-full h-full z-0 pointer-events-none overflow-hidden">
+          <img
+            src={banner_image}
+            className="absolute top-1/2 start-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover"
+            alt=""
+          />
+        </div>
         <div className="absolute inset-0 bg-black opacity-75"></div>
         <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center mt-10">

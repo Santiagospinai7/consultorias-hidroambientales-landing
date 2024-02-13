@@ -1,8 +1,11 @@
 // import { Link } from 'react-router-dom'
 
-import ab03 from '../assets/images/about/ab03.jpg'
-import ab02 from '../assets/images/about/ab02.jpg'
-import ab01 from '../assets/images/about/ab01.jpg'
+// import ab03 from '../assets/images/about/ab03.jpg'
+// import ab02 from '../assets/images/about/ab02.jpg'
+// import ab01 from '../assets/images/about/ab01.jpg'
+
+import p1 from '../assets/images/ch/asesoria_capacitacion/p1.webp'
+import p17 from '../assets/images/ch/lavado_desinfeccion/p17.jpg'
 
 import CountUp from 'react-countup'
 
@@ -38,14 +41,14 @@ export default function WhoWeAre(){
             <div className="grid grid-cols-12 gap-6 items-center">
               <div className="col-span-6">
                 <div className="grid grid-cols-1 gap-6">
-                  <img src={ab03} className="shadow rounded-md" alt="" />
-                  <img src={ab02} className="shadow rounded-md" alt="" />
+                  <img src={p1} className="shadow rounded-md" alt="" />
+                  {/* <img src={p17} className="shadow rounded-md" alt="" /> */}
                 </div>
               </div>
 
               <div className="col-span-6">
                 <div className="grid grid-cols-1 gap-6">
-                  <img src={ab01} className="shadow rounded-md" alt="" />
+                  <img src={p17} className="shadow rounded-md" alt="" />
                 </div>
               </div>
             </div>

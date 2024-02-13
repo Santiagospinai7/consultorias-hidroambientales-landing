@@ -25,7 +25,7 @@ export default function CustomerSatisfaction({ title }) {
           {title && (
             <h6 className="text-cyan-500 text-sm font-bold uppercase mb-2">Clientes</h6>
           )}
-          <h3 className="mb-6 text-2xl md:text-3xl leading-normal font-semibold">
+          <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
             Satisfacción de nuestros clientes:
           </h3>
           <p className="text-slate-400 max-w-xl">
