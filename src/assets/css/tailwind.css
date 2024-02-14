@@ -94,6 +94,9 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+.underline {
+  text-decoration: underline;
+}
 /*
 Add the correct font weight in Edge and Safari.
 */
@@ -2806,6 +2809,9 @@ video {
 }
 .bg-opacity-50{
   --tw-bg-opacity: 0.5 !important;
+}
+.bg-opacity-10{
+  --tw-bg-opacity: 0.1 !important;
 }
 .bg-\[url\(\'\.\.\/assets\/images\/app\/bg\.png\'\)\]{
   background-image: url('../images/app/bg.png') !important;

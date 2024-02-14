@@ -1,4 +1,4 @@
-import text_logo from '../assets/images/ch/logo/logo_transparente.png'
+import text_logo from '../assets/images/ch/logo/hidroambientales.png'
 import '../assets/css/tailwind.css'
 import { useState, useEffect } from 'react'
 
@@ -28,10 +28,12 @@ export default function Navbar(props) {
       if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
         if (navbar !== null) {
           navbar?.classList.add('nav-sticky')
+          // navbar?.classList.remove('bg-opacity-10')
         }
       } else {
         if (navbar !== null) {
-          navbar?.classList.remove('nav-sticky')
+          // navbar?.classList.add('bg-opacity-')
+          // navbar?.classList.remove('nav-sticky')
         }
       }
     }
@@ -103,7 +105,7 @@ export default function Navbar(props) {
   return (
     <nav
       id="topnav"
-      className={`defaultscroll ${navClass === 'nav-light' ? '' : navClass === 'nav-sticky' ? 'bg-white dark:bg-slate-900' : ''}`}
+      className={`defaultscroll ${navClass === 'nav-light' ? '' : navClass === 'nav-sticky' ? 'bg-white dark:bg-slate-900' : ''} nav-sticky`}
     >
       <div className="container relative flex justify-between items-center">
         <div className='max-w-11'>

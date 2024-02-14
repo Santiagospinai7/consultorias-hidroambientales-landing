@@ -5,7 +5,11 @@ import paypal from '../assets/images/client/paypal.svg'
 import shopify from '../assets/images/client/shopify.svg'
 import spotify from '../assets/images/client/spotify.svg'
 
-const logos = [amazon, google, lenovo, paypal, shopify, spotify]
+import logo_1 from '../assets/images/ch/clients/Club tequendama.jpg'
+import logo_2 from '../assets/images/ch/clients/Fundacion ideal.jpg'
+import logo_3 from '../assets/images/ch/clients/tugo.webp'
+
+const logos = [ logo_1, logo_2, logo_3]
 
 export default function CompanyLogo({animate = true}) {
   if (animate) {
@@ -18,12 +22,12 @@ export default function CompanyLogo({animate = true}) {
           <div className="w-[400%] sm:w-[300%] md:w-[200%] flex items-center h-10 justify-around absolute left-0 animate animate">
             {logos.map((logo, index) => (
               <div key={index} className="mx-auto py-1">
-                <img src={logo} className="h-6" alt={`logo-${index}`} />
+                <img src={logo} className="h-10" alt={`logo-${index}`} />
               </div> 
             ))}
             {logos.map((logo, index) => (
               <div key={index} className="mx-auto py-1">
-                <img src={logo} className="h-6" alt={`logo-${index}`} />
+                <img src={logo} className="h-10" alt={`logo-${index}`} />
               </div>
             ))}
           </div>
@@ -32,20 +36,20 @@ export default function CompanyLogo({animate = true}) {
     )
   } else {
     return (
-      <div className="grid md:grid-cols-6 grid-cols-2 justify-center gap-[30px]">
+      <div className="grid md:grid-cols-3 grid-cols-2 justify-center gap-[30px]">
         <div className="mx-auto py-4">
-          <img src={amazon} className="h-6" alt="" />
+          <img src={logo_1} className="h-10" alt="" />
         </div>
   
         <div className="mx-auto py-4">
-          <img src={google} className="h-6" alt="" />
+          <img src={logo_2} className="h-10" alt="" />
         </div>
   
         <div className="mx-auto py-4">
-          <img src={lenovo} className="h-6" alt="" />
+          <img src={logo_3} className="h-10" alt="" />
         </div>
   
-        <div className="mx-auto py-4">
+        {/* <div className="mx-auto py-4">
           <img src={paypal} className="h-6" alt="" />
         </div>
   
@@ -55,7 +59,7 @@ export default function CompanyLogo({animate = true}) {
   
         <div className="mx-auto py-4">
           <img src={spotify} className="h-6" alt="" />
-        </div>
+        </div> */}
       </div>
     )
   }

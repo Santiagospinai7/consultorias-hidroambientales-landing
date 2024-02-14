@@ -65,7 +65,7 @@ export default function Home() {
             <img src={logo_gota} className="mx-auto" width={80} height={100} alt="Gota" />
             <h4 className="text-white lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium my-6 position-relative">Consultorias hidroambientales</h4>
 
-            <p className="text-white opacity-50 mb-0 max-w-xl text-lg mx-auto">Contribuir  a la salud y bienestar de las comunidades en Colombia.</p>
+            <p className="text-white opacity-80 mb-0 max-w-xl text-lg mx-auto underline">Contribuir  a la salud y bienestar de las comunidades en Colombia.</p>
 
             <div className="relative mt-8">
               <Link to="/about-us" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-green-ch-600 hover:bg-green-ch-700 border-green-ch-600 hover:border-green-ch-700 text-white rounded-md" >Acerca de nosotros</Link>
