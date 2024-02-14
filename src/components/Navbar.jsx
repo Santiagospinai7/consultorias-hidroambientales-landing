@@ -156,16 +156,19 @@ export default function Navbar(props) {
               <span className="menu-arrow"></span>
               <ul className="submenu">
                 <li className={`${['/services/1'].includes(path) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="services/1">Lavado, desinfeccion, e impermeabilizacion de Tanques de Agua Potable</Link>
+                  <Link to="services/1">Lavado y desinfeccion de Tanques de Agua Potable</Link>
                 </li>
                 <li className={`${['/services/2'].includes(path) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="services/2">Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable</Link>
+                  <Link to="services/2">Impermeabilización de tanques de agua</Link>
                 </li>
                 <li className={`${['/services/3'].includes(path) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="services/3">Diseño, construccion y operacion de Piscinas</Link>
+                  <Link to="services/3">Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable</Link>
                 </li>
-                <li className={`${['/services/4'].includes(path) ? 'active' : ''} has-submenu parent-menu-item`}>
-                  <Link to="services/4">Asesoría y Capacitación</Link>
+                <li className={`${['/services/3'].includes(path) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="services/4">Diseño, construccion y operacion de Piscinas</Link>
+                </li>
+                <li className={`${['/services/5'].includes(path) ? 'active' : ''} has-submenu parent-menu-item`}>
+                  <Link to="services/5">Asesoría y Capacitación</Link>
                 </li>
                 <li className={`${['about-us'].includes(path) ? 'active' : ''} has-submenu parent-menu-item`}>
                   <a className="sub-menu-item" onClick={() => scrollTo('products')}>

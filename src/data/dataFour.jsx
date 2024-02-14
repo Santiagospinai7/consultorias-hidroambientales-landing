@@ -1,4 +1,4 @@
-import {BiWallet,LuImagePlus,LuSave, FiPhone, FaRegEnvelope, RiMapPinLine } from '../assets/icons/icons'
+import {HiOutlineCog6Tooth,BiWallet,LuImagePlus,LuSave, FiPhone, FaRegEnvelope, RiMapPinLine } from '../assets/icons/icons'
 
 import { TbWashEco } from 'react-icons/tb'
 import { GiWaterTank } from 'react-icons/gi'
@@ -27,7 +27,7 @@ import image47 from '../assets/images/ch/lavado_desinfeccion/p47.jpeg'
 import image58 from '../assets/images/ch/mantenimiento_plantas/p58.jpg'
 import image8 from '../assets/images/ch/impermeabilizacion_de_tanques/p8.webp'
 import image9 from '../assets/images/ch/impermeabilizacion_de_tanques/p9.webp'
-// import impermeabilizacion_bg from '../assets/images/ch/bgs/impermeabilizacion.webp'
+import impermeabilizacion_bg from '../assets/images/ch/bgs/impermeabilizacion.webp'
 
 // service 3
 import image60 from '../assets/images/ch/mantenimiento_plantas/p60.jpg'
@@ -40,7 +40,7 @@ import image54 from '../assets/images/ch/mantenimiento_piscinas/p54.jpg'
 import image55 from '../assets/images/ch/mantenimiento_piscinas/p55.jpg'
 import image56 from '../assets/images/ch/mantenimiento_piscinas/p56.jpg'
 import image57 from '../assets/images/ch/mantenimiento_piscinas/p57.jpg'
-import mantenimiento_piscinas_bg from '../assets/images/ch/bgs/mantenimiento_piscina.webp'
+import mantenimiento_piscinas_bg from '../assets/images/ch/new/Operario piscinas.jpg'
 
 // service 5
 // import image2 from '../assets/images/ch/asesoria_capacitacion/p2.jpg'
@@ -56,20 +56,15 @@ export const servicesData = [
   {
     id:1,
     icon:TbWashEco,
-    title:'Lavado, desinfeccion, e impermeabilizacion de Tanques de Agua Potable',
+    title:'Lavado y desinfeccion de tanques de agua potable',
     desc:'',
     link: '/services/1',
     detail : (
-      <>
-        <p>
+      <p>
         Según resolución No. 4145.0.21.0382 Secretaria de Salud Pública Municipal (21 de noviembre de 2014),  en edificios y clínicas,  hospitales, unidades residenciales, zona industrial - fabricas, centros comerciales, universidades, colegios, empresas de suministro de agua potable;  Donde establece que los tanques para almacenamiento de agua potable deben lavarse y desinfectarse mínimo cada 4 meses. Esto posibilita el retiro de los barros decantados en el fondo del tanque, la eliminación de hongos y el perfecto funcionamiento del sistema para garantizar una buena calidad del agua para el consumo humano.
-        </p>
-        <p>
-      Los tanques de agua potable desempeñan un papel fundamental en la provisión de agua segura y de calidad a las comunidades, con el fin de asegurar un suministro confiable, es esencial contar con un sistema de impermeabilización adecuado en estos tanques, el cual es realizado con epoxicos y membranas grado agua potable, donde se hace un recubrimiento en el tanque de agua, que nos garantiza una impermeabilidad y asepsia de la superficie, asi como la protección contra filtraciones, posibles perdidas de agua, mantenimiento adecuado de la estructura, cumplimiento  de estándares con base a las normas de la secretaria de salud y confianza de los usuarios.
-        </p>
-      </>
+      </p>
     ),
-    photos: [image17, image36, image8, image9],
+    photos: [image17, image36],
     before_after: [
       { title:'Antes', image:image48 },
       { title:'Después', image:image47 }
@@ -78,10 +73,24 @@ export const servicesData = [
   },
   {
     id:2,
-    icon:GiWaterTank,
-    title:'Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable.',
+    icon:HiOutlineCog6Tooth,
+    title:'Impermeabilización de tanques de agua',
     desc:'',
     link: '/services/2',
+    detail : (
+      <p>
+        Los tanques de agua potable desempeñan un papel fundamental en la provisión de agua segura y de calidad a las comunidades, con el fin de asegurar un suministro confiable, es esencial contar con un sistema de impermeabilización adecuado en estos tanques, el cual es realizado con epoxicos y membranas grado agua potable, donde se hace un recubrimiento en el tanque de agua, que nos garantiza una impermeabilidad y asepsia de la superficie, asi como la protección contra filtraciones, posibles perdidas de agua, mantenimiento adecuado de la estructura, cumplimiento  de estándares con base a las normas de la secretaria de salud y confianza de los usuarios.
+      </p>
+    ),
+    photos: [image8, image9],
+    banner_bg: impermeabilizacion_bg,
+  },
+  {
+    id:3,
+    icon:GiWaterTank,
+    title:'Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable',
+    desc:'',
+    link: '/services/3',
     detail : (
       <p>
         La calidad del agua que se consume en una localidad está determinada entre otros factores por la calidad de la fuente, el tratamiento que se aplica para potabilizarla, el estado de las instalaciones físicas y de los equipos, la disponibilidad de los recursos necesarios para el funcionamiento de las instalaciones de tratamiento y la disponibilidad de personal para operar y mantener adecuadamente dichas instalaciones. <br /> El objetivo de la operación y mantenimiento de una planta es el control de calidad para obtener mejores resultados en la calidad del agua apta para el consumo humano. Debe incluir el control de calidad en procesos, como captación, bombeo, filtración, separación de sólidos, procesos bioquímicos aeróbicos o anaeróbicos, uso de lodos activados, decantación y descarga, entre otros.
@@ -91,11 +100,11 @@ export const servicesData = [
     banner_bg: image58,
   },
   {
-    id:3,
+    id:4,
     icon:FaSwimmingPool,
-    title:'Diseño, construccion y operacion de Piscinas.',
+    title:'Diseño, construccion y operacion de Piscinas',
     desc:'',
-    link: '/services/3',
+    link: '/services/4',
     detail : (
       <>
         <p>
@@ -113,24 +122,24 @@ export const servicesData = [
     banner_bg: mantenimiento_piscinas_bg,
   },
   {
-    id:4,
+    id:5,
     icon:FaHandsHelping,
     title:'Asesoría y Capacitación',
     desc:'',
-    link: '/services/4',
+    link: '/services/5',
     detail : 'La presencia de bacterias, virus y otros patógenos en las plantas ,  tanques de agua y en piscinas  puede causar enfermedades transmitidas por el agua, como gastroenteritis, diarrea y hepatitis. La desinfección adecuada ayuda a eliminar estos microorganismos. Por ello es tan importante contar con el personal capacitado de acuerdo a la normatividad y los estándares de calidad de agua.',
     photos: [image5, image6],
     banner_bg: image3,
   },
   {
-    id:5,
+    id:6,
     icon:FaShoppingBasket,
     title:'Suministro de equipos,productos quimicos para acueductos y piscinas',
     desc:'',
     link: '/home#products',
     detail : '',
     photos: [],
-    banner_bg: venta_productos_bg,
+    banner_bg: venta_productos_bg
   },
 ]
 export const productData = [
