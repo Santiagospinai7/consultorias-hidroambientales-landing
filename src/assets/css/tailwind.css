@@ -7503,6 +7503,11 @@ html[dir=rtl] .tns-visually-hidden {
   color: rgb(156 163 175 / var(--tw-text-opacity)) !important;
 }
 
+.hover\:text-gray-300:hover{
+  --tw-text-opacity: 1 !important;
+  color: rgb(209 213 219 / var(--tw-text-opacity)) !important;
+}
+
 .hover\:text-gray-800:hover{
   --tw-text-opacity: 1 !important;
   color: rgb(31 41 55 / var(--tw-text-opacity)) !important;

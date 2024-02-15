@@ -156,7 +156,7 @@ export default function Home() {
                     </div> */}
         
                     <div className="title absolute z-10 opacity-0 group-hover:opacity-100 bottom-4 start-4 transition-all duration-500">
-                      <Link to="https://quickstart-3d6bd286.myshopify.com/" className="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">{item.name}</Link>
+                      <Link to="#" className="h6 text-md font-medium text-white hover:text-gray-300 duration-500 ease-in-out">{item.name}</Link>
                       {/* <p  className="h6 text-md font-medium text-white duration-500 ease-in-out">{item.name}</p> */}
                       <p className="text-slate-100 tag mb-0">{item.title}</p>
                     </div>

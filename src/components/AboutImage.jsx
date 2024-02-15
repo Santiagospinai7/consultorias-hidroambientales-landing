@@ -24,7 +24,7 @@ export default function AboutImage({grid}){
     <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
       <div className={grid}>
         <div className="relative lg:me-8">
-          <img src={p38} className="rounded-md max-h-[400px]" alt="" />
+          <img src={p38} className="rounded-md max-h-[400px] opacity-90" alt="" />
           <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
             <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610"
               className="lightbox h-14 w-14 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-cyan-500">
