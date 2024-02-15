@@ -29,10 +29,13 @@ import image8 from '../assets/images/ch/impermeabilizacion_de_tanques/p8.webp'
 import image9 from '../assets/images/ch/impermeabilizacion_de_tanques/p9.webp'
 import impermeabilizacion_bg from '../assets/images/ch/bgs/impermeabilizacion.webp'
 import antes_despues from '../assets/images/ch/new/impermeabilizacion tanque.png'
+import img_impermeabilizacion from '../assets/images/ch/new/Impermeabilizacion 2.gif'
 
 // service 3
 import image60 from '../assets/images/ch/mantenimiento_plantas/p60.jpg'
 import image59 from '../assets/images/ch/mantenimiento_plantas/p59.jpg'
+import img_planta_1 from '../assets/images/ch/new/Planta de tratamiento agua potable ad.jpg'
+import img_planta_2 from '../assets/images/ch/new/Planta tratamiento agua potable.jpg'
 
 // service 4
 // import image52 from '../assets/images/ch/mantenimiento_piscinas/p52.jpg'
@@ -44,6 +47,7 @@ import image57 from '../assets/images/ch/mantenimiento_piscinas/p57.jpg'
 import mantenimiento_piscinas_bg from '../assets/images/ch/new/Operario piscinas.jpg'
 import bg_piscinas from '../assets/images/ch/bgs/mantenimiento_piscina.webp'
 import cambio_piscina from '../assets/images/ch/new/cambio_piscina.jpg'
+import img_piscina from '../assets/images/ch/new/pisina recrea.jpg'
 
 // service 5
 // import image2 from '../assets/images/ch/asesoria_capacitacion/p2.jpg'
@@ -67,7 +71,7 @@ export const servicesData = [
         La calidad del agua que se consume en una localidad está determinada entre otros factores por la calidad de la fuente, el tratamiento que se aplica para potabilizarla, el estado de las instalaciones físicas y de los equipos, la disponibilidad de los recursos necesarios para el funcionamiento de las instalaciones de tratamiento y la disponibilidad de personal para operar y mantener adecuadamente dichas instalaciones. <br /> El objetivo de la operación y mantenimiento de una planta es el control de calidad para obtener mejores resultados en la calidad del agua apta para el consumo humano. Debe incluir el control de calidad en procesos, como captación, bombeo, filtración, separación de sólidos, procesos bioquímicos aeróbicos o anaeróbicos, uso de lodos activados, decantación y descarga, entre otros.
       </p>
     ),
-    photos: [image60, image59],
+    photos: [image59, img_planta_1, img_planta_2],
     banner_bg: image58,
     bg: image58,
   },
@@ -102,7 +106,7 @@ export const servicesData = [
       </p>
     ),
     after_before: antes_despues,
-    photos: [image8, image9],
+    photos: [image8, image9, img_impermeabilizacion],
     banner_bg: impermeabilizacion_bg,
     bg: impermeabilizacion_bg,
   },
@@ -126,7 +130,7 @@ export const servicesData = [
       </>
     ),
     after_before: cambio_piscina,
-    photos: [image53, image54, image55, image56, image57],
+    photos: [image53, image54, image55, image56, image57, img_piscina],
     banner_bg: mantenimiento_piscinas_bg,
     bg: bg_piscinas,
   },
