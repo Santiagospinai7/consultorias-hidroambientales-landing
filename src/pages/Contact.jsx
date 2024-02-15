@@ -44,22 +44,23 @@ export default function Contact() {
       </div>
 
       <section className="relative md:py-24 py-16">
-        <div className="container relative">
-          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
-            {contactData.map((item,index)=>{
-              let Icons = item.icon
-              return(
-                <div key={index} className="text-center px-6 mt-6">
-                  <div className="w-20 h-20 bg-indigo-600/5 text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
-                    <Icons className="w-7 h-7"/>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 gap-8">
+            {contactData.map((item, index) => {
+              const Icon = item.icon
+              return (
+                <div key={index} className="text-center relative block overflow-hidden rounded-md p-6 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+                  <div className="w-20 h-20 bg-indigo-600/5 text-indigo-600 rounded-xl text-3xl flex justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                    <Icon className="w-7 h-7"/>
                   </div>
 
                   <div className="content mt-7">
-                    <h5 className="title h5 text-xl font-medium">{item.title}</h5>
-                    {/* <p className="text-slate-400 mt-3">{item.desc}</p> */}
-
+                    <h5 className="title h5 text-lg md:text-xl font-medium">{item.title}</h5>
+              
                     <div className="mt-5">
-                      <Link to={item.link} target="_blank" className="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-cyan-500 after:bg-indigo-600 duration-500">{item.contact}</Link>
+                      <Link to={item.link} target="_blank" className="relative inline-block font-semibold tracking-wide text-base text-indigo-600 hover:text-cyan-500 duration-500">
+                        {item.contact}
+                      </Link>
                     </div>
                   </div>
                 </div>

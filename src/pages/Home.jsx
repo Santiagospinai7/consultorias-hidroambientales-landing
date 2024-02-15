@@ -2,7 +2,8 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 // import logo_icon_64 from '../assets/images/logo-icon-64.png'
-import logo_gota from '../assets/images/ch/logo/gota.png'
+import logo_gota from '../assets/images/ch/logo/logo.png'
+import {FiPhone,FaRegEnvelope} from '../assets/icons/icons'
 
 // import CookieModal from '../components/CookieModal'
 import GetInTouch from '../components/GetInTouch'
@@ -50,7 +51,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="py-36 md:py-60 w-full table relative bg-center bg-no-repeat bg-cover">
+      <section className="py-36 md:py-48 w-full table relative bg-center bg-no-repeat bg-cover">
         <div className="absolute top-0 start-0 w-full h-full z-0 pointer-events-none overflow-hidden">
           <img
             src={banner_image}
@@ -66,6 +67,19 @@ export default function Home() {
             <h4 className="text-white lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium my-6 position-relative">Consultorias hidroambientales</h4>
 
             <p className="text-white opacity-80 mb-0 max-w-xl text-lg mx-auto underline">Contribuir  a la salud y bienestar de las comunidades en Colombia.</p>
+            
+            <div className="text-white opacity-80 mb-0 mt-8 max-w-xl mx-auto">
+              <div className='flex justify-center items-center mx-2 my-2'>
+                <FiPhone className="w-5 h-5 mx-2"/> {/* Ensure you have h-5 here for height */}
+                <p className="mb-0">+57 313 613 6848</p>
+              </div>
+              <div className='flex justify-center items-center mx-2'>
+                <FaRegEnvelope className="w-5 h-5 mx-2"/> 
+                <p className="mb-0">consultoriashidroambientales@gmail.com</p>
+              </div>
+            </div>
+
+                
 
             <div className="relative mt-8">
               <Link to="/about-us" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-green-ch-600 hover:bg-green-ch-700 border-green-ch-600 hover:border-green-ch-700 text-white rounded-md" >Acerca de nosotros</Link>

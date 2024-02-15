@@ -1744,6 +1744,21 @@ video {
 .sm\:.w-\[300\%\]{
   display: 300% !important;
 }
+.sm\:h10 {
+  height: 2.5rem !important;
+}
+.md\:h10 {
+  height: 2.5rem !important;
+}
+.md\:h1 {
+  height: 0.25rem !important;
+}
+.sm\:h1 {
+  height: 0.25rem !important;
+}
+.md\:h20 {
+  height: 5rem !important;
+}
 .md\:.w-\[200\%\]{
   display: 200% !important;
 }
@@ -2056,6 +2071,15 @@ video {
   -webkit-box-pack: start !important;
       -ms-flex-pack: start !important;
           justify-content: flex-start !important;
+}
+.justify-items-center{
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+.justify-self-center{
+  -ms-flex-item-align: center !important;
+      align-self: center !important;
 }
 .justify-end{
   -webkit-box-pack: end !important;
@@ -9244,6 +9268,15 @@ html[dir=rtl] .tns-visually-hidden {
     padding-top: 11rem !important;
     padding-bottom: 11rem !important;
   }
+  .md\:py-48{
+    padding-top: 12rem !important;
+    padding-bottom: 12rem !important;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px); /* Levanta ligeramente la tarjeta */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  }
+
   .md\:py-52{
     padding-top: 13rem !important;
     padding-bottom: 13rem !important;

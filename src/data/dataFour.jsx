@@ -1,4 +1,4 @@
-import {HiOutlineCog6Tooth,BiWallet,LuImagePlus,LuSave, FiPhone, FaRegEnvelope, RiMapPinLine } from '../assets/icons/icons'
+import {HiOutlineCog6Tooth, FiPhone, FaRegEnvelope, RiMapPinLine } from '../assets/icons/icons'
 
 import { TbWashEco } from 'react-icons/tb'
 import { GiWaterTank } from 'react-icons/gi'
@@ -32,7 +32,7 @@ import antes_despues from '../assets/images/ch/new/impermeabilizacion tanque.png
 import img_impermeabilizacion from '../assets/images/ch/new/Impermeabilizacion 2.gif'
 
 // service 3
-import image60 from '../assets/images/ch/mantenimiento_plantas/p60.jpg'
+// import image60 from '../assets/images/ch/mantenimiento_plantas/p60.jpg'
 import image59 from '../assets/images/ch/mantenimiento_plantas/p59.jpg'
 import img_planta_1 from '../assets/images/ch/new/Planta de tratamiento agua potable ad.jpg'
 import img_planta_2 from '../assets/images/ch/new/Planta tratamiento agua potable.jpg'
@@ -184,23 +184,7 @@ export const productData = [
     title:'Producto'
   }
 ]
-export const nftAbout = [
-  {
-    icon: BiWallet,
-    title:'Connect your wallet',
-    desc:'Use Trust Wallet, Metamask or any wallet to connect to the app.'
-  },
-  {
-    icon: LuImagePlus,
-    title:'Create your NFT Item',
-    desc:'Upload your NFTs and set a title, description and price.'
-  },
-  {
-    icon: LuSave,
-    title:'List them for sale',
-    desc:'Earn ETH and BIT for all your NFTs that you sell on our marketplace.'
-  },
-]
+
 export const footerCompany = [
   {
     liClass: '',

@@ -14,23 +14,35 @@ const logos = [ logo_1, logo_2, logo_3, logo_4, logo_5, logo_6, logo_7, logo_8, 
 export default function CompanyLogo({animate = true}) {
   if (animate) {
     return (
+      // <>
+      //   <div>
+      //     <h1 className="text-2xl text-center mb-4 md:text-3xl md:leading-normal leading-normal font-semibold">Empresas que han confiado en nosotros:</h1>
+      //   </div>
+      //   <div className="w-[200%] h-32 overflow-hidden relative flex items-center">
+      //     <div className="w-[400%] sm:w-[300%] md:w-[200%] flex items-center justify-around absolute left-0 animate">
+      //       {logos.map((logo, index) => (
+      //         <div key={index} className="mx-auto py-1">
+      //           <img src={logo} className="h-20 sm:h-10 md:h-10" alt={`logo-${index}`} />
+      //         </div> 
+      //       ))}
+      //       {logos.map((logo, index) => (
+      //         <div key={index} className="mx-auto py-1">
+      //           <img src={logo} className="h-20 sm:h-1 md:h-1" alt={`logo-${index}`} />
+      //         </div>
+      //       ))}
+      //     </div>
+      //   </div>
+      // </>
       <>
-        <div>
-          <h1 className="text-2xl text-center mb-4 md:text-3xl md:leading-normal leading-normal font-semibold">Empresas que han confiado en nosotros:</h1>
-        </div>
-        <div className="w-[200%] h-32 overflow-hidden relative flex items-center">
-          <div className="w-[400%] sm:w-[300%] md:w-[200%] flex items-center h-20 justify-around absolute left-0 animate animate">
-            {logos.map((logo, index) => (
-              <div key={index} className="mx-auto py-1">
-                <img src={logo} className="h-20" alt={`logo-${index}`} />
-              </div> 
-            ))}
-            {logos.map((logo, index) => (
-              <div key={index} className="mx-auto py-1">
-                <img src={logo} className="h-20" alt={`logo-${index}`} />
+        <h1 className="text-2xl text-center mb-4 md:text-3xl md:leading-normal leading-normal font-semibold">Empresas que han confiado en nosotros:</h1>
+        <div className="grid lg:grid-cols-5 grid-cols-2 justify-items-center gap-[30px]">
+          {
+            logos.map((logo, index) => (
+              <div key={index} className="mx-auto py-4 justify-self-center">
+                <img src={logo} className="h-14" alt={`logo-${index}`} />
               </div>
-            ))}
-          </div>
+            ))
+          }
         </div>
       </>
     )

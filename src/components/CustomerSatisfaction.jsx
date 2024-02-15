@@ -21,14 +21,14 @@ export default function CustomerSatisfaction({ title }) {
   return (
     <div className="container relative">
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center">
-        <div className="md:w-1/2">
+        <div className="grid grid-cols-1 pb-8 text-center">
           {title && (
             <h6 className="text-cyan-500 text-sm font-bold uppercase mb-2">Clientes</h6>
           )}
           <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
             Satisfacción de nuestros clientes:
           </h3>
-          <p className="text-slate-400 max-w-xl">
+          <p className="text-slate-400 max-w-2xl mx-auto">
             Nuestros clientes son muy importantes para nosotros, por eso siempre buscamos brindarles el mejor servicio. Estas son nuestras estadísticas de satisfacción según nuestros clientes:
           </p>
         </div>
