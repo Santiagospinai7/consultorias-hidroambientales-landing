@@ -56,10 +56,10 @@ export default function Contact() {
 
                   <div className="content mt-7">
                     <h5 className="title h5 text-xl font-medium">{item.title}</h5>
-                    <p className="text-slate-400 mt-3">{item.desc}</p>
+                    {/* <p className="text-slate-400 mt-3">{item.desc}</p> */}
 
                     <div className="mt-5">
-                      <Link to={item.link} target="_blank" className="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">{item.contact}</Link>
+                      <Link to={item.link} target="_blank" className="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-cyan-500 after:bg-indigo-600 duration-500">{item.contact}</Link>
                     </div>
                   </div>
                 </div>
