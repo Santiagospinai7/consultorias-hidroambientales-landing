@@ -55,10 +55,24 @@ import venta_productos_bg from '../assets/images/ch/bgs/venta_productos.webp'
 export const servicesData = [
   {
     id:1,
+    icon:GiWaterTank,
+    title:'Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable',
+    desc:'',
+    link: '/services/1',
+    detail : (
+      <p>
+        La calidad del agua que se consume en una localidad está determinada entre otros factores por la calidad de la fuente, el tratamiento que se aplica para potabilizarla, el estado de las instalaciones físicas y de los equipos, la disponibilidad de los recursos necesarios para el funcionamiento de las instalaciones de tratamiento y la disponibilidad de personal para operar y mantener adecuadamente dichas instalaciones. <br /> El objetivo de la operación y mantenimiento de una planta es el control de calidad para obtener mejores resultados en la calidad del agua apta para el consumo humano. Debe incluir el control de calidad en procesos, como captación, bombeo, filtración, separación de sólidos, procesos bioquímicos aeróbicos o anaeróbicos, uso de lodos activados, decantación y descarga, entre otros.
+      </p>
+    ),
+    photos: [image60, image59],
+    banner_bg: image58,
+  },
+  {
+    id:2,
     icon:TbWashEco,
     title:'Lavado y desinfeccion de tanques de agua potable',
     desc:'',
-    link: '/services/1',
+    link: '/services/2',
     detail : (
       <p>
         Según resolución No. 4145.0.21.0382 Secretaria de Salud Pública Municipal (21 de noviembre de 2014),  en edificios y clínicas,  hospitales, unidades residenciales, zona industrial - fabricas, centros comerciales, universidades, colegios, empresas de suministro de agua potable;  Donde establece que los tanques para almacenamiento de agua potable deben lavarse y desinfectarse mínimo cada 4 meses. Esto posibilita el retiro de los barros decantados en el fondo del tanque, la eliminación de hongos y el perfecto funcionamiento del sistema para garantizar una buena calidad del agua para el consumo humano.
@@ -72,11 +86,11 @@ export const servicesData = [
     banner_bg: image11,
   },
   {
-    id:2,
+    id:3,
     icon:HiOutlineCog6Tooth,
     title:'Impermeabilización de tanques de agua',
     desc:'',
-    link: '/services/2',
+    link: '/services/3',
     detail : (
       <p>
         Los tanques de agua potable desempeñan un papel fundamental en la provisión de agua segura y de calidad a las comunidades, con el fin de asegurar un suministro confiable, es esencial contar con un sistema de impermeabilización adecuado en estos tanques, el cual es realizado con epoxicos y membranas grado agua potable, donde se hace un recubrimiento en el tanque de agua, que nos garantiza una impermeabilidad y asepsia de la superficie, asi como la protección contra filtraciones, posibles perdidas de agua, mantenimiento adecuado de la estructura, cumplimiento  de estándares con base a las normas de la secretaria de salud y confianza de los usuarios.
@@ -84,20 +98,6 @@ export const servicesData = [
     ),
     photos: [image8, image9],
     banner_bg: impermeabilizacion_bg,
-  },
-  {
-    id:3,
-    icon:GiWaterTank,
-    title:'Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable',
-    desc:'',
-    link: '/services/3',
-    detail : (
-      <p>
-        La calidad del agua que se consume en una localidad está determinada entre otros factores por la calidad de la fuente, el tratamiento que se aplica para potabilizarla, el estado de las instalaciones físicas y de los equipos, la disponibilidad de los recursos necesarios para el funcionamiento de las instalaciones de tratamiento y la disponibilidad de personal para operar y mantener adecuadamente dichas instalaciones. <br /> El objetivo de la operación y mantenimiento de una planta es el control de calidad para obtener mejores resultados en la calidad del agua apta para el consumo humano. Debe incluir el control de calidad en procesos, como captación, bombeo, filtración, separación de sólidos, procesos bioquímicos aeróbicos o anaeróbicos, uso de lodos activados, decantación y descarga, entre otros.
-      </p>
-    ),
-    photos: [image60, image59],
-    banner_bg: image58,
   },
   {
     id:4,
