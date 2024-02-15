@@ -28,6 +28,7 @@ import image58 from '../assets/images/ch/mantenimiento_plantas/p58.jpg'
 import image8 from '../assets/images/ch/impermeabilizacion_de_tanques/p8.webp'
 import image9 from '../assets/images/ch/impermeabilizacion_de_tanques/p9.webp'
 import impermeabilizacion_bg from '../assets/images/ch/bgs/impermeabilizacion.webp'
+import antes_despues from '../assets/images/ch/new/impermeabilizacion tanque.png'
 
 // service 3
 import image60 from '../assets/images/ch/mantenimiento_plantas/p60.jpg'
@@ -41,6 +42,8 @@ import image55 from '../assets/images/ch/mantenimiento_piscinas/p55.jpg'
 import image56 from '../assets/images/ch/mantenimiento_piscinas/p56.jpg'
 import image57 from '../assets/images/ch/mantenimiento_piscinas/p57.jpg'
 import mantenimiento_piscinas_bg from '../assets/images/ch/new/Operario piscinas.jpg'
+import bg_piscinas from '../assets/images/ch/bgs/mantenimiento_piscina.webp'
+import cambio_piscina from '../assets/images/ch/new/cambio_piscina.jpg'
 
 // service 5
 // import image2 from '../assets/images/ch/asesoria_capacitacion/p2.jpg'
@@ -66,6 +69,7 @@ export const servicesData = [
     ),
     photos: [image60, image59],
     banner_bg: image58,
+    bg: image58,
   },
   {
     id:2,
@@ -84,6 +88,7 @@ export const servicesData = [
       { title:'Después', image:image47 }
     ],
     banner_bg: image11,
+    bg: image11
   },
   {
     id:3,
@@ -96,8 +101,10 @@ export const servicesData = [
         Los tanques de agua potable desempeñan un papel fundamental en la provisión de agua segura y de calidad a las comunidades, con el fin de asegurar un suministro confiable, es esencial contar con un sistema de impermeabilización adecuado en estos tanques, el cual es realizado con epoxicos y membranas grado agua potable, donde se hace un recubrimiento en el tanque de agua, que nos garantiza una impermeabilidad y asepsia de la superficie, asi como la protección contra filtraciones, posibles perdidas de agua, mantenimiento adecuado de la estructura, cumplimiento  de estándares con base a las normas de la secretaria de salud y confianza de los usuarios.
       </p>
     ),
+    after_before: antes_despues,
     photos: [image8, image9],
     banner_bg: impermeabilizacion_bg,
+    bg: impermeabilizacion_bg,
   },
   {
     id:4,
@@ -118,8 +125,10 @@ export const servicesData = [
         
       </>
     ),
+    after_before: cambio_piscina,
     photos: [image53, image54, image55, image56, image57],
     banner_bg: mantenimiento_piscinas_bg,
+    bg: bg_piscinas,
   },
   {
     id:5,
@@ -130,6 +139,7 @@ export const servicesData = [
     detail : 'La presencia de bacterias, virus y otros patógenos en las plantas ,  tanques de agua y en piscinas  puede causar enfermedades transmitidas por el agua, como gastroenteritis, diarrea y hepatitis. La desinfección adecuada ayuda a eliminar estos microorganismos. Por ello es tan importante contar con el personal capacitado de acuerdo a la normatividad y los estándares de calidad de agua.',
     photos: [image5, image6],
     banner_bg: image3,
+    bg: image3,
   },
   {
     id:6,
@@ -139,7 +149,8 @@ export const servicesData = [
     link: '/home#products',
     detail : '',
     photos: [],
-    banner_bg: venta_productos_bg
+    banner_bg: venta_productos_bg,
+    bg: venta_productos_bg
   },
 ]
 export const productData = [

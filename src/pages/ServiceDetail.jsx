@@ -19,7 +19,7 @@ export default function ServiceDetail() {
     <>
       <section
         className="relative table w-full py-72 bg-no-repeat bg-top bg-cover"
-        style={{ backgroundImage: `url(${data.banner_bg})` }}
+        style={{ backgroundImage: `url(${data.bg})` }}
       >
         <div className="absolute inset-0 bg-black opacity-20"></div>
       </section>
@@ -83,6 +83,17 @@ export default function ServiceDetail() {
                   </Swiper> 
                 </div>
               ) || ''
+              }
+
+              {
+                data.after_before && (
+                  <>
+                    <h4 className="mt-8 text-xl font-semibold text-cyan-500">Antes y Después :</h4>
+                    <div className="text-slate-400 mt-4">
+                      <img src={data.after_before} className="group-hover:origin-center h-100 w-full transition duration-500" alt="imagen" />
+                    </div>
+                  </>
+                ) || ''
               }
 
               <h4 className="mt-8 text-xl font-semibold text-cyan-500">Algunos de nuestros trabajos:</h4>
