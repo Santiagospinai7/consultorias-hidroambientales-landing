@@ -17,11 +17,11 @@ export default function Navbar(props) {
 
     // get current path
     let path = location.pathname
-    console.log('path', path)
+    
     setPath(path)
     setManu(current)
 
-    console.log('path', path)
+    
 
     function windowScroll() {
       const navbar = document.getElementById('topnav')

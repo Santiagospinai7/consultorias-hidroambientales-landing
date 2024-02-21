@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react'
+
 import { Link } from 'react-router-dom'
 import contact from '../assets/images/contact.svg'
 
@@ -8,6 +10,20 @@ import { contactData } from '../data/dataFour'
 import banner_image from '../assets/images/ch/lavado_desinfeccion/p30.jpg'
 
 export default function Contact() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [subject, setSubject] = useState('')
+  const [comments, setComments] = useState('')
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  onsubmit = (e) => {
+    e.preventDefault()
+    
+    // console.log(name, email, subject, comments)
+  }
     
   return (
     <>
@@ -87,7 +103,7 @@ export default function Contact() {
                           <label htmlFor="name" className="font-semibold">Nombre:</label>
                           <div className="form-icon relative mt-2">
                             <Icon.User className="w-4 h-4 absolute top-3 start-4"></Icon.User>
-                            <input name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Nombre :" />
+                            <input value={name} onChange={(e) => setName(e.target.value)} name="name" id="name" type="text" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Nombre :" />
                           </div>
                         </div>
                       </div>
@@ -97,7 +113,7 @@ export default function Contact() {
                           <label htmlFor="email" className="font-semibold">Correo:</label>
                           <div className="form-icon relative mt-2">
                             <Icon.Mail className="w-4 h-4 absolute top-3 start-4"></Icon.Mail>
-                            <input name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Correo :" />
+                            <input value={email} onChange={(e) => setEmail(e.target.value)} name="email" id="email" type="email" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Correo :" />
                           </div>
                         </div>
                       </div>
@@ -109,7 +125,7 @@ export default function Contact() {
                           <label htmlFor="subject" className="font-semibold">Pregunta:</label>
                           <div className="form-icon relative mt-2">
                             <Icon.Book className="w-4 h-4 absolute top-3 start-4"></ Icon.Book>
-                            <input name="subject" id="subject" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Pregunta :" />
+                            <input value={subject} onChange={(e) => setSubject(e.target.value)} name="subject" id="subject" className="form-input ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Pregunta :" />
                           </div>
                         </div>
                       </div>
@@ -119,7 +135,7 @@ export default function Contact() {
                           <label htmlFor="comments" className="font-semibold">Comentario:</label>
                           <div className="form-icon relative mt-2">
                             <Icon.MessageCircle className="w-4 h-4 absolute top-3 start-4"></Icon.MessageCircle>
-                            <textarea name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Mensaje :"></textarea>
+                            <textarea value={comments} onChange={(e) => setComments(e.target.value)} name="comments" id="comments" className="form-input ps-11 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Mensaje :"></textarea>
                           </div>
                         </div>
                       </div>
