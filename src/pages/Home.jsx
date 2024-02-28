@@ -196,12 +196,12 @@ export default function Home() {
       <section className="relative bg-gray-50 md:py-24 py-16">
         <CustomerSatisfaction title={true}/>
       </section>
-      <section className="relative md:py-24 py-16">
+      {/* <section className="relative md:py-24 py-16">
         <div >
           <UserFeedBack />
         </div>
-      </section>
-      <section className="relative bg-gray-50 md:py-24 py-16">
+      </section> */}
+      <section className="relative md:py-24 py-16">
         <GetInTouch title={true}/>
       </section>
       {/* <CookieModal /> */}
