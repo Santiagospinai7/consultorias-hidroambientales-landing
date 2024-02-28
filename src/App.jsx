@@ -11,7 +11,11 @@ import AboutUs from './pages/AboutUs'
 import Contact from './pages/Contact'
 import ServiceDetail from './pages/ServiceDetail'
 
+import emailjs from '@emailjs/browser'
+
 function App() {
+  emailjs.init('Vij97Pf05QFGOVOLb')
+
   return (
     <BrowserRouter>
       <Navbar navClass="nav-light" />
