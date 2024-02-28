@@ -8,7 +8,7 @@ import {FiPhone,FaRegEnvelope} from '../assets/icons/icons'
 // import CookieModal from '../components/CookieModal'
 import GetInTouch from '../components/GetInTouch'
 import AboutImage from '../components/AboutImage'
-import UserFeedBack from '../components/UserFeedBack'
+// import UserFeedBack from '../components/UserFeedBack'
 import CompanyLogo from '../components/companyLogo'
 import CustomerSatisfaction from '../components/CustomerSatisfaction'
 
@@ -68,12 +68,15 @@ export default function Home() {
 
             <p className="text-white opacity-80 mb-0 max-w-xl text-lg mx-auto underline">Contribuir  a la salud y bienestar de las comunidades en Colombia.</p>
             
-            <div className="text-white opacity-80 mb-0 mt-8 max-w-xl mx-auto">
-              <div className='flex justify-center items-center mx-2 my-2'>
-                <FiPhone className="w-5 h-5 mx-2"/> {/* Ensure you have h-5 here for height */}
-                <p className="mb-0">+57 313 613 6848</p>
+            <div className="text-white mb-0 mt-8 max-w-xl mx-auto">
+              <div className='flex justify-center items-center mx-2 my-2 bg-green-400 opacity-100 rounded-2xl p-2'>
+                {/* <div className='flex justify-center items-center'> */}
+                <FiPhone className="w-5 h-5 mx-2"/> 
+                {/* <p className="mb-0">Contáctanos</p> */}
+                {/* </div> */}
+                <p className="mb-0 font-bold">+57 313 613 6848</p>
               </div>
-              <div className='flex justify-center items-center mx-2'>
+              <div className='flex justify-center items-center mx-2 my-2 bg-transparent opacity-100 rounded-2xl p-2'>
                 <FaRegEnvelope className="w-5 h-5 mx-2"/> 
                 <p className="mb-0">consultoriashidroambientales@gmail.com</p>
               </div>

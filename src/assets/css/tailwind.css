@@ -2629,6 +2629,10 @@ video {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity)) !important;
 }
+.bg-green-400{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(29 185 84 / var(--tw-bg-opacity)) !important;
+}
 .bg-green-500{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity)) !important;
@@ -4140,6 +4144,10 @@ pl-2 {
 .opacity-80{
   opacity: 0.8 !important;
 }
+.opacity-100{
+  opacity: 1 !important;
+}
+
 .opacity-90{
   opacity: 0.9 !important;
 }
