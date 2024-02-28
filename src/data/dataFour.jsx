@@ -13,7 +13,11 @@ import client4 from '../assets/images/client/04.jpg'
 import client5 from '../assets/images/client/05.jpg'
 import client6 from '../assets/images/client/06.jpg'
 
-import product1 from '../assets/images/products/8151754.jpg'
+import cloro from '../assets/images/ch/productos/Cloro.png'
+import hipcloritoDeCalcio from '../assets/images/ch/productos/Hipoclorito_de_calcio-Cloro.png'
+import hipocloritoDeSodio from '../assets/images/ch/productos/Hipoclorito_de_sodio.png'
+import hidroxidoDeAluminio from '../assets/images/ch/productos/Policloruro_Hidroxido_de_Aluminio.png'
+import sodaCaustica from '../assets/images/ch/productos/Soda_caustica.png'
 
 // service 1
 import image11 from '../assets/images/ch/lavado_desinfeccion/p11.jpg'
@@ -159,28 +163,28 @@ export const servicesData = [
 ]
 export const productData = [
   {
-    image:product1,
-    name:'Cloro granulado 70%',
+    image:cloro,
+    name:'Cloro',
     title:'Producto'
   },
   {
-    image:product1,
-    name:'Clarificante',
+    image:hipcloritoDeCalcio,
+    name:'Hipoclorito de calcio',
     title:'Producto'
   },
   {
-    image:product1,
-    name:'Reductor',
+    image:hipocloritoDeSodio,
+    name:'Hipoclorito de sodio',
     title:'Producto'
   },
   {
-    image:product1,
-    name:'Desengrasante',
+    image:hidroxidoDeAluminio,
+    name:'Policloruro Hidroxido de Aluminio',
     title:'Producto'
   },
   {
-    image:product1,
-    name:'Filtrante de vidrio',
+    image:sodaCaustica,
+    name:'Soda caustica',
     title:'Producto'
   }
 ]
