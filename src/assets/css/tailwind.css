@@ -10314,3 +10314,7 @@ ul li:first-child{
   -webkit-margin-start: 0px;
           margin-inline-start: 0px;
 }
+
+.justify-text{
+  text-align: justify;
+}

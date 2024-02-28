@@ -48,7 +48,7 @@ export default function ServiceDetail() {
               {/* If data has before_after show detalle */}
               <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">{data.desc}</h3>
               <h4 className="text-xl font-semibold text-cyan-500">Detalle :</h4>
-              <div className="text-slate-400 mt-4">
+              <div className="text-slate-400 mt-4 justify-text">
                 {data.detail}
               </div>
               {/* <p className="text-slate-400 mt-4">{data.detail}</p> */}
