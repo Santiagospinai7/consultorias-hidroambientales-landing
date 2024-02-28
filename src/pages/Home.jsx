@@ -119,7 +119,19 @@ export default function Home() {
           <div className="grid grid-cols-1 pb-8 text-center">
             <h6 className="text-cyan-500 text-sm font-bold uppercase mb-2">Servicios</h6>
             <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Nuestros servicios</h3>
-            <p className="text-slate-400 max-w-2xl mx-auto">Somos una empresa dedicada a la consultoría ambiental, contamos con una gran trayectoria en el sector ofreciendo servicios de calidad, que son: <a href="/services/1">1) Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable</a>, <a href="/services/2"> 2)Lavado y desinfeccion de tanques de agua potable</a>, <a href="/services/3">3)Impermeabilización de tanques de agua</a>, <a href="/services/4">4) Diseño, construccion y operacion de Piscinas</a>, <a href="/services/5">5) Asesoría y Capacitación</a>, <a href="/home#products">6) Suministro de equipos,productos quimicos para acueductos y piscinas</a></p>
+            <p className="text-slate-400 max-w-2xl mx-auto">Somos una empresa dedicada a la consultoría ambiental, contamos con una gran trayectoria en el sector ofreciendo servicios de calidad, que son: </p>
+            {/* order list */}
+            <div className="text-center mt-4 text-slate-400">
+              <ol>
+                <li><a href="/services/1">1) Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable</a></li>
+                <li><a href="/services/2">2) Lavado y desinfeccion de tanques de agua potable</a></li>
+                <li><a href="/services/3">3) Impermeabilización de tanques de agua</a></li>
+                <li><a href="/services/4">4) Diseño, construccion y operacion de Piscinas</a></li>
+                <li><a href="/services/5">5) Asesoría y Capacitación</a></li>
+                <li><a href="/home#products">6) Suministro de equipos,productos quimicos para acueductos y piscinas</a></li>
+              </ol>
+            </div>
+
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-6 gap-[30px]">
