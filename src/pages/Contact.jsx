@@ -33,9 +33,7 @@ export default function Contact() {
       setEmailSent(true)
 
       if (isValidEmail(email)) {
-        alert('Email sent successfully.')
-
-        const serviceId = 'service_id'
+        const serviceId = 'service_124vxyg'
         const templateId = 'template_71or0h6'
         const templateParams = {
           name: 'Consultorias Hidroambientales',
