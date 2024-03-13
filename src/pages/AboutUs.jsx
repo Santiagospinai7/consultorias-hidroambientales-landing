@@ -1,12 +1,6 @@
 import { Link } from 'react-router-dom'
-
-// import image from '../assets/images/client/01.jpg'
-// import image1 from '../assets/images/client/02.jpg'
-// import image2 from '../assets/images/client/03.jpg'
-// import image3 from '../assets/images/client/04.jpg'
-
 import '../../node_modules/react-modal-video/css/modal-video.css'
-// import * as Icon from 'react-feather'
+
 import {MdKeyboardArrowRight} from '../assets/icons/icons'
 import CompanyLogo from '../components/companyLogo'
 import WhoWeAre from '../components/WhoWeAre'
@@ -15,35 +9,20 @@ import banner_image from '../assets/images/ch/lavado_desinfeccion/p34.jpg'
 
 import {FaRegEnvelope} from '../assets/icons/icons'
 
+import { Helmet } from 'react-helmet'
+
 export default function AboutUs() {
-  // const teamData = [
-  //   {
-  //     image:image,
-  //     name:'Ronny Jofra',
-  //     title:'C.E.O.',
-  //     desc:'If the distribution of letters and \'words\' is random'
-  //   },
-  //   {
-  //     image:image1,
-  //     name:'Aliana Rosy',
-  //     title:'HR',
-  //     desc:'If the distribution of letters and \'words\' is random'
-  //   },
-  //   {
-  //     image:image2,
-  //     name:'Sofia Razaq',
-  //     title:'C.O.O.',
-  //     desc:'If the distribution of letters and \'words\' is random'
-  //   },
-  //   {
-  //     image:image3,
-  //     name:'Micheal Carlo',
-  //     title:'Director',
-  //     desc:'If the distribution of letters and \'words\' is random'
-  //   },
-  // ]
   return (
     <>
+      <Helmet>
+        <title>Acerca de Nosotros</title>
+        <meta name="description" content="Consultorias Hidroambientales es una empresa especializada en el diseño, construcción, operación y mantenimiento de sistemas de tratamiento de aguas residuales, potabilización, desinfección y lavado de tanques." />
+        <meta name="keywords" content="tanques, lavado, cali, impermeabilizacion, desinfeccion, piscinas" />
+        <meta name="author" content="Consultorias Hidroambientales" />
+        <meta property="og:title" content="Acerca de Nosotros" />
+        <meta property="og:description" content="Consultorias Hidroambientales es una empresa especializada en el diseño, construcción, operación y mantenimiento de sistemas de tratamiento de aguas residuales, potabilización, desinfección y lavado de tanques." />
+        <meta property="og:url" content="https://consultoriashidroambientales.co/about-us" />        
+      </Helmet>
       <section className="relative table w-full py-36 lg:py-44 bg-no-repeat bg-center bg-cover">
         <div className="absolute top-0 start-0 w-full h-full z-0 pointer-events-none overflow-hidden">
           <img
@@ -97,26 +76,6 @@ export default function AboutUs() {
             </div>
           </div>
 
-          {/* <div className="grid md:pb-24 pb-16 md:grid-cols-12 grid-cols-1 mt-8 gap-[30px]">
-            {teamData.map((item,index)=>{
-              return(
-                <div key={index} className="lg:col-span-3 md:col-span-6">
-                  <div className="team p-6 rounded-md border border-gray-100 dark:border-gray-700 group bg-white dark:bg-slate-900">
-                    <img src={item.image} className="h-24 w-24 rounded-full shadow-md dark:shadow-gray-800" alt="" />
-      
-                    <div className="content mt-4">
-                      <Link  className="text-lg font-medium hover:text-indigo-600 block">{item.name}</Link>
-                      <span className="text-slate-400 block">{item.title}</span>
-      
-                      <ul className="list-none mt-4 space-x-1">
-                        <li className="inline"><Link  className="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-base text-center border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 hover:text-white"><Icon.Linkedin className="h-4 w-4"></Icon.Linkedin></Link></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              )
-            })}
-          </div> */}  
         </div>
       </section>
     </>

@@ -26,6 +26,8 @@ import { useLocation } from 'react-router-dom'
 // import p67_image from '../assets/images/ch/freepik/p67.jpg'
 import banner_image from '../assets/images/ch/new/banner.jpg'
 
+import { Helmet } from 'react-helmet'
+
 export default function Home() {
   const scrollToAbout = () => {
     scroll.scrollTo('about', {
@@ -51,6 +53,16 @@ export default function Home() {
 
   return (
     <>
+      <Helmet>
+        <title>Consultorias Hidroambientales</title>
+        <meta name="description" content="Consultorias Hidroambientales es una empresa especializada en la consultoría ambiental, contamos con una gran trayectoria en el sector ofreciendo servicios de calidad." />
+        <meta name="keywords" 
+          content="consultoria, ambiental, agua, potable, piscinas, acueductos, tanques, lavado, desinfeccion, impermeabilizacion, Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable, Lavado y desinfeccion de tanques de agua potable, Impermeabilización de tanques de agua, Diseño, construccion y operacion de Piscinas" />
+        <meta name="author" content="Consultorias Hidroambientales" />
+        <meta property="og:title" content="Consultorias Hidroambientales" />
+        <meta property="og:description" content="Consultorias Hidroambientales es una empresa especializada en la consultoría ambiental, contamos con una gran trayectoria en el sector ofreciendo servicios de calidad." />
+        <meta property="og:url" content="https://consultoriashidroambientales.co" />
+      </Helmet>
       <section className="py-36 md:py-48 w-full table relative bg-center bg-no-repeat bg-cover">
         <div className="absolute top-0 start-0 w-full h-full z-0 pointer-events-none overflow-hidden">
           <img

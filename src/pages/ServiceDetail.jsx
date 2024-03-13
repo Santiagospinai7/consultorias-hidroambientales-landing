@@ -8,6 +8,8 @@ import 'react-18-image-lightbox/style.css'
 
 import { servicesData } from '../data/dataFour'
 
+import { Helmet } from 'react-helmet'
+
 export default function ServiceDetail() {
   let params = useParams()
   let id = params.id
@@ -17,6 +19,15 @@ export default function ServiceDetail() {
 
   return (
     <>
+      <Helmet>
+        <title>{data?.title ? data?.title : 'Thomas Brewer'}</title>
+        <meta name="description" content={data?.desc ? data?.desc : 'Consultorias Hidroambientales'} />
+        <meta name="keywords" content={data?.keywords ? data?.keywords : 'Consultorias Hidroambientales, cali, tanques, lavado, impermeabilizacion, desinfeccion, piscinas'} />
+        <meta name="author" content="Consultorias Hidroambientales" />
+        <meta property="og:title" content={data?.title ? data?.title : 'Consultorias Hidroambientales'} />
+        <meta property="og:description" content={data?.desc ? data?.desc : 'Consultorias Hidroambientales'} />
+        <meta property="og:url" content={`https://consultoriashidroambientales.co/services/${id}`} />
+      </Helmet>
       <section
         className="relative table w-full py-72 bg-no-repeat bg-top bg-cover"
         style={{ backgroundImage: `url(${data.bg})` }}

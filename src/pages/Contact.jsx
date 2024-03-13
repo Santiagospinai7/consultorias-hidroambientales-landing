@@ -13,6 +13,7 @@ import isValidEmail from '../utils/validEmail'
 
 import emailjs from '@emailjs/browser'
 
+import { Helmet } from 'react-helmet'
 
 export default function Contact() {
   const [name, setName] = useState('')
@@ -59,6 +60,16 @@ export default function Contact() {
     
   return (
     <>
+      <Helmet>
+        <title>Contáctanos</title>
+        <meta name="description" content="Consultorias Hidroambientales es una empresa especializada en el diseño, construcción, operación y mantenimiento de sistemas de tratamiento de aguas residuales, potabilización, desinfección y lavado de tanques." />
+        <meta name="keywords" content="tanques, lavado, cali, impermeabilizacion, desinfeccion, piscinas, contacto, valle del cauca" />
+        <meta name="author" content="Consultorias Hidroambientales" />
+        <meta property="og:title" content="Contáctanos" />
+        <meta property="og:description" content="Consultorias Hidroambientales es una empresa especializada en el diseño, construcción, operación y mantenimiento de sistemas de tratamiento de aguas residuales, potabilización, desinfección y lavado de tanques." />
+        <meta property="og:url" content="https://consultoriashidroambientales.co/contact" />
+      </Helmet>
+    
       <section className="relative table w-full py-36  bg-center bg-no-repeat bg-cover">
         <div className="absolute top-0 start-0 w-full h-full z-0 pointer-events-none overflow-hidden">
           <img
