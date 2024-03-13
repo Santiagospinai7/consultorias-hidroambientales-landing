@@ -13,11 +13,22 @@ import ServiceDetail from './pages/ServiceDetail'
 
 import emailjs from '@emailjs/browser'
 
+import { Helmet } from 'react-helmet'
+
 function App() {
   emailjs.init('Vij97Pf05QFGOVOLb')
 
   return (
     <BrowserRouter>
+      <Helmet>
+        <title>Consultorias Hidroambientales</title>
+        <meta name="description" content="Consultorias Hidroambientales es una empresa especializada en el diseño, construcción, operación y mantenimiento de sistemas de tratamiento de aguas residuales, potabilización, desinfección y lavado de tanques." />
+        <meta name="keywords" content="tanques, lavado, cali, impermeabilizacion, desinfeccion, piscinas, lavado de tanques cali, impermeabilizacion de tanques, psicinas cali, acuavalle, agua cali, tratamiento de agua" />
+        <meta name="author" content="Consultorias Hidroambientales" />
+        <meta property="og:title" content="Consultorias Hidroambientales" />
+        <meta property="og:description" content="Consultorias Hidroambientales es una empresa especializada en el diseño, construcción, operación y mantenimiento de sistemas de tratamiento de aguas residuales, potabilización, desinfección y lavado de tanques." />
+        <meta property="og:url" content="https://consultoriashidroambientales.co" />
+      </Helmet>
       <Navbar navClass="nav-light" />
       <Routes>
         <Route path='/' element={<Navigate to='/home' />} />

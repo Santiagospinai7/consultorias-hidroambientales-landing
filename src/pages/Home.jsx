@@ -57,7 +57,7 @@ export default function Home() {
         <title>Consultorias Hidroambientales</title>
         <meta name="description" content="Consultorias Hidroambientales es una empresa especializada en la consultoría ambiental, contamos con una gran trayectoria en el sector ofreciendo servicios de calidad." />
         <meta name="keywords" 
-          content="consultoria, ambiental, agua, potable, piscinas, acueductos, tanques, lavado, desinfeccion, impermeabilizacion, Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable, Lavado y desinfeccion de tanques de agua potable, Impermeabilización de tanques de agua, Diseño, construccion y operacion de Piscinas" />
+          content="lavado de tanques cali, acuavalle, lavado de piscinas cali, lavado de piscinas coombia, consultoria, ambiental, agua, potable, piscinas, acueductos, tanques, lavado, desinfeccion, impermeabilizacion, Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable, Lavado y desinfeccion de tanques de agua potable, Impermeabilización de tanques de agua, Diseño, construccion y operacion de Piscinas" />
         <meta name="author" content="Consultorias Hidroambientales" />
         <meta property="og:title" content="Consultorias Hidroambientales" />
         <meta property="og:description" content="Consultorias Hidroambientales es una empresa especializada en la consultoría ambiental, contamos con una gran trayectoria en el sector ofreciendo servicios de calidad." />

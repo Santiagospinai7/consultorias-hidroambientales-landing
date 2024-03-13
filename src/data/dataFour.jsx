@@ -68,7 +68,8 @@ export const servicesData = [
     id:1,
     icon:GiWaterTank,
     title:'Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable',
-    desc:'',
+    desc:'Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable',
+    keywords: 'Diseño, Construccion, Operacion Plantas de Tratamiento de Agua Potable, cali, valle de cauca, colombia, aquavalle, acueducto, agua potable, tratamiento de agua potable',
     link: '/services/1',
     detail : (
       <p>
