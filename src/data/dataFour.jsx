@@ -6,13 +6,6 @@ import { FaHandsHelping } from 'react-icons/fa'
 import { FaSwimmingPool } from 'react-icons/fa'
 import { FaShoppingBasket } from 'react-icons/fa'
 
-import client1 from '../assets/images/client/01.jpg'
-import client2 from '../assets/images/client/02.jpg'
-import client3 from '../assets/images/client/03.jpg'
-import client4 from '../assets/images/client/04.jpg'
-import client5 from '../assets/images/client/05.jpg'
-import client6 from '../assets/images/client/06.jpg'
-
 import hipocloritoDeSodio from '../assets/images/ch/productos/hipoclorito_de_sodio_15.jpg'
 import hipcloritoDeCalcio from '../assets/images/ch/productos/hipoclorito_calcio_70.jpg'
 
@@ -198,44 +191,6 @@ export const footerCompany = [
   //   title: 'Terminos de servicio',
   //   liClass: 'mt-[10px]',
   // }
-]
-export const feedback =[
-  {
-    description: '" Hola "',
-    image: client1,
-    name: 'Calvin Carlo',
-    role: 'Manager'
-  },
-  {
-    description: '" The most well-known dummy text is the \'Lorem Ipsum\', which is said to have originated in the 16th century. "',
-    image: client2,
-    name: 'Christa Smith',
-    role: 'Manager'
-  },
-  {
-    description: '" One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others. "',
-    image: client3,
-    name: 'Jemina CLone',
-    role: 'Manager'
-  },
-  {
-    description: '" Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. "',
-    image: client4,
-    name: 'Smith Vodka',
-    role: 'Manager'
-  },
-  {
-    description: '" There is now an abundance of readable dummy texts. These are usually used when a text is required. "',
-    image: client5,
-    name: 'Cristino Murfi',
-    role: 'Manager'
-  },
-  {
-    description: '" According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero. "',
-    image: client6,
-    name: 'Cristino Murfi',
-    role: 'Manager'
-  }
 ]
 export const contactData = [
   {
