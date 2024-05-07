@@ -1368,6 +1368,9 @@ video {
 .mt-2{
   margin-top: 0.5rem !important;
 }
+.mt-5 {
+  margin-top: 1.25rem !important;
+}
 .mt-20{
   margin-top: 5rem !important;
 }

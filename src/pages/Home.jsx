@@ -175,39 +175,28 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative md:py-24 py-16" id='products'>
-        <div className="container relative" >
-          <div className="grid grid-cols-1 pb-8 text-center">
+      <section className="relative py-16 md:py-24" id='products'>
+        <div className="container mx-auto">
+          <div className="text-center pb-8">
             <h6 className="text-cyan-500 text-sm font-bold uppercase mb-2">Productos</h6>
-            <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Nuestros productos</h3>
-
+            <h3 className="mb-4 md:text-4xl text-3xl font-semibold text-cyan-700">Nuestros productos</h3>
             <p className="text-slate-400 max-w-2xl mx-auto">Somos proveedores de productos de calidad, contamos con una gran trayectoria en el sector ofreciendo productos de calidad.</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 mt-8">
-            {productData.map((item,index)=>{
-              return(
-                <div key={index} className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                  <img src={item.image} className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500" alt="" />
-                  <div className="absolute inset-0 group-hover:bg-dark opacity-50 transition duration-500 z-0"></div>
-        
-                  <div className="content">
-                    {/* <div className="icon absolute z-10 opacity-0 group-hover:opacity-100 top-4 end-4 transition-all duration-500">
-                      <Link onClick={() => handleImageClick(index)} className="h-9 w-9 inline-flex items-center justify-center tracking-wide align-middle transition duration-500 ease-in-out text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full lightbox"><FiCamera className="w-4 h-4"/></Link>
-                    </div> */}
-        
-                    <div className="title absolute z-10 opacity-0 group-hover:opacity-100 bottom-4 start-4 transition-all duration-500">
-                      <Link to="#" className="h6 text-md font-medium text-white hover:text-gray-300 duration-500 ease-in-out">{item.name}</Link>
-                      {/* <p  className="h6 text-md font-medium text-white duration-500 ease-in-out">{item.name}</p> */}
-                      <p className="text-slate-100 tag mb-0">{item.title}</p>
-                    </div>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+            {productData.map((item, index) => (
+              <div key={index} className="text-center px-4">
+                <div className="group relative block overflow-hidden rounded-lg shadow-lg mx-auto transition-all duration-500 mb-5" style={{ maxWidth: '250px', height: '300px' }}>
+                  <img src={item.image} alt={item.name} className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500 w-full h-full object-cover" style={{ objectPosition: 'center' }} />
+                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-500 z-0"></div>
                 </div>
-              )
-            })}
+                <Link to="#" className="text-lg text-black transition duration-500 ease-in-out mt-5">{item.name}</Link>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
       <section className="relative bg-gray-50 md:py-24 py-16">
         <CustomerSatisfaction title={true}/>
       </section>

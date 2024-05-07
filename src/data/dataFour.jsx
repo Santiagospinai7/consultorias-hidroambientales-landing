@@ -13,11 +13,8 @@ import client4 from '../assets/images/client/04.jpg'
 import client5 from '../assets/images/client/05.jpg'
 import client6 from '../assets/images/client/06.jpg'
 
-import cloro from '../assets/images/ch/productos/Cloro.png'
-import hipcloritoDeCalcio from '../assets/images/ch/productos/Hipoclorito_de_calcio-Cloro.png'
-import hipocloritoDeSodio from '../assets/images/ch/productos/Hipoclorito_de_sodio.png'
-import hidroxidoDeAluminio from '../assets/images/ch/productos/Policloruro_Hidroxido_de_Aluminio.png'
-import sodaCaustica from '../assets/images/ch/productos/Soda_caustica.png'
+import hipocloritoDeSodio from '../assets/images/ch/productos/hipoclorito_de_sodio_15.jpg'
+import hipcloritoDeCalcio from '../assets/images/ch/productos/hipoclorito_calcio_70.jpg'
 
 // service 1
 import image11 from '../assets/images/ch/lavado_desinfeccion/p11.jpg'
@@ -164,30 +161,15 @@ export const servicesData = [
 ]
 export const productData = [
   {
-    image:cloro,
-    name:'Cloro',
+    image:hipocloritoDeSodio,
+    name:'Hipoclorito de sodio al 15%',
     title:'Producto'
   },
   {
     image:hipcloritoDeCalcio,
-    name:'Hipoclorito de calcio',
+    name:'Hipoclorito de calcio al 70%',
     title:'Producto'
   },
-  {
-    image:hipocloritoDeSodio,
-    name:'Hipoclorito de sodio',
-    title:'Producto'
-  },
-  {
-    image:hidroxidoDeAluminio,
-    name:'Policloruro Hidroxido de Aluminio',
-    title:'Producto'
-  },
-  {
-    image:sodaCaustica,
-    name:'Soda caustica',
-    title:'Producto'
-  }
 ]
 
 export const footerCompany = [
